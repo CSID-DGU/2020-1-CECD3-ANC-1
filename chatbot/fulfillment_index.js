@@ -70,21 +70,21 @@ function connectToDatabase(){
   /* 1단원 */
   function handleCH1_PL(agent){
     var answer;
-    if(parameter.PL == "COBOL" || parameter.PL == "cobol" || parameter.PL =="코볼"){
+    if(parameter.pl == "COBOL"){
         answer = "COBOL은 1960년대 초 코다실(CODASYL)에서 발표한 COmmon Business Oriented Language 입니다. 더 자세한 내용은 1단원 교안 4 페이지를 참고하세요.";
-    } else if(parameter.PL == "FORTRAN" || parameter.PL == "fortran" || parameter.PL == "포트란"){
+    } else if(parameter.pl == "FORTRAN"){
         answer = "FORTRAN은 1977년 FORTRAN77이 발표한 FORmula TRANslation 입니다. 더 자세한 내용은 1단원 교안 4 페이지를 참고하세요.";
-    } else if(parameter.PL == "ALGOL" || parameter.PL == "algol" || parameter.PL == "알골"){
+    } else if(parameter.pl == "ALGOL"){
         answer = "ALGOL은 1968년 IFIP WG2.1에서 발표한 ALGOrithmic Language 입니다. 더 자세한 내용은 1단원 교안 5 페이지를 참고하세요.";
-    } else if(parameter.PL == "Pascal" || parameter.PL == "PASCAL" || parameter.PL == "파스칼"){
+    } else if(parameter.pl == "Pascal"){
         answer = "Pascal은 1970년대 초, N.Wirth가 고안한 언어입니다. 더 자세한 내용은 1단원 교안 5 페이지를 참고하세요.";
-    } else if(parameter.PL == "Ada" || parameter.PL == "ADA" || parameter.PL == "아다"){
+    } else if(parameter.pl == "Ada"){
         answer = "Ada은 1980년에 발표된 언어입니다. 더 자세한 내용은 1단원 교안 6 페이지를 참고하세요.";
-    } else if(parameter.PL == "C++" || parameter.PL == "c++"){
+    } else if(parameter.pl == "C++"){
       answer = "C++은 1983년에 발표된 언어입니다. 더 자세한 내용은 1단원 교안 6 페이지를 참고하세요.";
-    } else if(parameter.PL == "Java" || parameter.PL == "java" || parameter.PL == "자바"){
+    } else if(parameter.pl == "Java"){
       answer = "Java은 Sun MicroSystems에서 1995년에 개발한 객체 지향 프로그래밍 언어 입니다. 더 자세한 내용은 1단원 교안 7 페이지를 참고하세요.";
-    } else if(parameter.PL == "C#" || parameter.PL == "c#" || parameter.PL == "씨샾"){
+    } else if(parameter.pl == "C#"){
       answer = "C#은 Microsoft에서 개발한 객체지향 프로그래밍 언어입니다. 더 자세한 내용은 1단원 교안 7 페이지를 참고하세요.";
     } 
     agent.add(answer);
