@@ -68,6 +68,7 @@ function connectToDatabase(){
   }
   
   /* 1단원 */
+  // 프로그래밍 언어 종류
   function handleCH1_PL(agent){
     var answer;
     if(parameter.pl == "COBOL"){
@@ -89,6 +90,21 @@ function connectToDatabase(){
     } 
     agent.add(answer);
   }
+
+  // 번역기와 컴파일러
+  function handleCH1_IC(agent){
+    var answer;
+    if(parameter.compiler[0] == "compiler" && parameter.compiler[1] == "cross-compiler" && parameter.different == "차이점"){
+        answer = "컴파일러는 고급언어로 쓰인 프로그램을 컴퓨터에서 바로 실행될 수 있는 형태의 목적 프로그램으로 바꾸어 주는 번역기고, 크로스 컴파일러는 소스 프로그램을 다른 기종에 대한 기계어로 번역하는 컴파일러입니다.";
+    } else if(parameter.compiler == "compiler" && parameter.interpreter == "interpreter" && parameter.different == "차이점"){
+        answer = "컴파일러는 고급언어로 쓰인 프로그램을 컴퓨터에서 바로 실행될 수 있는 형태의 목적 프로그램으로 바꾸어 주는 번역기고, 인터프리터는 고급언어로 작성된 코드를 한 단계씩 해설해서 실행시키는 방법입니다.";
+    } else if(parameter.compiler == "compiler"){
+        answer = "컴파일러는 고급언어로 쓰인 프로그램을 컴퓨터에서 바로 실행될 수 있는 형태의 목적 프로그램으로 바꾸어 주는 번역기입니다.";
+    } else if(parameter.interpreter == "interpreter"){
+        answer = "인터프리터는 고급언어로 작성된 코드를 한 단계씩 해설해서 실행시키는 방법입니다.";
+    }
+    agent.add(answer);
+  }
   // Run the proper function handler based on the matched Dialogflow intent name
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
@@ -98,5 +114,6 @@ function connectToDatabase(){
   intentMap.set('test', testconnDB);
   intentMap.set('getDataFromMySQL', handleReadFromMySQL);
   intentMap.set('CH1_PL', handleCH1_PL);
+  intentMap.set('CH1_IC', handleCH1_IC);
   agent.handleRequest(intentMap);
 	});
