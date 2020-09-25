@@ -15,50 +15,26 @@ process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
  
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
   const agent = new WebhookClient({ request, response });
+
+  const parameter = request.body.queryResult.parameters; //쿼리 결과에서 파라미터 정보 가져오기
+
   console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
   console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
  
   function welcome(agent) {
-    agent.add(`Welcome to my agent!`);
+    agent.add(`안녕하세요. 난 고박사예요. 뭐 질문있나요?`);
   }
  
   function fallback(agent) {
-    agent.add(`I didn't understand`);
-    agent.add(`I'm sorry, can you try again?`);
+    agent.add(`무슨 소린지 모르겠군요`);
+    agent.add(`미안해요. 못 알아 들었어요. 다시 한번 말해줄래요?`);
   }
  function testconnDB(agent){
      return admin.database().ref().once('value').then((snapshot) => {
        let test = snapshot.child('testconnDB').val();
        agent.add(`db 연결 테스트..${test}`);
      });}
-  // // Uncomment and edit to make your own intent handler
-  // // uncomment `intentMap.set('your intent name here', yourFunctionHandler);`
-  // // below to get this function to be run when a Dialogflow intent is matched
-  // function yourFunctionHandler(agent) {
-  //   agent.add(`This message is from Dialogflow's Cloud Functions for Firebase editor!`);
-  //   agent.add(new Card({
-  //       title: `Title: this is a card title`,
-  //       imageUrl: 'https://developers.google.com/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png',
-  //       text: `This is the body text of a card.  You can even use line\n  breaks and emoji! 💁`,
-  //       buttonText: 'This is a button',
-  //       buttonUrl: 'https://assistant.google.com/'
-  //     })
-  //   );
-  //   agent.add(new Suggestion(`Quick Reply`));
-  //   agent.add(new Suggestion(`Suggestion`));
-  //   agent.setContext({ name: 'weather', lifespan: 2, parameters: { city: 'Rome' }});
-  // }
-
-  // // Uncomment and edit to make your own Google Assistant intent handler
-  // // uncomment `intentMap.set('your intent name here', googleAssistantHandler);`
-  // // below to get this function to be run when a Dialogflow intent is matched
-  // function googleAssistantHandler(agent) {
-  //   let conv = agent.conv(); // Get Actions on Google library conv instance
-  //   conv.ask('Hello from the Actions on Google client library!') // Use Actions on Google library
-  //   agent.add(conv); // Add Actions on Google library responses to your agent's response
-  // }
-  // // See https://github.com/dialogflow/fulfillment-actions-library-nodejs
-  // // for a complete Dialogflow fulfillment library Actions on Google client library v2 integration sample
+/* MySQL 연결 정보 */
 function connectToDatabase(){
   const connection = mysql.createConnection({
   	host:'52.78.240.248',
@@ -90,6 +66,29 @@ function connectToDatabase(){
       });
     });
   }
+  
+  /* 1단원 */
+  function handleCH1_PL(agent){
+    var answer;
+    if(parameter.PL == "COBOL" || parameter.PL == "cobol" || parameter.PL =="코볼"){
+        answer = "COBOL은 1960년대 초 코다실(CODASYL)에서 발표한 COmmon Business Oriented Language 입니다. 더 자세한 내용은 1단원 교안 4 페이지를 참고하세요.";
+    } else if(parameter.PL == "FORTRAN" || parameter.PL == "fortran" || parameter.PL == "포트란"){
+        answer = "FORTRAN은 1977년 FORTRAN77이 발표한 FORmula TRANslation 입니다. 더 자세한 내용은 1단원 교안 4 페이지를 참고하세요.";
+    } else if(parameter.PL == "ALGOL" || parameter.PL == "algol" || parameter.PL == "알골"){
+        answer = "ALGOL은 1968년 IFIP WG2.1에서 발표한 ALGOrithmic Language 입니다. 더 자세한 내용은 1단원 교안 5 페이지를 참고하세요.";
+    } else if(parameter.PL == "Pascal" || parameter.PL == "PASCAL" || parameter.PL == "파스칼"){
+        answer = "Pascal은 1970년대 초, N.Wirth가 고안한 언어입니다. 더 자세한 내용은 1단원 교안 5 페이지를 참고하세요.";
+    } else if(parameter.PL == "Ada" || parameter.PL == "ADA" || parameter.PL == "아다"){
+        answer = "Ada은 1980년에 발표된 언어입니다. 더 자세한 내용은 1단원 교안 6 페이지를 참고하세요.";
+    } else if(parameter.PL == "C++" || parameter.PL == "c++"){
+      answer = "C++은 1983년에 발표된 언어입니다. 더 자세한 내용은 1단원 교안 6 페이지를 참고하세요.";
+    } else if(parameter.PL == "Java" || parameter.PL == "java" || parameter.PL == "자바"){
+      answer = "Java은 Sun MicroSystems에서 1995년에 개발한 객체 지향 프로그래밍 언어 입니다. 더 자세한 내용은 1단원 교안 7 페이지를 참고하세요.";
+    } else if(parameter.PL == "C#" || parameter.PL == "c#" || parameter.PL == "씨샾"){
+      answer = "C#은 Microsoft에서 개발한 객체지향 프로그래밍 언어입니다. 더 자세한 내용은 1단원 교안 7 페이지를 참고하세요.";
+    } 
+    agent.add(answer);
+  }
   // Run the proper function handler based on the matched Dialogflow intent name
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
@@ -98,5 +97,6 @@ function connectToDatabase(){
   // intentMap.set('your intent name here', googleAssistantHandler);
   intentMap.set('test', testconnDB);
   intentMap.set('getDataFromMySQL', handleReadFromMySQL);
+  intentMap.set('CH1_PL', handleCH1_PL);
   agent.handleRequest(intentMap);
 	});
