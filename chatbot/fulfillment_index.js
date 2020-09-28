@@ -116,13 +116,40 @@ function connectToDatabase(){
   function handleCH1_CS(agent){
     var answer;
     if(parameter.structure == "lexical"){
-      answer = "Lexical Analyzer, 즉 어휘 분석기는 컴파일러 내부에서 효율적이고 다루기 쉬운 정수로 바꾸어 줍니다. 1단원 교안 14 페이지를 참고하세요."
+      answer = "Lexical Analyzer, 즉 어휘 분석기는 컴파일러 내부에서 효율적이고 다루기 쉬운 정수로 바꾸어 줍니다. 1단원 교안 14 페이지를 참고하세요.";
     } else if(parameter.structure == "syntax"){
-      answer = "Syntax Analyzer, 즉 구문 분석기는 구문을 확인하고 트리를 생성을 합니다. 1단원 교안 15 페이지를 참고하세요."
+      answer = "Syntax Analyzer, 즉 구문 분석기는 구문을 확인하고 트리를 생성을 합니다. 1단원 교안 15 페이지를 참고하세요.";
     } else if(parameter.structure == "intermediate_code"){
-      answer = "Intermediate Code Generator, 즉 중간 코드 생성기는 중간 코드를 생성합니다. 1단원 교안 16 페이지를 참고하세요."
+      answer = "Intermediate Code Generator, 즉 중간 코드 생성기는 중간 코드를 생성합니다. 1단원 교안 16 페이지를 참고하세요.";
     } else if(parameter.structure == "optimizer"){
-      answer = "Code Optimizer, 즉 코드 최적기는 비효율적인 코드를 구분해 효율적으로 바꾸어 줍니다. 최적화의 뜻, 기준, 지역 최적화, 전역 최적화도 공부해 보세요. 1단원 교안 17~18 페이지를 참고하세요."
+      answer = "Code Optimizer, 즉 코드 최적기는 비효율적인 코드를 구분해 효율적으로 바꾸어 줍니다. 최적화의 뜻, 기준, 지역 최적화, 전역 최적화도 공부해 보세요. 1단원 교안 17~18 페이지를 참고하세요.";
+    } else if(parameter.structure == "target_code"){
+      answer = "Target Code Generator, 즉 중간 코드 생성기는 중간 코드로부터 타겟 코드를 생성합니다. 1단원 교안 19 페이지를 참고하세요.";
+    } else if(parameter.structure == "error"){
+      answer = "Error recovery는 오류를 수정하는 것이고 Error repair는 오류가 발생하면 복구해 주는 것입니다. Error Handling의 종류와 Error의 종류는 1단원 교안 20 페이지를 참고하세요.";
+    }
+    agent.add(answer);
+  }
+
+  //컴파일러 자동화 도구
+  function handleCH1_CGT(agent){
+    var answer;
+    if(parameter.CGT == "cgt"){
+      answer = "컴파일러 자동화 도구는 compiler-compiler, Translator Writing System 이라고도 합니다. 1단원 교안 21 페이지를 참고하세요.";
+    } else if(parameter.CGT == "lexical_ag"){
+      answer = "Lexical Analyzer Generator, 즉 어휘 분석기 생성기는 정규표현으로 기술된 토큰들을 찾아내는 프로그램을 작성하는데 유용한 도구입니다. 1단원 교안 23 페이지를 참고하세요.";
+    } else if(parameter.CGT == "parser_g"){
+      answer = "Parser Generator, 즉 PGS는 Stanford PGS, Wisconsin PGS, YACC이 있습니다. 1단원 교안 24 페이지를 참고하세요.";
+    } else if(parameter.CGT == "acg"){
+      answer = "Automatic Code Generation은 1단원 교안 26 페이지를 참고하세요.";
+    } else if(parameter.CGT == "ccs"){
+      answer = "Compiler Compiler System은 PQCC와 ACK가 있습니다. 1단원 교안 27 페이지를 참고하세요.";
+    } else if(parameter.model == "cc_model"){
+      answer = "Compiler Compiler Model 구조는 1단원 교안 22 페이지를 참고하세요.";
+    } else if(parameter.model == "pqcc_model"){
+      answer = "PQCC Model 구조는 1단원 교안 28 페이지를 참고하세요.";
+    } else if(parameter.model == "ack_model"){
+      answer = "ACK Model 구조는 1단원 교안 29 페이지를 참고하세요.";
     }
     agent.add(answer);
   }
@@ -137,6 +164,7 @@ function connectToDatabase(){
   intentMap.set('CH1_PL', handleCH1_PL);
   intentMap.set('CH1_IC', handleCH1_IC);
   intentMap.set('CH1_CS', handleCH1_CS);
+  intentMap.set('CH1_CGT', handleCH1_CGT);
   agent.handleRequest(intentMap);
 	});
 
