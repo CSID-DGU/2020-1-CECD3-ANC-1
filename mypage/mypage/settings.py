@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'learningLevel.apps.LearninglevelConfig',
+    'answerQuestions.apps.AnswerquestionsConfig',
 ]
 
 MIDDLEWARE = [
