@@ -50,9 +50,18 @@ function connectToDatabase(){
   });
 }
   
+  // 디비에 미해결 질문 저장
+  function insertIntoDatabase(connection, data){
+    return new Promise((resolve, reject) => {
+      // 테이블 이름 변경
+      connection.query('INSERT INTO test SET ? ', data, (error, results) => {
+        resolve(results);
+      });
+    });
+  }
   function queryDatabase(connection){
     return new Promise((resolve, reject)=>{
-    	connection.query('SELECT * from users',(error, results, fields)=>{
+    	connection.query('Insert * from users',(error, results, fields)=>{
           resolve(results);
         });
     });
@@ -153,6 +162,23 @@ function connectToDatabase(){
     }
     agent.add(answer);
   }
+
+  // 미해결질문 등록
+  // subject도 같이 등록할 수 있도록 수정
+  function handleregi_question_custom(agent){
+      const data = {
+      //subject: parameter.subject,
+        question: parameter.question,
+        answer: "대기중"
+      };
+      return connectToDatabase().then(connection => {
+        return insertIntoDatabase(connection, data).then(result => {
+          agent.add( `강의명: ${parameter.subject} \n 질문: ${parameter.question} \n 을 등록합니다.`);
+
+        });
+      });
+    }
+    
   // Run the proper function handler based on the matched Dialogflow intent name
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
@@ -165,6 +191,7 @@ function connectToDatabase(){
   intentMap.set('CH1_IC', handleCH1_IC);
   intentMap.set('CH1_CS', handleCH1_CS);
   intentMap.set('CH1_CGT', handleCH1_CGT);
+  intentMap.set('regi_question-custom', handleregi_question_custom);
   agent.handleRequest(intentMap);
 	});
 
