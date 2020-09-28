@@ -16,6 +16,7 @@ process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
   const agent = new WebhookClient({ request, response });
 
+  const queryText = request.body.queryResult.queryText; // 사용자 입력문자 가져오기
   const parameter = request.body.queryResult.parameters; //쿼리 결과에서 파라미터 정보 가져오기
 
   console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
@@ -94,17 +95,36 @@ function connectToDatabase(){
   // 번역기와 컴파일러
   function handleCH1_IC(agent){
     var answer; var check;
-    check = "더 자세한 내용은 1단원 교안 8 ~ 12 페이지를 참고하세요";
+    check = "더 자세한 내용은 1단원 교안 8 ~ 13 페이지를 참고하세요";
     if(parameter.compiler[0] == "compiler" && parameter.compiler[1] == "cross-compiler" && parameter.different == "차이점"){
         answer = "컴파일러는 고급언어로 쓰인 프로그램을 컴퓨터에서 바로 실행될 수 있는 형태의 목적 프로그램으로 바꾸어 주는 번역기고, 크로스 컴파일러는 소스 프로그램을 다른 기종에 대한 기계어로 번역하는 컴파일러입니다.";
     } else if(parameter.compiler == "compiler" && parameter.interpreter == "interpreter" && parameter.different == "차이점"){
         answer = "컴파일러는 고급언어로 쓰인 프로그램을 컴퓨터에서 바로 실행될 수 있는 형태의 목적 프로그램으로 바꾸어 주는 번역기고, 인터프리터는 고급언어로 작성된 코드를 한 단계씩 해설해서 실행시키는 방법입니다.";
+    } else if(parameter.compiler == "compiler" && parameter.structure == "structure"){
+      answer = "일반적인 컴파일러 구조는 \"어휘 분석기 (토큰)> 구문 분석기(트리) > 중간 코드 생성기(중간 코드) > 코드 최적화(최적화된 코드) > 타겟 코드 생성기\" 입니다. 그림과 ";
     } else if(parameter.compiler == "compiler"){
         answer = "컴파일러는 고급언어로 쓰인 프로그램을 컴퓨터에서 바로 실행될 수 있는 형태의 목적 프로그램으로 바꾸어 주는 번역기입니다.";
     } else if(parameter.interpreter == "interpreter"){
         answer = "인터프리터는 고급언어로 작성된 코드를 한 단계씩 해설해서 실행시키는 방법입니다.";
-    }
+    } else if(parameter.preprocessor == "preprocessor"){
+      answer = "프리프로세서, 즉 전처리기는 소스 프로그램을 확장된 소스 프로그램으로 바꿔줍니다. 이를 translator에서 target 프로그램으로 바꾸는 것입니다.";
+  }
     agent.add(answer+check);
+  }
+
+  // 컴파일러 구조
+  function handleCH1_CS(agent){
+    var answer;
+    if(parameter.structure == "lexical"){
+      answer = "Lexical Analyzer, 즉 어휘 분석기는 컴파일러 내부에서 효율적이고 다루기 쉬운 정수로 바꾸어 줍니다. 1단원 교안 14 페이지를 참고하세요."
+    } else if(parameter.structure == "syntax"){
+      answer = "Syntax Analyzer, 즉 구문 분석기는 구문을 확인하고 트리를 생성을 합니다. 1단원 교안 15 페이지를 참고하세요."
+    } else if(parameter.structure == "intermediate_code"){
+      answer = "Intermediate Code Generator, 즉 중간 코드 생성기는 중간 코드를 생성합니다. 1단원 교안 16 페이지를 참고하세요."
+    } else if(parameter.structure == "optimizer"){
+      answer = "Code Optimizer, 즉 코드 최적기는 비효율적인 코드를 구분해 효율적으로 바꾸어 줍니다. 최적화의 뜻, 기준, 지역 최적화, 전역 최적화도 공부해 보세요. 1단원 교안 17~18 페이지를 참고하세요."
+    }
+    agent.add(answer);
   }
   // Run the proper function handler based on the matched Dialogflow intent name
   let intentMap = new Map();
@@ -116,5 +136,8 @@ function connectToDatabase(){
   intentMap.set('getDataFromMySQL', handleReadFromMySQL);
   intentMap.set('CH1_PL', handleCH1_PL);
   intentMap.set('CH1_IC', handleCH1_IC);
+  intentMap.set('CH1_CS', handleCH1_CS);
   agent.handleRequest(intentMap);
 	});
+
+  
