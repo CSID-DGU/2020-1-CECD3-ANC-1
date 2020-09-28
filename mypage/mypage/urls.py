@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+import learningLevel.views
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('learningLevel/',include('learningLevel.urls')),
     path('answerQuestions/',include('answerQuestions.urls')),
+    url(r'^login$',learningLevel.views.login),
+    url(r'^signin/',learningLevel.views.signin),
 ]
