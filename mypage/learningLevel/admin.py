@@ -3,8 +3,7 @@ from .models import *
 
 # Register your models here.
 
-class AuthUserAdmin(admin.ModelAdmin):
-    list_display = ('username','password', 'first_name', 'last_name', 'email', 'is_superuser', 'is_staff')
+class MdlUserAdmin(admin.ModelAdmin):
+    list_display = ('username','password', 'firstname', 'lastname', 'email')
 
-
-admin.site.register(AuthUser, AuthUserAdmin)
+admin.site.register(MdlUser, MdlUserAdmin)

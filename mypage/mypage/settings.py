@@ -99,7 +99,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+PASSWORD_HASHERS = (
+       'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+       'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+       'django.contrib.auth.hashers.BCryptPasswordHasher',
+       'django.contrib.auth.hashers.SHA1PasswordHasher',
+       'django.contrib.auth.hashers.MD5PasswordHasher',
+       'django.contrib.auth.hashers.CryptPasswordHasher'
+)
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -119,4 +126,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-AUTH_USER_MODEL = 'learningLevel.AuthUser'
+#AUTH_USER_MODEL = 'learningLevel.MdlUser'

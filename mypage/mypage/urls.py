@@ -24,4 +24,5 @@ urlpatterns = [
     path('answerQuestions/',include('answerQuestions.urls')),
     url(r'^login$',learningLevel.views.login),
     url(r'^signin/',learningLevel.views.signin),
+    url(r'^signout/',learningLevel.views.signout),
 ]
