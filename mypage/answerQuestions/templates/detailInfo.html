@@ -145,29 +145,22 @@
 
 
         <div>
-            <table class="table table-hover">
-            <thread>
-                <tr>
-                    <th>번호</th>
-                    <th>과목</th>
-                    <th>작성자 아이디</th>
-                    <th>제목</th>
-                </tr>
-            </thread>
-            <tbody>
-            {% for request in questLists %}
-            <tr>
-                <td>{{forloop.counter}}</td>
-                <td>{{request.q_c_name}}</td>
-                <td>{{request.q_s_id}}</td>
-                <td><a href="{%url 'answerQuestions:detail' request.q_id %}">{{request.question}}</a></td>
-            </tr>
-            {%endfor %}
+          <b>{{question.question}}</b>
+        </div><br>
 
+      <div>
 
-            </tbody>
-        </table>
-        </div>
+      현재 등록되어 있는 답변 :   {{question.answer}}
+
+      </div>
+      <br>
+      <div>
+        <form action="{% url 'answerQuestions:answerCreate' question.q_id %}" method="post" >
+          {% csrf_token %}
+          <textarea name="answer" id="answer" rows="5" cols="100"></textarea>
+          <input type="submit" value="답변등록/수정">
+        </form>
+      </div>
 
     </main>
   </div>
