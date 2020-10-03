@@ -8,7 +8,8 @@ import bcrypt
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    studentLists=MdlEnrolFlatfile.objects.all()
+    return render(request, 'index.html',{'students':studentLists})
 
 def signin(request):
     return render(request, 'signin.html')

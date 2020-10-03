@@ -66,3 +66,19 @@ class MdlUser(models.Model):
     class Meta:
         db_table = 'mdl_user'
         unique_together = (('mnethostid', 'username'),)
+
+
+class MdlEnrolFlatfile(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    action = models.CharField(max_length=30)
+    roleid = models.BigIntegerField()
+    userid = models.BigIntegerField()
+    courseid = models.BigIntegerField()
+    grade = models.CharField(max_length=45, blank=True, null=True)
+    timestart = models.BigIntegerField()
+    timeend = models.BigIntegerField()
+    timemodified = models.BigIntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'mdl_enrol_flatfile'
