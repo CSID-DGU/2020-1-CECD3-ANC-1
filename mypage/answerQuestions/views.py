@@ -4,10 +4,13 @@ from django.http import HttpResponse
 from .models import *
 
 def index2(request):
-    enrolList=MdlEnrolFlatfile.objects.get(userid=request.session['user'])
-    courseid=enrolList.courseid
-    questLists=Question.objects.filter(q_c_id=courseid)
-    return render(request, 'index2.html', {'questLists':questLists})
+    if request.session.get('user',False):
+        enrolList=MdlEnrolFlatfile.objects.get(userid=request.session['user'])
+        courseid=enrolList.courseid
+        questLists=Question.objects.filter(q_c_id=courseid)
+        return render(request, 'index2.html', {'questLists':questLists})
+    else :
+        return render(request, 'index2.html')
 
 def detail(request, question_id):
     question=Question.objects.get(q_id=question_id)
