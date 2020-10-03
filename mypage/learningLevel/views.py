@@ -8,7 +8,9 @@ import bcrypt
 # Create your views here.
 
 def index(request):
-    studentLists=MdlEnrolFlatfile.objects.all()
+    enrolList = MdlEnrolFlatfile.objects.get(userid=request.session['user'])
+    courseid = enrolList.courseid
+    studentLists=MdlEnrolFlatfile.objects.exclude(userid=request.session['user']).filter(courseid=courseid)
     return render(request, 'index.html',{'students':studentLists})
 
 def signin(request):

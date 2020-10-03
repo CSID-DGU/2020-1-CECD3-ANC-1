@@ -72,7 +72,7 @@ class MdlEnrolFlatfile(models.Model):
     id = models.BigAutoField(primary_key=True)
     action = models.CharField(max_length=30)
     roleid = models.BigIntegerField()
-    userid = models.BigIntegerField()
+    userid = models.CharField(max_length=100)
     courseid = models.BigIntegerField()
     grade = models.CharField(max_length=45, blank=True, null=True)
     timestart = models.BigIntegerField()
