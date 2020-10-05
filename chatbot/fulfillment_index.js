@@ -54,14 +54,14 @@ function connectToDatabase(){
   function insertIntoDatabase(connection, data){
     return new Promise((resolve, reject) => {
       // 테이블 이름 변경
-      connection.query('INSERT INTO test SET ? ', data, (error, results) => {
+      connection.query('INSERT INTO question SET ? ', data, (error, results) => {
         resolve(results);
       });
     });
   }
   function queryDatabase(connection){
     return new Promise((resolve, reject)=>{
-    	connection.query('Insert * from users',(error, results, fields)=>{
+    	connection.query('SELECT * from users',(error, results, fields)=>{
           resolve(results);
         });
     });
@@ -167,7 +167,7 @@ function connectToDatabase(){
   // subject도 같이 등록할 수 있도록 수정
   function handleregi_question_custom(agent){
       const data = {
-      //subject: parameter.subject,
+        q_c_name: parameter.subject,
         question: parameter.question,
         answer: "대기중"
       };

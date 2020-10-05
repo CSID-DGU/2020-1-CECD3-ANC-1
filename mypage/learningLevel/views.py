@@ -9,13 +9,20 @@ from .crawler import eclass
 # Create your views here.
 
 def index(request):
-    if request.session.get('user',False):
-        enrolList = MdlEnrolFlatfile.objects.get(userid=request.session['user'])
-        courseid = enrolList.courseid
-        studentLists=MdlEnrolFlatfile.objects.exclude(userid=request.session['user']).filter(courseid=courseid)
-        return render(request, 'index.html',{'students':studentLists})
-    else:
+
+    if request.session.get('user',False) :
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        userid=user.id
+        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
+            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            #courseid = teachList.courseid
+            #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
+            return render(request, 'index.html',{'teachList':teachList})
+        else :
+            return render(request, index.html)
+    else  :
         return render(request, 'index.html')
+
 
 def signin(request):
     return render(request, 'signin.html')

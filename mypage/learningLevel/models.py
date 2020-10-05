@@ -72,8 +72,9 @@ class MdlEnrolFlatfile(models.Model):
     id = models.BigAutoField(primary_key=True)
     action = models.CharField(max_length=30)
     roleid = models.BigIntegerField()
-    userid = models.CharField(max_length=100)
+    userid = models.BigIntegerField()
     courseid = models.BigIntegerField()
+    coursename = models.CharField(max_length=100, blank=True, null=True)
     grade = models.CharField(max_length=45, blank=True, null=True)
     timestart = models.BigIntegerField()
     timeend = models.BigIntegerField()
@@ -89,3 +90,18 @@ class HomeWork(models.Model):
     title = models.CharField(max_length=100)
     start = models.CharField(max_length=100)
     end = models.CharField(max_length=100)
+    
+class MdlRoleAssignments(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    roleid = models.BigIntegerField()
+    contextid = models.BigIntegerField()
+    userid = models.BigIntegerField()
+    timemodified = models.BigIntegerField()
+    modifierid = models.BigIntegerField()
+    component = models.CharField(max_length=100)
+    itemid = models.BigIntegerField()
+    sortorder = models.BigIntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'mdl_role_assignments'
