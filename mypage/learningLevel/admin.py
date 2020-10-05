@@ -7,7 +7,7 @@ class MdlUserAdmin(admin.ModelAdmin):
     list_display = ('username','password', 'firstname', 'lastname', 'email')
 
 class HomeWorkAdmin(admin.ModelAdmin):
-    list_display = ('id', 'code', 'name', 'title', 'start', 'end')
+    list_display = ('id', 'name', 'title', 'start', 'end')
 
 admin.site.register(MdlUser, MdlUserAdmin)
 admin.site.register(HomeWork, HomeWorkAdmin)

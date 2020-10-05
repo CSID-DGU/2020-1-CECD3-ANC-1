@@ -36,7 +36,7 @@
   <body>
         
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">고박사</a>
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">고박사</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -71,16 +71,21 @@
           </li>
           {% endif %}
           <br>
+          {% for request in teachList %}
           <li class="nav-item">
-            <a class="nav-link" href="/learningLevel">
-              <span data-feather="home"></span>
-              수강생 학습 수준파악
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              {{request.coursename}} <span class="sr-only">(current)</span>
+              <ul class="sub">수강생 학습 수준파악</ul>
+              <ul class="sub">미해결 질문답변</ul>
             </a>
           </li>
+          {% endfor %}
+
           <li class="nav-item">
-            <a class="nav-link" href="../answerQuestions">
+            <a class="nav-link" href="../chatbot">
               <span data-feather="file"></span>
-              미해결 질문답변
+              고박사
             </a>
           </li>
           <li class="nav-item">
@@ -105,13 +110,25 @@
             {% csrf_token %}
             <input type="text" name="id" placeholder="이클래스 아이디">
             <input type="password" name="pw" placeholder="이클래스 비밀번호">
-            <input type="text" name="code" placeholder="과목 코드">
+            <input type="text" name="name" placeholder="과목명" value ="{{name}}" readonly>
             <button type="submit" class="btn btn-sm btn-outline-secondary">업데이트하기</button>
         </form>
       </div>
-      {% if task %}
-      <h4>{{name}} / {{code}}</h4>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          수업 선택
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          {% for i in teachList %}
+          <a class="dropdown-item" href="/crawler/{{i.coursename}}">{{i.coursename}}</a>
+          {% endfor %}
+          <a class="dropdown-item" href="/crawler/컴퓨터공학종합설계2">컴퓨터공학종합설계2</a>
+        </div>
+      </div>
+      <br><br>
+      <h4>{{name}}</h4>
       <br>
+      {% if update %}
       <p>다음과 같이 업데이트 되었습니다.</p>
       {% endif %}
       <div class="table-responsive">

@@ -17,11 +17,11 @@ def index(request):
             teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
             #courseid = teachList.courseid
             #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
-            return render(request, 'index.html',{'teachList':teachList})
+            return render(request, 'index.html', {'teachList':teachList})
         else :
-            return render(request, index.html)
+            return render(request, 'index.html')
     else  :
-        return render(request, 'index.html')
+        return render(request, 'signin.html')
 
 
 def signin(request):
@@ -45,22 +45,62 @@ def login(request):
             request.session['user'] = inputId
             return redirect('learningLevel/')
 
+def crawler2(request, name):
+    if request.session.get('user',False) :
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        userid=user.id
+        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
+            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            #courseid = teachList.courseid
+            #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
+            if request.method == 'GET':
+                item = HomeWork.objects.filter(name=name)
+                hwList = []
+                for i in item:
+                    hwList.append({'title': i.title, 'start': i.start, 'end': i.end})
+            return render(request, 'crawler.html', {'teachList':teachList, 'task': hwList ,'name':name})
+        else:
+            return render(request, 'crawler.html')
+    else:
+        return render(request, 'signin.html')
+
 def crawler(request):
-    return render(request, 'crawler.html')
+    if request.session.get('user',False) :
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        userid=user.id
+        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
+            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            #courseid = teachList.courseid
+            #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
+            return render(request, 'crawler.html', {'teachList':teachList})
+        else:
+            return render(request, 'crawler.html')
+    else:
+        return render(request, 'signin.html')
 
 def crawlAct(request):
-    inputId = request.POST.get('id', None)
-    inputPassword = request.POST.get('pw', None)
-    inputCode = request.POST.get('code', None)
-    df, name = eclass(inputId, inputPassword, inputCode)
-    task=[] #과제
-    try:
-        hw_instance = HomeWork.objects.filter(code = inputCode).delete()
-    except:
-        pass
-    for i in df:
-        hw_instance = HomeWork(code = inputCode, name = name, title=i['title'], start = i['start'], end = i['end'])
-        hw_instance.save()
-        task.append({'title': i['title'], 'start': i['start'], 'end': i['end']})
-    context = {'task': task, 'code': inputCode, 'name': name}
-    return render(request, 'crawler.html', context)
+    if request.session.get('user',False) :
+        inputId = request.POST.get('id', None)
+        inputPassword = request.POST.get('pw', None)
+        inputName = request.POST.get('name', None)
+        df= eclass(inputId, inputPassword, inputName)
+        task=[] #과제
+        try:
+            hw_instance = HomeWork.objects.filter(name = inputName).delete()
+        except:
+            pass
+        for i in df:
+            hw_instance = HomeWork(name = inputName, title=i['title'], start = i['start'], end = i['end'])
+            hw_instance.save()
+            task.append({'title': i['title'], 'start': i['start'], 'end': i['end']})
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        userid=user.id
+        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
+            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            context = {'task': task, 'name': inputName, 'update': 1, 'teachList':teachList}
+            return render(request, 'crawler.html', context)
+        else:
+            context = {'task': task, 'name': inputName, 'update': 1}
+            return render(request, 'crawler.html', context)
+    else:
+        return render(request, 'signin.html')

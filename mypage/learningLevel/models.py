@@ -85,7 +85,6 @@ class MdlEnrolFlatfile(models.Model):
         db_table = 'mdl_enrol_flatfile'
 
 class HomeWork(models.Model):
-    code = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
     start = models.CharField(max_length=100)

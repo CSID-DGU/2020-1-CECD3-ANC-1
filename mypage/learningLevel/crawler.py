@@ -31,22 +31,23 @@ def eclass(sid, spw, ccode):
             sidx = link.find("(")
             eidx = link.find(")")
             link = link[sidx+2:eidx-1]
-            if code == ccode:
+            if name == ccode:
                 break
         except:
             print("")
-    go = "https://eclass.dongguk.edu/Report.do?cmd=viewReportInfoPageList&boardInfoDTO.boardInfoGubun=report&courseDTO.courseId="+link+"&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00063"
-    driver.get(go)
-    soup = bs(driver.page_source, 'html.parser')
-    task = soup.find_all("div",{"class":"listContent pb20"})
-    for item in task:
-        d={}
-        title = item.find("h4",{"class":"f14"}).text.replace("\n","").replace("\t","")
-        date = item.find("tbody").find("td", {"class":"first"}).text.replace("\n","").replace("\t","")
-        date = date.split(" ~ ")
-        d["title"]=title
-        d["start"]=date[0]
-        d["end"]=date[1]
-        l.append(d)
-    return l, name
+    if name == ccode:
+        go = "https://eclass.dongguk.edu/Report.do?cmd=viewReportInfoPageList&boardInfoDTO.boardInfoGubun=report&courseDTO.courseId="+link+"&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00063"
+        driver.get(go)
+        soup = bs(driver.page_source, 'html.parser')
+        task = soup.find_all("div",{"class":"listContent pb20"})
+        for item in task:
+            d={}
+            title = item.find("h4",{"class":"f14"}).text.replace("\n","").replace("\t","")
+            date = item.find("tbody").find("td", {"class":"first"}).text.replace("\n","").replace("\t","")
+            date = date.split(" ~ ")
+            d["title"]=title
+            d["start"]=date[0]
+            d["end"]=date[1]
+            l.append(d)
+    return l
     
