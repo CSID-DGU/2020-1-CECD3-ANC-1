@@ -10,16 +10,16 @@ import bcrypt
 def index(request):
 
     if request.session.get('user',False) :
-        """user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(id=userid)).roleid) == 4 :
-            enrolList = MdlEnrolFlatfile.objects.get(userid=userid)
-            courseid = enrolList.courseid
-            studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
-            return render(request, 'index.html',{'students':studentLists})
+        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
+            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            #courseid = teachList.courseid
+            #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
+            return render(request, 'index.html',{'teachList':teachList})
         else :
             return render(request, index.html)
-    else  :"""
+    else  :
         return render(request, 'index.html')
 
 

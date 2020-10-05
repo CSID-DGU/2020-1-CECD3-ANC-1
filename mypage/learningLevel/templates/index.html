@@ -1,4 +1,5 @@
 {% load static %}
+{% csrf_token %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -70,20 +71,19 @@
           </li>
           {% endif %}
           <br>
+          {% for request in teachList %}
           <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <span data-feather="home"></span>
-              수강생 학습 수준파악 <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../answerQuestions">
+            <a class="nav-link" href="#">
               <span data-feather="file"></span>
-              미해결 질문답변
+              {{request.coursename}} <span class="sr-only">(current)</span>
+              <ul class="sub">수강생 학습 수준파악</ul>
+              <ul class="sub">미해결 질문답변</ul>
             </a>
           </li>
+          {% endfor %}
+
           <li class="nav-item">
-            <a class="nav-link active" href="../kobaksa">
+            <a class="nav-link" href="../kobaksa">
               <span data-feather="file"></span>
               고박사
             </a>
