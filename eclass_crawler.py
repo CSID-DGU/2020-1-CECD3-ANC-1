@@ -7,7 +7,7 @@ import pandas as pd
 import pyperclip
 from bs4 import BeautifulSoup as bs
 
-def eclass(sid, spw):
+def eclass(sid, spw, ccode):
     l = []
     driver = webdriver.Chrome("C:\\Users\\yooso\\Downloads\\chromedriver_win32\\chromedriver")
     driver.get("https://eclass.dongguk.edu/Main.do?cmd=viewHome")
@@ -16,7 +16,23 @@ def eclass(sid, spw):
     driver.find_element_by_name('userDTO.password').send_keys(spw)
     driver.find_element_by_xpath('//*[@id="loginForm-member"]/fieldset/p/a').click()
     time.sleep(2)
-    driver.get("https://eclass.dongguk.edu/Report.do?cmd=viewReportInfoPageList&boardInfoDTO.boardInfoGubun=report&courseDTO.courseId=S2019U0002001UCSE403101&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00063")
+    driver.get("https://eclass.dongguk.edu/Main.do?cmd=moveMenu&mainDTO.parentMenuId=menu_00026&mainDTO.menuId=menu_00031")
+    soup = bs(driver.page_source, 'html.parser')
+    classes = soup.find_all("tr")
+    for i in classes:
+        try:
+            name = i.find("a").text
+            code = i.select_one("td:nth-of-type(2)").text
+            link = i.find('a')['href']
+            sidx = link.find("(")
+            eidx = link.find(")")
+            link = link[sidx+2:eidx-1]
+            if code == ccode:
+                break
+        except:
+            print("")
+    go = "https://eclass.dongguk.edu/Report.do?cmd=viewReportInfoPageList&boardInfoDTO.boardInfoGubun=report&courseDTO.courseId="+link+"&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00063"
+    driver.get(go)
     soup = bs(driver.page_source, 'html.parser')
     task = soup.find_all("div",{"class":"listContent pb20"})
     for item in task:
@@ -29,8 +45,6 @@ def eclass(sid, spw):
         d["end"]=date[1]
         l.append(d)
     df=pd.DataFrame(l)
-    print(df)
-    time.sleep(10)
     
-eclass('id', 'pw')
+eclass('id', 'pw', 'CSE4067')
 

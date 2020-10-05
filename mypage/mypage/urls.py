@@ -25,4 +25,6 @@ urlpatterns = [
     url(r'^login$',learningLevel.views.login),
     url(r'^signin/',learningLevel.views.signin),
     url(r'^signout/',learningLevel.views.signout),
+    url(r'^crawler/', learningLevel.views.crawler),
+    url(r'^crawlAct$', learningLevel.views.crawlAct),
 ]
