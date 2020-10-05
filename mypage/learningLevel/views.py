@@ -104,3 +104,20 @@ def crawlAct(request):
             return render(request, 'crawler.html', context)
     else:
         return render(request, 'signin.html')
+
+def learningLevelDetail(request,course_id):
+    students=MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=5)
+
+    if request.session.get('user',False) :
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        userid=user.id
+        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
+            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            context = {'students': students, 'teachList':teachList}
+            return render(request, 'learningLevelDetail.html',context)
+        else :
+            context={'students': students}
+            return render(request, 'learningLevelDetail.html',context)
+
+
+    #return render(request, 'index.html',context)
