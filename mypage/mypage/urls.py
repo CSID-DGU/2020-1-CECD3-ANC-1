@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('learningLevel/',include('learningLevel.urls')),
     path('answerQuestions/',include('answerQuestions.urls')),
-    path('kobaksa/', include('kobaksa.urls')),
+    path('chatbot/', include('chatbot.urls')),
     url(r'^login$',learningLevel.views.login),
     url(r'^signin/',learningLevel.views.signin),
     url(r'^signout/',learningLevel.views.signout),

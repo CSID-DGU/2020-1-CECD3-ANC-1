@@ -26,4 +26,3 @@ def answerCreate(request, question_id):
     """return render(request, 'index2.html',{'questLists':questLists})"""
     return redirect('answerQuestions:detail',question_id=question_answer.q_id)
 
-
