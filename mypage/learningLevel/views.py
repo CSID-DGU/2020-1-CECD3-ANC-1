@@ -11,7 +11,7 @@ def index(request):
     if request.session.get('user',False):
         enrolList = MdlEnrolFlatfile.objects.get(userid=request.session['user'])
         courseid = enrolList.courseid
-        studentLists=MdlEnrolFlatfile.objects.exclude(userid=request.session['user']).filter(courseid=courseid)
+        studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
         return render(request, 'index.html',{'students':studentLists})
     else  :
         return render(request, 'index.html')
