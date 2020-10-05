@@ -73,11 +73,11 @@
           <br>
           {% for request in teachList %}
           <li class="nav-item">
-            <a class="nav-link" href="/learningLevel">
+            <a class="nav-link" href="#">
               <span data-feather="file"></span>
               {{request.coursename}} <span class="sr-only">(current)</span>
-              <ul class="sub">수강생 학습 수준파악</ul>
-              <ul class="sub">미해결 질문답변</ul>
+              <a href="{%url 'learningLevel:learningLevelDetail' request.courseid %}"><ul class="sub">수강생 학습 수준파악</ul></a>
+              <a href="../answerQuestions"><ul class="sub">미해결 질문답변</ul></a>
             </a>
           </li>
           {% endfor %}
@@ -88,12 +88,7 @@
               고박사
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/crawler">
-              <span data-feather="file"></span>
-              과제 데이터 업데이트
-            </a>
-          </li>
+
         </ul>
 
 
