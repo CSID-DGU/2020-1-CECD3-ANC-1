@@ -137,7 +137,8 @@ def learningLevelDetail(request,course_id):
                                      mode='lines',
                                      opacity=0.8, marker_color='blue',fillcolor='rgba(0,0,0,0)')],
                             output_type='div')
-            context = {'students': students, 'teachList':teachList,'plot_div':plot_div}
+            course=MdlEnrolFlatfile.objects.get(userid=userid,courseid=course_id)
+            context = {'students': students, 'teachList':teachList,'plot_div':plot_div,'course':course}
             return render(request, 'learningLevelDetail.html',context)
         else :
             context={'students': students}

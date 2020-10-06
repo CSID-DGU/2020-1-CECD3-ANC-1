@@ -12,7 +12,8 @@ def index2(request,course_id):
         userid = user.id
         if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4:
             teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            return render(request, 'index2.html', {'questLists':questLists,'teachList':teachList})
+            course = MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id)
+            return render(request, 'index2.html', {'questLists':questLists,'teachList':teachList,'course':course})
         else:
             return render(request, 'index2.html', )
     else :
