@@ -5,6 +5,9 @@ from django.contrib.auth import logout as dlogout
 from .models import *
 import bcrypt
 from .crawler import eclass
+from plotly.offline import plot
+from plotly.graph_objs import Scatter, Layout, Figure
+
 
 # Create your views here.
 
@@ -15,9 +18,13 @@ def index(request):
         userid=user.id
         if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
             teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            #courseid = teachList.courseid
-            #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
-            return render(request, 'index.html', {'teachList':teachList})
+            x_data=['A','B','C','N']
+            y_data=[1,2,1,0]
+            plot_div=plot([Scatter(x=x_data, y=y_data,
+                                   mode='lines',name='test',
+                                   opacity=0.8,marker_color='green')],
+                          output_type='div')
+            return render(request, 'index.html', {'teachList':teachList,'plot_div':plot_div})
         else :
             return render(request, 'index.html')
     else  :
@@ -113,7 +120,24 @@ def learningLevelDetail(request,course_id):
         userid=user.id
         if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
             teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            context = {'students': students, 'teachList':teachList}
+            x_data = ['A', 'B', 'C', 'D']
+            #y_data = [1, 2, 1, 0]
+            y_data=[]
+
+            A=(MdlEnrolFlatfile.objects.filter(courseid=course_id,roleid=5,grade__gte=50)).count()
+            y_data.append(A)
+            B=(MdlEnrolFlatfile.objects.filter(courseid=course_id,roleid=5,grade__gte=40,grade__lte=49)).count()
+            y_data.append(B)
+            C = (MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=5, grade__gte=30, grade__lte=40)).count()
+            y_data.append(C)
+            D = (MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=4, grade__lte=20)).count()
+            y_data.append(D)
+
+            plot_div = plot([Scatter(x=x_data, y=y_data,
+                                     mode='lines',
+                                     opacity=0.8, marker_color='blue',fillcolor='rgba(0,0,0,0)')],
+                            output_type='div')
+            context = {'students': students, 'teachList':teachList,'plot_div':plot_div}
             return render(request, 'learningLevelDetail.html',context)
         else :
             context={'students': students}
