@@ -9,7 +9,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Dashboard Template · Bootstrap</title>
-
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
 
     <!-- Bootstrap core CSS -->
@@ -87,23 +88,131 @@
               과제 데이터 업데이트
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../chatbot">
+              <span data-feather="file"></span>
+              고박사
+            </a>
+          </li>
         </ul>
 
 
 
       </div>
     </nav>
-
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">고박사 구현 예정</h1>
+        <div class="container">
+          <div class="page-header text-center">
+            <h1>고박사</h1>
+          </div>
+    
+          <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+              <ul class="list-group js-chat-log">
+              </ul>
+    
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control js-text" placeholder="메세지를 입력하세요.">
+                <span class="input-group-btn">   
+                  <button class="btn btn-primary js-say">전송</button>
+                </span>
+              </div>
+    
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+      
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="{% static 'js/dist/bootstrap.bundle.min.js' %}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-        <script src="{% static 'js/dashboard.js' %}"></script></body>
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="{% static 'js/dist/bootstrap.bundle.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="{% static 'js/dashboard.js' %}"> </script>
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/js.cookie.js' %}"></script>
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script>
+          var $chatlog = $('.js-chat-log');
+          var $input = $('.js-text');
+          var formData = new FormData();
+
+          var $sayButton = $('.js-say');
+          var dialogflowUrl = '{% url "index3" %}';
+          var csrftoken = Cookies.get('csrftoken');
+
+          function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+          }
+
+          $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+              if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+              }
+            }
+          });
+
+          function createRow(text) {
+            var $row = $('<li class="list-group-item"></li>');
+            var list = '<li class="list-group-item">'
+            var k = text.split("\n")
+
+            for(i=0;i<k.length;i++) {
+                list += k[i]+"<br />"
+            }
+
+            list = list + "</li>"
+            $row.text(list);
+            $chatlog.append(list);
+            //$chatlog.append(text);
+          }
+
+          window.onload = createRow('<b><font size="4" face="Lucida Console">고박사랑 채팅하기</font></b>');
+
+          function submitInput() {
+            var inputData = {
+              'text': $input.val()
+              
+            }
+            // Display the user's input on the web page
+            createRow(inputData.text);
+            var dialogflowChatUrl = '{% url "chat-home" %}';
+            var $submit = $.ajax({
+              type: 'POST',
+              url: dialogflowChatUrl,
+              data: JSON.stringify(inputData),
+              contentType: 'application/json',
+            });
+
+
+
+            $submit.done(function(statement) {
+                //createRow(statement.text);
+                createRow(statement);
+                console.log("this is", statement)
+                // Clear the input field
+                $input.val('');
+            });
+
+            $submit.fail(function() {
+              // TODO: Handle errors
+            });
+          }
+
+          $sayButton.click(function() {
+            submitInput();
+          });
+
+          $input.keydown(function(event) {
+            // Submit the input when the enter button is pressed
+            if (event.keyCode == 13) {
+              submitInput();
+            }
+          });
+        </script>
+      </body>
 </html>

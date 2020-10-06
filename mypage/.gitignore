@@ -4,6 +4,9 @@
 #my_settings.py
 my_settings.py
 
+#kobaksa.json
+kobaksa.json
+
 ### Django ###
 *.log
 *.pot
