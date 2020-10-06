@@ -26,10 +26,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`안녕하세요. 난 고박사예요. 뭐 질문있나요?`);
   }
  
-  function fallback(agent) {
-    agent.add(`무슨 소린지 모르겠군요`);
-    agent.add(`미안해요. 못 알아 들었어요. 다시 한번 말해줄래요?`);
-  }
+  // function fallback(agent) {
+  //   agent.add(`무슨 소린지 모르겠군요`);
+  //   agent.add(`미안해요. 못 알아 들었어요. 다시 한번 말해줄래요?`);
+  // }
  function testconnDB(agent){
      return admin.database().ref().once('value').then((snapshot) => {
        let test = snapshot.child('testconnDB').val();
@@ -165,24 +165,24 @@ function connectToDatabase(){
 
   // 미해결질문 등록
   // subject도 같이 등록할 수 있도록 수정
-  function handleregi_question_custom(agent){
-      const data = {
-        q_c_name: parameter.subject,
-        question: parameter.question,
-        answer: "대기중"
-      };
-      return connectToDatabase().then(connection => {
-        return insertIntoDatabase(connection, data).then(result => {
-          agent.add( `강의명: ${parameter.subject} \n 질문: ${parameter.question} \n 을 등록합니다.`);
+  // function handleregi_question_custom(agent){
+  //     const data = {
+  //       q_c_name: parameter.subject,
+  //       question: parameter.question,
+  //       answer: "대기중"
+  //     };
+  //     return connectToDatabase().then(connection => {
+  //       return insertIntoDatabase(connection, data).then(result => {
+  //         agent.add( `강의명: ${parameter.subject} \n 질문: ${parameter.question} \n 을 등록합니다.`);
 
-        });
-      });
-    }
+  //       });
+  //     });
+  //   }
     
   // Run the proper function handler based on the matched Dialogflow intent name
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
-  intentMap.set('Default Fallback Intent', fallback);
+  // intentMap.set('Default Fallback Intent', fallback);
   // intentMap.set('your intent name here', yourFunctionHandler);
   // intentMap.set('your intent name here', googleAssistantHandler);
   intentMap.set('test', testconnDB);
@@ -191,8 +191,6 @@ function connectToDatabase(){
   intentMap.set('CH1_IC', handleCH1_IC);
   intentMap.set('CH1_CS', handleCH1_CS);
   intentMap.set('CH1_CGT', handleCH1_CGT);
-  intentMap.set('regi_question-custom', handleregi_question_custom);
+  // intentMap.set('regi_question-custom', handleregi_question_custom);
   agent.handleRequest(intentMap);
 	});
-
-  
