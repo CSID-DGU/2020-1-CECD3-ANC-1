@@ -75,7 +75,7 @@ class MdlEnrolFlatfile(models.Model):
     userid = models.BigIntegerField()
     courseid = models.BigIntegerField()
     coursename = models.CharField(max_length=100, blank=True, null=True)
-    grade = models.CharField(max_length=45, blank=True, null=True)
+    grade = models.BigIntegerField(blank=True, null=True)
     timestart = models.BigIntegerField()
     timeend = models.BigIntegerField()
     timemodified = models.BigIntegerField()
@@ -105,10 +105,3 @@ class MdlRoleAssignments(models.Model):
         managed = False
         db_table = 'mdl_role_assignments'
 
-
-class HomeWork(models.Model):
-    code = models.CharField(max_length=100)
-    name = models.CharField(max_length=100)
-    title = models.CharField(max_length=100)
-    start = models.CharField(max_length=100)
-    end = models.CharField(max_length=100)

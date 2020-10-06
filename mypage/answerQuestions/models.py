@@ -36,7 +36,7 @@ class MdlEnrolFlatfile(models.Model):
     userid = models.BigIntegerField()
     courseid = models.BigIntegerField()
     coursename = models.CharField(max_length=100, blank=True, null=True)
-    grade = models.CharField(max_length=45, blank=True, null=True)
+    grade = models.BigIntegerField(blank=True, null=True)
     timestart = models.BigIntegerField()
     timeend = models.BigIntegerField()
     timemodified = models.BigIntegerField()
