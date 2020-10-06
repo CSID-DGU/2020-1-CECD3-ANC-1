@@ -24,7 +24,8 @@ def index(request):
                                    mode='lines',name='test',
                                    opacity=0.8,marker_color='green')],
                           output_type='div')
-            return render(request, 'index.html', {'teachList':teachList,'plot_div':plot_div})
+
+            return render(request, 'index.html', {'teachList':teachList,'plot_div':plot_div,})
         else :
             return render(request, 'index.html')
     else  :
@@ -113,7 +114,7 @@ def crawlAct(request):
         return render(request, 'signin.html')
 
 def learningLevelDetail(request,course_id):
-    students=MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=5)
+    students=MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=5).order_by('-grade')
 
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
@@ -138,7 +139,8 @@ def learningLevelDetail(request,course_id):
                                      opacity=0.8, marker_color='blue',fillcolor='rgba(0,0,0,0)')],
                             output_type='div')
             course=MdlEnrolFlatfile.objects.get(userid=userid,courseid=course_id)
-            context = {'students': students, 'teachList':teachList,'plot_div':plot_div,'course':course}
+            context = {'students': students, 'teachList':teachList,'plot_div':plot_div,'course':course,
+                       'x_data':x_data,'y_data':y_data}
             return render(request, 'learningLevelDetail.html',context)
         else :
             context={'students': students}
