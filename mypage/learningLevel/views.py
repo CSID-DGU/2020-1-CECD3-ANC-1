@@ -29,7 +29,7 @@ def index(request):
         elif ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
             enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
 
-            return render(request, 'studentIndex.html',{'enrolList':enrolList})
+            return render(request, 'student.html',{'enrolList':enrolList})
     else  :
         return render(request, 'signin.html')
 
