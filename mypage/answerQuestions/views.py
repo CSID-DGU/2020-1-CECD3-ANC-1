@@ -27,9 +27,9 @@ def detail(request, question_id):
         userid = user.id
         if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4:
             teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            return render(request, 'detailInfo.html', {'question':question,'teachList':teachList})
+            return render(request, 'sdetailInfo.html', {'question':question,'teachList':teachList})
     else:
-        return render(request,'detailInfo.html',context)
+        return render(request,'sdetailInfo.html',context)
 
 def answerCreate(request, question_id):
     question_answer=Question.objects.get(q_id=question_id)

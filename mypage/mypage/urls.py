@@ -29,4 +29,5 @@ urlpatterns = [
     url(r'^crawler/(?P<name>[-\w]+)', learningLevel.views.crawler2),
     url(r'^crawler/', learningLevel.views.crawler),
     url(r'^crawlAct$', learningLevel.views.crawlAct),
+    path('student/',include('student.urls'))
 ]

@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learningLevel.apps.LearninglevelConfig',
     'answerQuestions.apps.AnswerquestionsConfig',
-    'chatbot.apps.ChatbotConfig'
+    'chatbot.apps.ChatbotConfig',
+    'student.apps.StudentConfig'
 ]
 
 MIDDLEWARE = [
