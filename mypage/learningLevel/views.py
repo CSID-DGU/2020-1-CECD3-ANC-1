@@ -26,8 +26,10 @@ def index(request):
                           output_type='div')
 
             return render(request, 'index.html', {'teachList':teachList,'plot_div':plot_div,})
-        else :
-            return render(request, 'index.html')
+        elif ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
+            enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
+
+            return render(request, 'studentIndex.html',{'enrolList':enrolList})
     else  :
         return render(request, 'signin.html')
 
