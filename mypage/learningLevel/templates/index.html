@@ -36,7 +36,10 @@
   </head>
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">고박사</a>
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">
+        <img src="{% static 'img/kitty.png' %}" width="35px" height="35px">
+        <font size="5">&nbsp;고박사</font>
+      </a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -58,6 +61,7 @@
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
           {% if request.session.user %}
+          <br>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <h5>{{ request.session.user }}님</h5>
@@ -104,7 +108,7 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">안녕하세요 고박사입니다.</h1>
+        <h1 class="h2"><img src="{% static 'img/flowerkitty.png' %}" width="50px" height="50px">&nbsp;안녕하세요 고박사입니다.</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>

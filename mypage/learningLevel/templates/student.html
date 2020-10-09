@@ -36,7 +36,10 @@
   </head>
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">고박사</a>
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">
+        <img src="{% static 'img/kitty.png' %}" width="35px" height="35px">
+        <font size="5">&nbsp;고박사</font>
+      </a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -58,6 +61,7 @@
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
           {% if request.session.user %}
+          <br>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <h5>{{ request.session.user }}님</h5>
@@ -87,12 +91,7 @@
               고박사
             </a>
           </li>
-
         </ul>
-
-
-
-
       </div>
     </nav>
 
