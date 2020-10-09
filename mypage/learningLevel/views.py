@@ -7,12 +7,11 @@ import bcrypt
 from .crawler import eclass
 from plotly.offline import plot
 from plotly.graph_objs import Scatter, Layout, Figure
-
+import json
 
 # Create your views here.
 
 def index(request):
-
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
@@ -24,13 +23,13 @@ def index(request):
                                    mode='lines',name='test',
                                    opacity=0.8,marker_color='green')],
                           output_type='div')
-
-            return render(request, 'index.html', {'teachList':teachList,'plot_div':plot_div,})
+            return render(request, 'index.html', {'teachList':teachList,'plot_div':plot_div})
         elif ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
             enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
-
             return render(request, 'student.html',{'enrolList':enrolList})
-    else  :
+        else:
+            return render(request, 'index.html')
+    else:
         return render(request, 'signin.html')
 
 
@@ -46,9 +45,11 @@ def login(request):
     inputPassword = request.POST.get('pw', None)
     check = MdlUser.objects.filter(username=inputId)[0].password.replace('$2y$', '$2a$')
     if not MdlUser.objects.filter(username=inputId).exists():
-        return render(request, 'signin.html')
+        context = {'error':"아이디나 비밀번호가 일치하지 않습니다"}
+        return render(request, 'signin.html', context)
     if not bcrypt.checkpw(inputPassword.encode('utf-8'), check):
-        return render(request, 'signin.html')
+        context = {'error':"아이디나 비밀번호가 일치하지 않습니다"}
+        return render(request, 'signin.html', context)
     else:
         u = MdlUser.objects.filter(username=inputId)[0]
         if u != None:

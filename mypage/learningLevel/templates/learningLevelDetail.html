@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Dashboard Template · Bootstrap</title>
+    <title>고박사-{{course.coursename}}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
 
@@ -89,9 +89,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/crawler">
+            <a class="nav-link" href="/crawler">
               <span data-feather="file"></span>
-              과제 데이터 업데이트 <span class="sr-only">(current)</span>
+              과제 데이터 업데이트
             </a>
           </li>
         </ul>
@@ -129,12 +129,13 @@
         window.onload=function(){
        var ctx = document.getElementById("line-chart").getContext("2d");
        var myChart = new Chart(ctx, {
-           type: 'line',
+           type: 'bar',
            data: {
                labels: {{x_data|safe}},
                datasets: [
                    {
-                       label: "수강생 참여도 A,B,C,D",
+                       label: "수강생 참여도",
+                       backgroundColor: ["#F5A9BC","#A9BCF5","#F2F5A9","#A9F5BC"],
                        data: {{y_data|safe}}
                    }
                ]
