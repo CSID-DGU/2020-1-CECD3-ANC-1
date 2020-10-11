@@ -18,6 +18,7 @@ def eclass(sid, spw, ccode):
         "C:/Users/yooso/Desktop/유소영/동국대 4-2/종합설계/2020-1-CECD3-ANC-1/mypage/learningLevel/static/chromedriver",
         chrome_options=options)
     driver.get("https://eclass.dongguk.edu/Main.do?cmd=viewHome")
+    driver.find_element_by_xpath('/html/body/div[3]/div[1]/button').click()
     driver.find_element_by_xpath('//*[@id="header"]/div[1]/div/ul/li[1]/a').click()
     driver.find_element_by_name('userDTO.userId').send_keys(sid)
     driver.find_element_by_name('userDTO.password').send_keys(spw)

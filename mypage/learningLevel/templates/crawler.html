@@ -29,11 +29,27 @@
           font-size: 3.5rem;
         }
       }
+      .loading { width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; display: block; opacity: 0.7; background-color: #fff; z-index: 99; text-align: center; }
+      #loading-image { position: absolute; top: 50%; left: 50%; z-index: 100; }
     </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
   </head>
   <body>
+    <script src="{% static '/js/jquery.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.loading').hide();
+        $('.form-signin').submit(function(){
+          $('.loading').show();
+          return true;
+        });
+      });
+    </script>
+    <div class="loading">
+      <img id="loading-image" src="https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile1.uf.tistory.com%2Fimage%2F9950163C5AFE32810A7310">    
+    </div>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
       <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">
         <img src="{% static 'img/kitty.png' %}" width="35px" height="35px">
@@ -114,7 +130,7 @@
             <input type="text" name="id" placeholder="이클래스 아이디">
             <input type="password" name="pw" placeholder="이클래스 비밀번호">
             <input type="text" name="name" placeholder="과목명" value ="{{name}}" readonly>
-            <button type="submit" class="btn btn-sm btn-outline-secondary">업데이트하기</button>
+            <button type="submit" id="upd" class="btn btn-sm btn-outline-secondary">업데이트하기</button>
         </form>
       </div>
       <div class="dropdown">
