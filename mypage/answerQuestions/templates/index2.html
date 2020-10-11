@@ -1,5 +1,5 @@
 {% load static %}
-{% csrf_token %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Dashboard Template · Bootstrap</title>
+    <title>고박사-{{course.coursename}}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
 
@@ -68,6 +68,7 @@
             </a>
           </li>
           {% else %}
+          <br>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <h5>로그인해주세요</h5>
@@ -87,7 +88,7 @@
           {% endfor %}
 
           <li class="nav-item">
-            <a class="nav-link" href="../chatbot">
+            <a class="nav-link" href="/chatbot">
               <span data-feather="file"></span>
               고박사
             </a>

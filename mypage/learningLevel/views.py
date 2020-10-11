@@ -43,18 +43,19 @@ def signout(request):
 def login(request):
     inputId = request.POST.get('id', None)
     inputPassword = request.POST.get('pw', None)
-    check = MdlUser.objects.filter(username=inputId)[0].password.replace('$2y$', '$2a$')
     if not MdlUser.objects.filter(username=inputId).exists():
         context = {'error':"아이디나 비밀번호가 일치하지 않습니다"}
         return render(request, 'signin.html', context)
-    if not bcrypt.checkpw(inputPassword.encode('utf-8'), check):
-        context = {'error':"아이디나 비밀번호가 일치하지 않습니다"}
-        return render(request, 'signin.html', context)
     else:
-        u = MdlUser.objects.filter(username=inputId)[0]
-        if u != None:
-            request.session['user'] = inputId
-            return redirect('learningLevel/')
+        check = MdlUser.objects.filter(username=inputId)[0].password.replace('$2y$', '$2a$')
+        if not bcrypt.checkpw(inputPassword.encode('utf-8'), check):
+            context = {'error':"아이디나 비밀번호가 일치하지 않습니다"}
+            return render(request, 'signin.html', context)
+        else:
+            u = MdlUser.objects.filter(username=inputId)[0]
+            if u != None:
+                request.session['user'] = inputId
+                return redirect('learningLevel/')
 
 def crawler2(request, name):
     if request.session.get('user',False) :

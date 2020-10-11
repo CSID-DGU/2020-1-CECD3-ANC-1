@@ -31,6 +31,7 @@
       }
       .loading { width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; display: block; opacity: 0.7; background-color: #fff; z-index: 99; text-align: center; }
       #loading-image { position: absolute; top: 50%; left: 50%; z-index: 100; }
+      #loading-image2 { position: absolute; top: 60%; left: 48%; z-index: 100; }
     </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
@@ -49,6 +50,8 @@
     </script>
     <div class="loading">
       <img id="loading-image" src="https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile1.uf.tistory.com%2Fimage%2F9950163C5AFE32810A7310">    
+      <br><br>
+      <h5 id="loading-image2">Loading...</h5>
     </div>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
       <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">
@@ -83,6 +86,7 @@
             </a>
           </li>
           {% else %}
+          <br>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <h5>로그인해주세요</h5>

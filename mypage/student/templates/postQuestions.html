@@ -36,7 +36,10 @@
   </head>
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">고박사</a>
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">
+        <img src="{% static 'img/kitty.png' %}" width="35px" height="35px">
+        <font size="5">&nbsp;고박사</font>
+      </a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -64,6 +67,7 @@
             </a>
           </li>
           {% else %}
+          <br>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <h5>로그인해주세요</h5>
@@ -82,7 +86,7 @@
           {% endfor %}
 
           <li class="nav-item">
-            <a class="nav-link" href="../chatbot">
+            <a class="nav-link" href="/chatbot">
               <span data-feather="file"></span>
               고박사
             </a>
@@ -99,17 +103,6 @@
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2"> "{{course.coursename}}" 질문등록 게시판</h1>
 
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group mr-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-          </div>
-          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-            <span data-feather="calendar"></span>
-            This week
-          </button>
-
-        </div>
       </div>
 
 
@@ -119,8 +112,8 @@
                 년도 : <input type="text" name="year"><br><br>
                 학기 : <input type="text" name="semester"><br><br>
                 단원 : <input type="text" name="chapter"><br><br>
-                질문 내용 :<br><textarea name="question" id="question" rows="5" cols="100"></textarea><br>
-                <input type="submit" value="질문 등록">
+                질문 내용 :<br><textarea name="question" id="question" rows="5" cols="100"></textarea><br><br>
+                <input type="submit" class="btn btn-secondary" value="질문 등록">
             </form>
         </div>
 
