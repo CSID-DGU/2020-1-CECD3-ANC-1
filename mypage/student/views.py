@@ -27,7 +27,10 @@ def sdetail(request, question_id):
         userid = user.id
         if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
             teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            return render(request, 'sdetailInfo.html', {'question':question,'teachList':teachList})
+            commentList=SComment.objects.filter(q_id=question_id)
+            answerNo=SComment.objects.filter(q_id=question_id).count()
+            return render(request, 'sdetailInfo.html', {'question':question,'teachList':teachList,
+                                                        'commentList':commentList,'answerNo':answerNo,})
     else:
         return render(request,'sdetailInfo.html',context)
 
@@ -50,12 +53,33 @@ def askQuestion(request, course_id):
     course_name=(MdlEnrolFlatfile.objects.get(courseid=course_id,roleid=4)).coursename
     username=request.session.get('user')
     question=request.POST['question']
-    year=request.POST['year']
-    semester=request.POST['semester']
-    chapter=request.POST['chapter']
+    year=request.POST.get('year')
+    semester=request.POST.get('semester')
+    chapter=request.POST.get('chapter')
     new_questions=Question.objects.create(q_s_id=username,question=question,q_c_id=course_id,
                                           t_year=year, t_semester=semester,ch_id=chapter,q_c_name=course_name)
 
 
     return redirect('student:studentMain', course_id=course_id)
 
+def writeComment(request, question_id):
+    question_id=question_id
+    username=request.session.get('user')
+    answer=request.POST['studentA']
+    new_comment=SComment.objects.create(userid=username, q_id=question_id, answer=answer)
+
+    return redirect('student:sdetail', question_id=question_id)
+
+
+def like(request, question_id, id):
+
+    comment = SComment.objects.get(q_id=question_id, id=id)
+    like=SComment.objects.get(q_id=question_id, id=id).like
+    if comment.like:
+        like = like + 1
+    else:
+        like=1
+    comment.like=like
+    comment.save()
+
+    return redirect('student:sdetail', question_id=question_id, )

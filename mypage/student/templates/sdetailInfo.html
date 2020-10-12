@@ -108,17 +108,46 @@
 
 
         <div>
-          <b>{{question.question}}</b>
+          <b><font size="6">{{question.question}}</font></b>
         </div><br>
 
       <div>
 
-      현재 등록되어 있는 답변 :   {{question.answer}}
+        <b>현재 관리자에 의해 등록된 답변</b> =>   {{question.answer}}
 
       </div>
       <br>
+      <div>
+        <font size="5">{{answerNo}} Answers</font>
+      </div>
+      <br>
+
+        {% for comment in commentList %}
+      <div style="background-color:#F2F2F2;border-radius:1em;height:50px">
+            {{comment.answer}}
+        <a href="{% url 'student:like' comment.q_id comment.id%}" class="btn btn=secondary">
+          <img src="{% static 'img/like.png' %}" width="35px" height="35px"></img></a>
+        {%if comment.like %}
+        {{comment.like}}
+        {% else %}
+
+        {% endif %}
+      </div><br>
+        {%endfor %}
 
 
+
+
+      <div>
+        <form action="{% url 'student:writeComment' question.q_id %}" method="post" >
+          {% csrf_token %}
+          <textarea name="studentA" id="studentA" rows="5" cols="100"></textarea>
+          <br><br>
+          <input type="submit" class="btn btn-secondary" value="댓글달기">
+        </form>
+      </div>
+
+      </div>
     </main>
   </div>
 </div>

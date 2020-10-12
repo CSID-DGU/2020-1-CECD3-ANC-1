@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a42e750d-2735-4e77-9c7b-0e2dfeba0930" name="Default Changelist" comment="" />
+    <list default="true" id="a42e750d-2735-4e77-9c7b-0e2dfeba0930" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/student/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/student/templates/postQuestions.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/templates/postQuestions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/student/templates/sdetailInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/templates/sdetailInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/student/templates/studentIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/templates/studentIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/student/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/student/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1i7rexyMfLlM5ZzM8xcAs1dorc6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,21 +34,21 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mypage/manage.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mypage" />
   </component>
   <component name="RunManager">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="kobaksa" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\moonyejin\PycharmProjects\kobaksa\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mypage" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mypage/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -64,26 +75,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="137" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1601269800769" />
-    <state x="145" y="91" key="FileChooserDialogImpl" timestamp="1601269785280">
+    <state x="145" y="91" key="FileChooserDialogImpl" timestamp="1602482394869">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="145" y="91" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1601269785280" />
-    <state width="1259" height="51" key="GridCell.Tab.0.bottom" timestamp="1602242350295">
+    <state x="145" y="91" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602482394869" />
+    <state width="891" height="180" key="GridCell.Tab.0.bottom" timestamp="1602470807250">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="51" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602242350295" />
-    <state width="1259" height="51" key="GridCell.Tab.0.center" timestamp="1602242350295">
+    <state width="891" height="180" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
+    <state width="891" height="180" key="GridCell.Tab.0.center" timestamp="1602470807250">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="51" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602242350295" />
-    <state width="1259" height="51" key="GridCell.Tab.0.left" timestamp="1602242350295">
+    <state width="891" height="180" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
+    <state width="891" height="180" key="GridCell.Tab.0.left" timestamp="1602470807250">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="51" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602242350295" />
-    <state width="1259" height="51" key="GridCell.Tab.0.right" timestamp="1602242350295">
+    <state width="891" height="180" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
+    <state width="891" height="180" key="GridCell.Tab.0.right" timestamp="1602470807250">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="51" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602242350295" />
+    <state width="891" height="180" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1601710849190">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

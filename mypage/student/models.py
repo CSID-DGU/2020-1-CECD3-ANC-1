@@ -140,3 +140,14 @@ class MdlCourseSections(models.Model):
         managed = False
         db_table = 'mdl_course_sections'
         unique_together = (('course', 'section'),)
+
+
+class SComment(models.Model):
+    userid = models.IntegerField(blank=True, null=True)
+    q_id = models.IntegerField(blank=True, null=True)
+    answer = models.CharField(max_length=1000, blank=True, null=True)
+    like = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 's_comment'

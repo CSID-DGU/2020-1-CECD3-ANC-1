@@ -113,6 +113,8 @@
                 <tr>
                     <th>번호</th>
                     <th>과목</th>
+                    <th>년도</th>
+                    <th>학기</th>
                     <th>작성자 아이디</th>
                     <th>제목</th>
                 </tr>
@@ -122,6 +124,8 @@
             <tr>
                 <td>{{forloop.counter}}</td>
                 <td>{{request.q_c_name}}</td>
+                <td>{{request.t_year}}</td>
+                <td>{{request.t_semester}}</td>
                 <td>{{request.q_s_id}}</td>
                 <td><a href="{%url 'student:sdetail' request.q_id %}">{{request.question}}</a></td>
             </tr>
