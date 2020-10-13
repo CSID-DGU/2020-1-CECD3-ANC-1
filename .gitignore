@@ -1,2 +1,4 @@
 #folder
 venv/
+
+.DS_Store
