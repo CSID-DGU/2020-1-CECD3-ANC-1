@@ -18,6 +18,37 @@
 <link href="{% static 'css/dist/bootstrap.min.css' %}" rel="stylesheet">
 
     <style>
+      .chat-input input {
+        height: 30px;
+        line-height: 60px;
+        outline: 0 none;
+        border: none;
+        width: calc(100% - 60px);
+        color: white;
+        text-indent: 10px;
+        font-size: 12pt;
+        padding: 0;
+        float:left;
+      }
+      .chat-input button {
+          outline: 0 none;
+          border: none;
+          background: #ffffff;
+          height: 15px;
+          width: 20px;
+          padding: 2px 0 0 0;
+          border-radius: 50%;
+          margin: 3px;
+          transition: all 0.15s ease-in-out;
+          float: left;
+          font-size: 10pt;
+      }
+      #chat h2{
+        display:inline-block;
+        font-size:13px;
+        font-weight:normal;
+      }
+
       #chat li{
         padding:10px 30px;
       }   
@@ -35,6 +66,7 @@
         display:inline-block;
         text-align:left;
         border-radius:5px;
+        font-size: 12pt;
       }
       #chat .you .message{
         background-color:#58b666;
@@ -44,8 +76,9 @@
         height: 650px;
       }
       main footer{
-       height:155px;
        padding:10px 10px 10px 20px;
+       flex: 0 0 auto;
+        height: 60px;
       }
       #chat{
         padding-left:0;
@@ -75,15 +108,6 @@
           border: 2px solid #ddd;
           color: #330;
           border-radius: 6px;
-      }
-
-      #test{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height:10%;
-        background: red;
-        padding:10px;
       }
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -174,11 +198,10 @@
 
             </ul>
           </div>
-          <footer>
+          <footer class = "chat-input">
             <input type="text" class="form-control js-text" placeholder="메세지를 입력하세요.">
-          <span class="input-group-btn">   
-            <button class="btn btn-primary js-say">전송</button>
-          </span>
+              <button class="js-say"><img src="../../static/img/send.png" alt="전송" width="30"></button>
+          
         </footer>
       </main>
     </div>
@@ -215,8 +238,8 @@
           });
           //챗봇
           function createRow(text) {
-            var $row = $('  <li class="you"> <div class="message"></div></li>'); 
-            var list = '<li class="you"><div class="message">'
+            var $row = $('<li class="you"><h2>고박사</h2><div class="triangle"></div><div class="message"></div></li>'); 
+            var list = '<li class="you"><h2>고박사</h2><div class="triangle"></div><div class="message">'
             var k = text.split("\n")
 
             for(i=0;i<k.length;i++) {
@@ -231,8 +254,8 @@
           
           //사용자
           function createRow_user(text) {
-            var $row = $('  <li class="me"> <div class="message"></div></li>'); 
-            var list = '<li class="me"><div class="message">'
+            var $row = $('<li class="me"><h2>나</h2><div class="triangle"></div><div class="message"></div></li>'); 
+            var list = '<li class="me"><h2>나</h2><div class="triangle"></div><div class="message">'
             var k = text.split("\n")
 
             for(i=0;i<k.length;i++) {
