@@ -17,7 +17,7 @@ def index(request):
         userid=user.id
         if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
             teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            x_data=['A','B','C','N']
+            x_data=['A','B','C','D']
             y_data=[1,2,1,0]
             plot_div=plot([Scatter(x=x_data, y=y_data,
                                    mode='lines',name='test',
@@ -38,7 +38,7 @@ def signin(request):
 
 def signout(request):
     request.session.clear()
-    return render(request, 'index.html')
+    return render(request, 'signin.html')
 
 def login(request):
     inputId = request.POST.get('id', None)

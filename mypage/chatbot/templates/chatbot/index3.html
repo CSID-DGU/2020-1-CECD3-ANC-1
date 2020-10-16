@@ -8,128 +8,145 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>고박사</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"/>
-    <link rel="stylesheet" href="{% static 'css/custom.css' %}"/>
+    <title>Dashboard Template · Bootstrap</title>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
 
     <!-- Bootstrap core CSS -->
 <link href="{% static 'css/dist/bootstrap.min.css' %}" rel="stylesheet">
 
-    <style>
-      .chat-input input {
-        height: 30px;
-        line-height: 60px;
+<style>
+    .chat-input input {
+      height: 30px;
+      line-height: 60px;
+      outline: 0 none;
+      border: none;
+      width: calc(100% - 60px);
+      color: white;
+      text-indent: 10px;
+      font-size: 12pt;
+      padding: 0;
+      float:left;
+    }
+    .chat-input button {
         outline: 0 none;
         border: none;
-        width: calc(100% - 60px);
-        color: white;
-        text-indent: 10px;
-        font-size: 12pt;
-        padding: 0;
-        float:left;
-      }
-      .chat-input button {
-          outline: 0 none;
-          border: none;
-          background: #ffffff;
-          height: 15px;
-          width: 20px;
-          padding: 2px 0 0 0;
-          border-radius: 50%;
-          margin: 3px;
-          transition: all 0.15s ease-in-out;
-          float: left;
-          font-size: 10pt;
-      }
-      #chat h2{
-        display:inline-block;
-        font-size:13px;
-        font-weight:normal;
-      }
+        background: #ffffff;
+        height: 15px;
+        width: 20px;
+        padding: 2px 0 0 0;
+        border-radius: 50%;
+        margin: 3px;
+        transition: all 0.15s ease-in-out;
+        float: left;
+        font-size: 10pt;
+    }
+    #chat h2{
+      display:inline-block;
+      font-size:13px;
+      font-weight:normal;
+    }
 
-      #chat li{
-        padding:10px 30px;
-      }   
-      #chat .me{
-        text-align:right;
-      }
-      #chat .me .message{
-        background-color:#6fbced;
-      }
-      #chat .message{
-        padding:20px;
-        color:#fff;
-        line-height:25px;
-        max-width:90%;
-        display:inline-block;
-        text-align:left;
-        border-radius:5px;
-        font-size: 12pt;
-      }
-      #chat .you .message{
-        background-color:#58b666;
-      }
-      main {
-        position: absolute;
-        height: 650px;
-      }
-      main footer{
-       padding:10px 10px 10px 20px;
-       flex: 0 0 auto;
-        height: 60px;
-      }
-      #chat{
-        padding-left:0;
-        margin:0;
-        list-style-type:none;
-        overflow-y:scroll;
-        height:90%;
-        border-top:2px solid black;
-        border-bottom:2px solid black;
-      }
-      #chat-form {
-        display: grid;
-        grid: 51px / 32px 1fr;
-        align-content: center;
-        align-items: center;
-        grid-gap: 15px;
-        grid-area: chat-form;
-        border-radius: 0 0 10px 0;
-        border-top: 1px solid rgba(0,0,0,0.25);
-        padding-left: 42px;
-        padding-right: 22px;
-      }
+    #chat li{
+      padding:10px 30px;
+    }   
+    #chat .me{
+      text-align:right;
+    }
+    #chat .me .message{
+      background-color:#6fbced;
+    }
+    #chat .message{
+      padding:15px;
+      color:#fff;
+      line-height:25px;
+      max-width:90%;
+      display:inline-block;
+      text-align:left;
+      border-radius:5px;
+      font-size: 12pt;
+    }
+    #chat .you .message{
+      background-color:#58b666;
+    }
+    main {
+      position: absolute;
+      height: 650px;
+    }
+    main footer{
+     padding:10px 10px 10px 20px;
+     flex: 0 0 auto;
+      height: 60px;
+    }
+    #chat{
+      padding-left:0;
+      margin:0;
+      list-style-type:none;
+      overflow-y:scroll;
+      height:70%;
+      border-top:2px solid black;
+      border-bottom:2px solid black;
+    }
+    #chat-form {
+      display: grid;
+      grid: 51px / 32px 1fr;
+      align-content: center;
+      align-items: center;
+      grid-gap: 15px;
+      grid-area: chat-form;
+      border-radius: 0 0 10px 0;
+      border-top: 1px solid rgba(0,0,0,0.25);
+      padding-left: 42px;
+      padding-right: 22px;
+    }
 
-      #chat-form input {
-          outline: none;
-          padding-right: 30px;
-          border: 2px solid #ddd;
-          color: #330;
-          border-radius: 6px;
-      }
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+    #chat-form input {
+        outline: none;
+        padding-right: 30px;
+        border: 2px solid #ddd;
+        color: #330;
+        border-radius: 6px;
+    }
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
-    </style>
+    }
+    @font-face { 
+    font-family: '둥근모';
+    font-style: normal;
+    src:url(../../static/DungGeunMo.eot);
+    src:url(../../static/DungGeunMo.eot?#iefix) format('embedded-opentype'), 
+    url(../../static/DungGeunMo.woff) format('woff'),
+    url(../../static/DungGeunMo.ttf) format('truetype');
+    src:local(※), url(../../static/DungGeunMo.woff) format('woff'); 
+    }
+    .font_01 { 
+        font-family: '둥근모'; 
+        font-size:15px; 
+        font-weight:300;
+    }
+  </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">고박사</a>
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/learningLevel">
+        <div class="font_01">
+        <img src="{% static 'img/kitty.png' %}" width="35px" height="35px">
+        <font size="5">&nbsp;고박사</font>
+        </div>
+      </a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -139,7 +156,7 @@
       {% if request.session.user %}
       <a class="nav-link" href="/signout">Sign out</a>
       {% else %}
-      <a class="nav-link" href="../signin">Sign in</a>
+      <a class="nav-link" href="/signin">Sign in</a>
       {% endif %}
     </li>
   </ul>
@@ -151,12 +168,14 @@
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
           {% if request.session.user %}
+          <br>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <h5>{{ request.session.user }}님</h5>
             </a>
           </li>
           {% else %}
+          <br>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <h5>로그인해주세요</h5>
@@ -164,22 +183,16 @@
           </li>
           {% endif %}
           <br>
-          {% for request in teachList %}
+          {% for request in enrolList %}
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file"></span>
               {{request.coursename}} <span class="sr-only">(current)</span>
-              <a href="{%url 'learningLevel:learningLevelDetail' request.courseid %}"><ul class="sub">수강생 학습 수준파악</ul></a>
-              <a href="../answerQuestions"><ul class="sub">미해결 질문답변</ul></a>
+              <a href="{%url 'student:studentMain' request.courseid %}"><ul class="sub">미해결 질문답변</ul></a>
             </a>
           </li>
           {% endfor %}
-          <li class="nav-item">
-            <a class="nav-link" href="/crawler">
-              <span data-feather="file"></span>
-              과제 데이터 업데이트
-            </a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="../chatbot">
               <span data-feather="file"></span>
@@ -187,27 +200,24 @@
             </a>
           </li>
         </ul>
-
-
-
       </div>
-     </nav>
-      <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <div>
-            <ul id="chat" class="js-chat-log">
+    </nav>
 
-            </ul>
-          </div>
-          <footer class = "chat-input">
-            <input type="text" class="form-control js-text" placeholder="메세지를 입력하세요.">
-              <button class="js-say"><img src="../../static/img/send.png" alt="전송" width="30"></button>
-          
-        </footer>
-      </main>
-    </div>
+    <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div id="chatdiv">
+          <br>
+          <ul id="chat" class="js-chat-log">
+
+          </ul>
+        </div>
+        <footer class = "chat-input">
+          <input type="text" class="form-control js-text" placeholder="메세지를 입력하세요.">
+            <button class="js-say"><img src="../../static/img/send.png" alt="전송" width="30"></button>
+        
+      </footer>
+    </main>
   </div>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="{% static 'js/dist/bootstrap.bundle.min.js' %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
@@ -223,7 +233,7 @@
           var $sayButton = $('.js-say');
           var dialogflowUrl = '{% url "index3" %}';
           var csrftoken = Cookies.get('csrftoken');
-
+          var scrollb = document.getElementById('chat');
           function csrfSafeMethod(method) {
             // these HTTP methods do not require CSRF protection
             return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
@@ -238,8 +248,8 @@
           });
           //챗봇
           function createRow(text) {
-            var $row = $('<li class="you"><h2>고박사</h2><div class="message"></div></li>'); 
-            var list = '<li class="you"><h2>고박사</h2><div class="message">'
+            var $row = $('<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"></div></li>'); 
+            var list = '<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message">'
             var k = text.split("\n")
 
             for(i=0;i<k.length;i++) {
@@ -250,12 +260,13 @@
             $row.text(list);
             $chatlog.append(list);
             //$chatlog.append(text);
+            scrollb.scrollTop = scrollb.scrollHeight;
           }
           
           //사용자
           function createRow_user(text) {
-            var $row = $('<li class="me"><h2>나</h2><div class="message"></div></li>'); 
-            var list = '<li class="me"><h2>나</h2><div class="message">'
+            var $row = $('<li class="me"><div class="message"></div></li>'); 
+            var list = '<li class="me"><div class="message">'
             var k = text.split("\n")
 
             for(i=0;i<k.length;i++) {
@@ -266,6 +277,7 @@
             $row.text(list);
             $chatlog.append(list);
             //$chatlog.append(text);
+            scrollb.scrollTop = scrollb.scrollHeight;
           }
 
           //window.onload = createRow('<b><font size="4" face="Lucida Console">고박사랑 채팅하기</font></b>');
@@ -275,6 +287,7 @@
               'text': $input.val()
               
             }
+            $input.val('');
             // Display the user's input on the web page
             createRow_user(inputData.text);
             var dialogflowChatUrl = '{% url "chat-home" %}';
@@ -284,15 +297,11 @@
               data: JSON.stringify(inputData),
               contentType: 'application/json',
             });
-
-
-
             $submit.done(function(statement) {
                 //createRow(statement.text);
                 createRow(statement);
                 console.log("this is", statement)
                 // Clear the input field
-                $input.val('');
             });
 
             $submit.fail(function() {

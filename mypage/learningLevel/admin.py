@@ -11,3 +11,4 @@ class HomeWorkAdmin(admin.ModelAdmin):
 
 admin.site.register(MdlUser, MdlUserAdmin)
 admin.site.register(HomeWork, HomeWorkAdmin)
+admin.site.register(MdlRoleAssignments)

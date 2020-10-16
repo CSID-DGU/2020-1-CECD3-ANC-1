@@ -7,7 +7,7 @@ import dialogflow
 import os
 import json
 from django.views.decorators.csrf import csrf_exempt
-from .models import *
+from learningLevel.models import *
 # Create your views here.
 
 @require_http_methods(['GET'])
@@ -97,13 +97,12 @@ def detect_intent_with_parameters(project_id, session_id, query_params, language
     return response
 
 def index3(request):
-    """if request.session.get('user',False) :
-        user=(MdlUser.objects.get(username=request.session.get('user',False)))
+    if request.session.get('user',False) :
+        '''user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
-            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            context = {'teachList':teachList}
-            return render(request, 'chatbot/index3.html',context)
-        else :
-            return render(request, 'chatbot/index3.html')"""
-    return render(request, 'chatbot/index3.html',)
+        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
+            enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
+            return render(request, 'chatbot/index3.html',{'enrolList':enrolList})
+        else :'''
+        return render(request, 'chatbot/index3.html')
+    return render(request, 'signin.html')
