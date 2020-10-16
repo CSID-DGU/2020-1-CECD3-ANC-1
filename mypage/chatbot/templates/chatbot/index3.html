@@ -237,7 +237,7 @@
           var $sayButton = $('.js-say');
           var dialogflowUrl = '{% url "index3" %}';
           var csrftoken = Cookies.get('csrftoken');
-          var scrollb = document.getElementById('chat');
+
           function csrfSafeMethod(method) {
             // these HTTP methods do not require CSRF protection
             return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
@@ -264,8 +264,6 @@
             $row.text(list);
             $chatlog.append(list);
             $('#chat').animate({scrollTop:1000000}, 800)
-            //$chatlog.append(text);
-            scrollb.scrollTop = scrollb.scrollHeight;
           }
           
           //사용자
@@ -282,11 +280,7 @@
             $row.text(list);
             $chatlog.append(list);
             $('#chat').animate({scrollTop:1000000}, 800)
-            //$chatlog.append(text);
-            scrollb.scrollTop = scrollb.scrollHeight;
           }
-
-          //window.onload = createRow('<b><font size="4" face="Lucida Console">고박사랑 채팅하기</font></b>');
 
           function submitInput() {
             var inputData = {
