@@ -80,8 +80,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file"></span>
-              {{request.coursename}} <span class="sr-only">(current)</span>
-              <a href="{%url 'student:studentMain' request.courseid %}"><ul class="sub">미해결 질문답변</ul></a>
+              {{request.fullname}} <span class="sr-only">(current)</span>
+              <a href="{%url 'student:studentMain' request.id %}"><ul class="sub">미해결 질문답변</ul></a>
             </a>
           </li>
           {% endfor %}
@@ -102,7 +102,7 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2"> "{{course.coursename}}" 미해결질문 게시판</h1>
+        <h1 class="h2"> "{{course.fullname}}" 미해결질문 게시판</h1>
 
       </div>
 
@@ -135,7 +135,7 @@
             </tbody>
         </table>
             <button type="button" class="btn btn-secondary" style="float:right">
-                <a id="mQ" href="{%url 'student:postQuestions' course.courseid%}">질문하기</a>
+                <a id="mQ" href="{%url 'student:postQuestions' course.id%}">질문하기</a>
             </button>
         </div>
 

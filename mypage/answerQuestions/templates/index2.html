@@ -8,8 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>고박사-{{course.coursename}}</title>
-
+    <title>고박사-{{course.fullname}}</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
 
     <!-- Bootstrap core CSS -->
@@ -80,9 +79,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file"></span>
-              {{request.coursename}} <span class="sr-only">(current)</span>
-              <a href="{%url 'learningLevel:learningLevelDetail' request.courseid %}"><ul class="sub">수강생 참여도 파악</ul></a>
-              <a href="{%url 'answerQuestions:mainpage' request.courseid %}"><ul class="sub">미해결 질문답변</ul></a>
+              {{request.fullname}} <span class="sr-only">(current)</span>
+              <a href="{%url 'learningLevel:learningLevelDetail' request.id %}"><ul class="sub">수강생 참여도 파악</ul></a>
+              <a href="{%url 'answerQuestions:mainpage' request.id %}"><ul class="sub">미해결 질문답변</ul></a>
             </a>
           </li>
           {% endfor %}
@@ -108,7 +107,7 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2"> "{{course.coursename}}" 미해결질문 답변</h1>
+        <h1 class="h2"> "{{course.fullname}}" 미해결질문 답변</h1>
 
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">

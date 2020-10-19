@@ -15,18 +15,142 @@ def index(request):
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
-            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+        """filter=MdlRoleAssignments.objects.filter(userid=userid)"""
+        temp=MdlRoleAssignments.objects.filter(userid=userid)
+        print('temp',temp)
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=4):
+            enrolList=[]
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid=MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid',enrolid)
+
+            courseList=[]
+            cnt = 0
+            for i in range(0,len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+
+
+
+            #int('결과',courseList)
+            #print((courseList[0][0])[0])
+            #print((courseList[1][0])[0])
+            fullname=[]
+
+            courseIdList=[]
+
+            for i in range(0,len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList',courseIdList)
+
+            cnt=0
+            mol=[]
+
+            for i in range(0,len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt ==0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt !=0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang=MdlCourse.objects.filter(id=100000)
+            for i in range(0,len(courseList)):
+                molang=molang|mol[i]
+
+            print('mol',mol)
+            print('molang',molang)
+
+
+            """for i in enrolid:
+                if cnt == 0:
+                    courseid = MdlEnrol.objects.filter(id=i)
+                else:
+                    courseid = courseid | courseid.filter(id=i)
+                cnt = cnt + 1
+
+            courseidList = courseid.values_list('courseid')[0]
+
+            cnt = 0
+
+            for j in courseidList:
+                if cnt == 0:
+                    fullname = MdlCourse.objects.filter(id=j)
+                else:
+                    fullname = fullname | fullname.filter(id=j)
+                cnt = cnt + 1
+
+            """
+            """
+            cnt = 0
+            for i in enrolid:
+                if cnt == 0 :
+                    courseid=MdlEnrol.objects.filter(id=i)
+                else :
+                    courseid=courseid | courseid.filter(id=i)
+                cnt=cnt+1
+
+            courseidList=courseid.values_list('courseid')[0]
+
+            cnt =0
+
+            for j in courseidList:
+                if cnt == 0 :
+                    fullname=MdlCourse.objects.filter(id=j)
+                else :
+                    fullname=fullname | fullname.filter(id=j)
+                cnt=cnt+1
+            """
+
+            """teachList = MdlEnrolFlatfile.objects.filter(userid=userid,roleid=4)
             x_data=['A','B','C','N']
             y_data=[1,2,1,0]
             plot_div=plot([Scatter(x=x_data, y=y_data,
                                    mode='lines',name='test',
                                    opacity=0.8,marker_color='green')],
-                          output_type='div')
-            return render(request, 'index.html', {'teachList':teachList,'plot_div':plot_div})
-        elif ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
-            enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
-            return render(request, 'student.html',{'enrolList':enrolList})
+                          output_type='div')"""
+            return render(request, 'index.html',{'courses':molang})
+        elif MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            print('courseLust', list(courseList))
+
+            print('결과', courseList)
+            print((courseList[0][0])[0])
+            print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+            print('mol', mol)
+            print('molang', molang)
+
+            return render(request, 'student.html',{'enrolList':molang})
         else:
             return render(request, 'index.html')
     else:
@@ -61,16 +185,57 @@ def crawler2(request, name):
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
-            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            #courseid = teachList.courseid
-            #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=4) :
+
+
+            """start"""
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            # int('결과',courseList)
+            # print((courseList[0][0])[0])
+            # print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+
+            """end"""
+
+
+
+
             if request.method == 'GET':
                 item = HomeWork.objects.filter(name=name)
                 hwList = []
                 for i in item:
                     hwList.append({'title': i.title, 'start': i.start, 'end': i.end})
-            return render(request, 'crawler.html', {'teachList':teachList, 'task': hwList ,'name':name})
+            return render(request, 'crawler.html', {'teachList':molang, 'task': hwList ,'name':name})
         else:
             return render(request, 'crawler.html')
     else:
@@ -80,11 +245,48 @@ def crawler(request):
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
-            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            #courseid = teachList.courseid
-            #studentLists=MdlEnrolFlatfile.objects.filter(courseid=courseid,roleid=5)
-            return render(request, 'crawler.html', {'teachList':teachList})
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=4) :
+
+            """start"""
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            # int('결과',courseList)
+            # print((courseList[0][0])[0])
+            # print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+
+            """end"""
+
+            return render(request, 'crawler.html', {'teachList':molang})
         else:
             return render(request, 'crawler.html')
     else:
@@ -107,9 +309,50 @@ def crawlAct(request):
             task.append({'title': i['title'], 'start': i['start'], 'end': i['end']})
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
-            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            context = {'task': task, 'name': inputName, 'update': 1, 'teachList':teachList}
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=4) :
+
+            """start"""
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            # int('결과',courseList)
+            # print((courseList[0][0])[0])
+            # print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+
+            """end"""
+
+
+
+            context = {'task': task, 'name': inputName, 'update': 1, 'teachList':molang}
             return render(request, 'crawler.html', context)
         else:
             context = {'task': task, 'name': inputName, 'update': 1}
@@ -118,35 +361,83 @@ def crawlAct(request):
         return render(request, 'signin.html')
 
 def learningLevelDetail(request,course_id):
-    students=MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=5).order_by('-grade')
+
+
+    enrolid=(MdlEnrol.objects.get(courseid=course_id,enrol='manual')).id
+    students=MdlUserEnrolments.objects.filter(enrolid=enrolid)
 
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 4 :
-            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=4) :
+
+            teachList=MdlCourse.objects.filter(id=course_id)
+
             x_data = ['A', 'B', 'C', 'D']
             #y_data = [1, 2, 1, 0]
             y_data=[]
 
-            A=(MdlEnrolFlatfile.objects.filter(courseid=course_id,roleid=5,grade__gte=50)).count()
+            A=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=50)).count()
             y_data.append(A)
-            B=(MdlEnrolFlatfile.objects.filter(courseid=course_id,roleid=5,grade__gte=40,grade__lte=49)).count()
+            B=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=40,grade__lte=49)).count()
             y_data.append(B)
-            C = (MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=5, grade__gte=30, grade__lte=40)).count()
+            C = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=30, grade__lte=40)).count()
             y_data.append(C)
-            D = (MdlEnrolFlatfile.objects.filter(courseid=course_id, roleid=4, grade__lte=20)).count()
+            D = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__lte=20)).count()
             y_data.append(D)
 
             plot_div = plot([Scatter(x=x_data, y=y_data,
                                      mode='lines',
                                      opacity=0.8, marker_color='blue',fillcolor='rgba(0,0,0,0)')],
                             output_type='div')
-            course=MdlEnrolFlatfile.objects.get(userid=userid,courseid=course_id)
-            context = {'students': students, 'teachList':teachList,'plot_div':plot_div,'course':course,
+            course=MdlCourse.objects.get(id=course_id)
+
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            # int('결과',courseList)
+            # print((courseList[0][0])[0])
+            # print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+            print('mol', mol)
+            print('molang', molang)
+
+
+            context = {'students': students, 'teachList':molang,'plot_div':plot_div,'course':course,
                        'x_data':x_data,'y_data':y_data}
+
+
             return render(request, 'learningLevelDetail.html',context)
         else :
+
             context={'students': students}
             return render(request, 'learningLevelDetail.html',context)
 

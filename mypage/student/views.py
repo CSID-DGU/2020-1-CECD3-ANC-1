@@ -10,10 +10,48 @@ def student(request,course_id):
         questLists=Question.objects.filter(q_c_id=course_id)
         user = (MdlUser.objects.get(username=request.session.get('user', False)))
         userid = user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
-            enrolList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            course = MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id)
-            return render(request, 'studentIndex.html', {'questLists':questLists,'enrolList':enrolList,'course':course})
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
+            #enrolList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            """start"""
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            # int('결과',courseList)
+            # print((courseList[0][0])[0])
+            # print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+            """end"""
+            #course = MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id)
+            course = (MdlCourse.objects.get(id=course_id))
+            return render(request, 'studentIndex.html', {'questLists':questLists,'enrolList':molang,'course':course})
         else:
             return render(request, 'studentIndex.html', )
     else :
@@ -25,11 +63,48 @@ def sdetail(request, question_id):
     if request.session.get('user', False):
         user = (MdlUser.objects.get(username=request.session.get('user', False)))
         userid = user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
-            teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
+            #teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            """start"""
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            # int('결과',courseList)
+            # print((courseList[0][0])[0])
+            # print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+            """end"""
             commentList=SComment.objects.filter(q_id=question_id)
             answerNo=SComment.objects.filter(q_id=question_id).count()
-            return render(request, 'sdetailInfo.html', {'question':question,'teachList':teachList,
+            return render(request, 'sdetailInfo.html', {'question':question,'teachList':molang,
                                                         'commentList':commentList,'answerNo':answerNo,})
     else:
         return render(request,'sdetailInfo.html',context)
@@ -39,18 +114,62 @@ def postQuestions(request, course_id):
         questLists=Question.objects.filter(q_c_id=course_id)
         user = (MdlUser.objects.get(username=request.session.get('user', False)))
         userid = user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
-            enrolList = MdlEnrolFlatfile.objects.filter(userid=userid)
-            course = MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id)
-            course_name= MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id).coursename
-            return render(request, 'postQuestions.html', {'enrolList':enrolList,'course':course,})
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
+            #enrolList = MdlEnrolFlatfile.objects.filter(userid=userid)
+            #course = MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id)
+            #course_name= MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id).coursename
+
+            """start"""
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            print(enrolList)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            print('enrolid', enrolid)
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            # int('결과',courseList)
+            # print((courseList[0][0])[0])
+            # print((courseList[1][0])[0])
+            fullname = []
+
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+            print('courseIdList', courseIdList)
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+            """end"""
+            course=(MdlCourse.objects.get(id=course_id))
+
+            return render(request, 'postQuestions.html', {'enrolList':molang,'course':course,})
         else :
             return render(request,'postQuestions.html')
     return render(request, 'postQuestions.html')
 
 def askQuestion(request, course_id):
 
-    course_name=(MdlEnrolFlatfile.objects.get(courseid=course_id,roleid=4)).coursename
+    #course_name=(MdlEnrolFlatfile.objects.get(courseid=course_id,roleid=4)).coursename
+    """start"""
+    course_name=(MdlCourse.objects.get(id=course_id)).fullname
+
+    """end"""
+
     username=request.session.get('user')
     question=request.POST['question']
     year=request.POST.get('year')

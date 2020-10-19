@@ -80,9 +80,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file"></span>
-              {{request.coursename}} <span class="sr-only">(current)</span>
-              <a href="{%url 'learningLevel:learningLevelDetail' request.courseid %}"><ul class="sub">수강생 참여도 파악</ul></a>
-              <a href="{%url 'answerQuestions:mainpage' request.courseid %}"><ul class="sub">미해결 질문답변</ul></a>
+              {{request.fullname}} <span class="sr-only">(current)</span>
+              <a href="{%url 'learningLevel:learningLevelDetail' request.id %}"><ul class="sub">수강생 참여도 파악</ul></a>
+              <a href="{%url 'answerQuestions:mainpage' request.id %}"><ul class="sub">미해결 질문답변</ul></a>
             </a>
           </li>
           {% endfor %}

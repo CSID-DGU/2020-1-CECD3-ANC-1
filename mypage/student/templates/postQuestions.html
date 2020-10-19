@@ -79,8 +79,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file"></span>
-              {{request.coursename}} <span class="sr-only">(current)</span>
-              <a href="{%url 'student:studentMain' request.courseid %}"><ul class="sub">미해결 질문답변</ul></a>
+              {{request.fullname}} <span class="sr-only">(current)</span>
+              <a href="{%url 'student:studentMain' request.id %}"><ul class="sub">미해결 질문답변</ul></a>
             </a>
           </li>
           {% endfor %}
@@ -101,13 +101,13 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2"> "{{course.coursename}}" 질문등록 게시판</h1>
+        <h1 class="h2"> "{{course.fullname}}" 질문등록 게시판</h1>
 
       </div>
 
 
         <div>
-            <form action="{% url 'student:askQuestion' course.courseid %}" method="post" >
+            <form action="{% url 'student:askQuestion' course.id %}" method="post" >
             {% csrf_token %}
               년도 :
               <select name="year">

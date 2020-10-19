@@ -3,11 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="a42e750d-2735-4e77-9c7b-0e2dfeba0930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/templates/detailInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/templates/detailInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/templates/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/learningLevel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/learningLevel/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/learningLevel/templates/crawler.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/learningLevel/templates/crawler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/learningLevel/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/learningLevel/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/learningLevel/templates/learningLevelDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/learningLevel/templates/learningLevelDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/learningLevel/templates/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/learningLevel/templates/student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/learningLevel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/learningLevel/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypage/student/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypage/student/templates/postQuestions.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/templates/postQuestions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypage/student/templates/sdetailInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/templates/sdetailInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypage/student/templates/studentIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/templates/studentIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage/student/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypage/student/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/student/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,22 +88,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="145" y="91" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602482394869" />
-    <state width="891" height="180" key="GridCell.Tab.0.bottom" timestamp="1602470807250">
+    <state width="1259" height="150" key="GridCell.Tab.0.bottom" timestamp="1602862449775">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="891" height="180" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
-    <state width="891" height="180" key="GridCell.Tab.0.center" timestamp="1602470807250">
+    <state width="1259" height="150" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602862449775" />
+    <state width="1259" height="150" key="GridCell.Tab.0.center" timestamp="1602862449774">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="891" height="180" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
-    <state width="891" height="180" key="GridCell.Tab.0.left" timestamp="1602470807250">
+    <state width="1259" height="150" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602862449774" />
+    <state width="1259" height="150" key="GridCell.Tab.0.left" timestamp="1602862449772">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="891" height="180" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
-    <state width="891" height="180" key="GridCell.Tab.0.right" timestamp="1602470807250">
+    <state width="1259" height="150" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602862449772" />
+    <state width="1259" height="150" key="GridCell.Tab.0.right" timestamp="1602862449774">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="891" height="180" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602470807250" />
+    <state width="1259" height="150" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602862449774" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1601710849190">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
