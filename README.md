@@ -14,7 +14,9 @@
 ```sh
 pip3 install -r requirements.txt
 ```
-```sh
+
 다음 명령으로 서버를 구동시켜주세요.
+
+```sh
 python3 manage.py runserver
 ```
