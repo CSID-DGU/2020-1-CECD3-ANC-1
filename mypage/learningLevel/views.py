@@ -15,7 +15,6 @@ def index(request):
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        """filter=MdlRoleAssignments.objects.filter(userid=userid)"""
         temp=MdlRoleAssignments.objects.filter(userid=userid)
         print('temp',temp)
         if MdlRoleAssignments.objects.filter(userid=userid, roleid=4):
@@ -61,53 +60,7 @@ def index(request):
             print('molang',molang)
 
 
-            """for i in enrolid:
-                if cnt == 0:
-                    courseid = MdlEnrol.objects.filter(id=i)
-                else:
-                    courseid = courseid | courseid.filter(id=i)
-                cnt = cnt + 1
 
-            courseidList = courseid.values_list('courseid')[0]
-
-            cnt = 0
-
-            for j in courseidList:
-                if cnt == 0:
-                    fullname = MdlCourse.objects.filter(id=j)
-                else:
-                    fullname = fullname | fullname.filter(id=j)
-                cnt = cnt + 1
-
-            """
-            """
-            cnt = 0
-            for i in enrolid:
-                if cnt == 0 :
-                    courseid=MdlEnrol.objects.filter(id=i)
-                else :
-                    courseid=courseid | courseid.filter(id=i)
-                cnt=cnt+1
-
-            courseidList=courseid.values_list('courseid')[0]
-
-            cnt =0
-
-            for j in courseidList:
-                if cnt == 0 :
-                    fullname=MdlCourse.objects.filter(id=j)
-                else :
-                    fullname=fullname | fullname.filter(id=j)
-                cnt=cnt+1
-            """
-
-            """teachList = MdlEnrolFlatfile.objects.filter(userid=userid,roleid=4)
-            x_data=['A','B','C','N']
-            y_data=[1,2,1,0]
-            plot_div=plot([Scatter(x=x_data, y=y_data,
-                                   mode='lines',name='test',
-                                   opacity=0.8,marker_color='green')],
-                          output_type='div')"""
             return render(request, 'index.html',{'courses':molang})
         elif MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
             enrolList = []
@@ -162,7 +115,7 @@ def signin(request):
 
 def signout(request):
     request.session.clear()
-    return render(request, 'index.html')
+    return render(request, 'signin.html')
 
 def login(request):
     inputId = request.POST.get('id', None)
