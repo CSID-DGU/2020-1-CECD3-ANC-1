@@ -51,7 +51,7 @@ def index(request):
                 if MdlCourse.objects.filter(id=courseIdList[i]) and cnt ==0:
                     mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
                 elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt !=0:
-                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
             molang=MdlCourse.objects.filter(id=100000)
             for i in range(0,len(courseList)):
                 molang=molang|mol[i]
@@ -318,6 +318,38 @@ def learningLevelDetail(request,course_id):
 
     enrolid=(MdlEnrol.objects.get(courseid=course_id,enrol='manual')).id
     students=MdlUserEnrolments.objects.filter(enrolid=enrolid)
+    enrolPeople=[]
+
+    """start"""
+    for i in MdlUserEnrolments.objects.filter(enrolid=enrolid).values_list('userid'):
+        enrolPeople.append(i)
+    print('enrolPeople', enrolPeople)
+    studentList=[]
+
+    for i in range(0, len(enrolPeople)):
+        if ((MdlRoleAssignments.objects.filter(userid=enrolPeople[i][0],roleid=5)).values_list('userid')):
+            studentList.append(enrolPeople[i][0])
+
+    cnt = 0
+    mol2 = []
+    print('studentList',studentList)
+
+    for i in range(0, len(studentList)):
+        if MdlUserEnrolments.objects.filter(userid=studentList[i],enrolid=enrolid) and cnt == 0:
+            mol2.append(MdlUserEnrolments.objects.filter(userid=studentList[i],enrolid=enrolid))
+        #elif MdlUserEnrolments.objects.filter(userid=studentList[i]) and cnt != 0:
+            #mol2.append(MdlUserEnrolments.objects.filter(userid=studentList[i]))
+    molang2 = MdlUserEnrolments.objects.filter(id=10000)
+
+    print('mol2',mol2)
+    for i in range(0, len(studentList)):
+        molang2 = molang2 | mol2[i]
+
+    """end"""
+    #for i in range(0, len(enrolPeople)):
+        #studentList.append(MdlRoleAssignments.objects.filter(id=enrolPeople[i][0]).values_list(''))
+
+
 
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
@@ -337,6 +369,7 @@ def learningLevelDetail(request,course_id):
             C = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=30, grade__lte=40)).count()
             y_data.append(C)
             D = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__lte=20)).count()
+            D=D-1
             y_data.append(D)
 
             plot_div = plot([Scatter(x=x_data, y=y_data,
@@ -375,7 +408,7 @@ def learningLevelDetail(request,course_id):
                 if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
                     mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
                 elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
-                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
             molang = MdlCourse.objects.filter(id=100000)
             for i in range(0, len(courseList)):
                 molang = molang | mol[i]
@@ -384,7 +417,7 @@ def learningLevelDetail(request,course_id):
             print('molang', molang)
 
 
-            context = {'students': students, 'teachList':molang,'plot_div':plot_div,'course':course,
+            context = {'students': molang2, 'teachList':molang,'plot_div':plot_div,'course':course,
                        'x_data':x_data,'y_data':y_data}
 
 
