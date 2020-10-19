@@ -1,0 +1,7 @@
+mysqlclient
+bcrypt
+selenium
+pyperclip 
+bs4
+plotly
+dialogflow
