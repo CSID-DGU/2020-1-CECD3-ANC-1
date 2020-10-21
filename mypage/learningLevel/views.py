@@ -30,9 +30,6 @@ def index(request):
             for i in range(0,len(enrolList)):
                 courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
 
-
-
-
             #int('결과',courseList)
             #print((courseList[0][0])[0])
             #print((courseList[1][0])[0])
@@ -59,8 +56,6 @@ def index(request):
             print('mol',mol)
             print('molang',molang)
 
-
-
             return render(request, 'index.html',{'courses':molang})
         elif MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
             enrolList = []
@@ -75,7 +70,7 @@ def index(request):
             for i in range(0, len(enrolList)):
                 courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
 
-            print('courseLust', list(courseList))
+            print('courseList', list(courseList))
 
             print('결과', courseList)
             print((courseList[0][0])[0])

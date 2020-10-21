@@ -98,11 +98,11 @@ def detect_intent_with_parameters(project_id, session_id, query_params, language
 
 def index3(request):
     if request.session.get('user',False) :
-        '''user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if ((MdlRoleAssignments.objects.get(userid=userid)).roleid) == 5:
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
             enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
             return render(request, 'chatbot/index3.html',{'enrolList':enrolList})
-        else :'''
-        return render(request, 'chatbot/index3.html')
+        else :
+            return render(request, 'chatbot/index3.html')
     return render(request, 'signin.html')
