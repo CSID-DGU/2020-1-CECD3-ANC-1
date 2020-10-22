@@ -2,4 +2,7 @@
 venv/
 
 .DS_Store
+mypage/.DS_Store
+
 chatbot/kobaksa.json
+

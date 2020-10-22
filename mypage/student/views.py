@@ -53,9 +53,9 @@ def student(request,course_id):
             course = (MdlCourse.objects.get(id=course_id))
             return render(request, 'studentIndex.html', {'questLists':questLists,'enrolList':molang,'course':course})
         else:
-            return render(request, 'studentIndex.html', )
+            return render(request, 'signin.html', )
     else :
-        return render(request, 'studentIndex.html')
+        return render(request, 'signin.html')
 
 def sdetail(request, question_id):
     question=Question.objects.get(q_id=question_id)
