@@ -76,7 +76,7 @@ def update_intent():
   response  = intents_client.update_intent(intent, language_code='ko')
 
 # 저장된 entity 목록 불러오기
-def get_entity_list:
+def get_entity_list():
     entity_type_client = dialogflow.EntityTypesClient()
     parent = entity_type_client.project_agent_path('kobaksa-1b59d')
 
