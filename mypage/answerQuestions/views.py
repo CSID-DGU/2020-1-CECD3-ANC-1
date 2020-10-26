@@ -3,6 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 from .models import *
 from .create_intent import create_intent
+from .create_intent import update_intent
 
 def index2(request,course_id):
     if request.session.get('user',False):
@@ -113,7 +114,8 @@ def answerCreate(request, question_id):
     question_answer.answer=answer
     question_answer.save()
     questLists=Question.objects.all()
-    create_intent()
+    #create_intent()
+    update_intent()
     """return render(request, 'index2.html',{'questLists':questLists})"""
     return redirect('answerQuestions:detail',question_id=question_answer.q_id)
 

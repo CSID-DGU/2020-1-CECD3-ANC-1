@@ -1,16 +1,17 @@
 import dialogflow_v2 as dialogflow
 import os
 
-def dialogflow_setting():
-  GOOGLE_AUTHENTICATION_FILE_NAME = "kobaksa.json"
-  current_directory = os.path.dirname(os.path.realpath(__file__))
-  path = os.path.join(current_directory, GOOGLE_AUTHENTICATION_FILE_NAME)
-  os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = path
-  intents_client = dialogflow.IntentsClient()
-  parent = intents_client.project_agent_path('kobaksa-1b59d')
+
+GOOGLE_AUTHENTICATION_FILE_NAME = "kobaksa.json"
+current_directory = os.path.dirname(os.path.realpath(__file__))
+path = os.path.join(current_directory, GOOGLE_AUTHENTICATION_FILE_NAME)
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = path
+intents_client = dialogflow.IntentsClient()
+parent = intents_client.project_agent_path('kobaksa-1b59d')
+
 
 def create_intent():
-  dialogflow_setting()
+  #dialogflow_setting()
 
   part = dialogflow.types.Intent.TrainingPhrase.Part(
     text = "유소영의 테스트")
@@ -47,8 +48,9 @@ def create_intent():
 # 매개변수 설정해서 코드 수정 필요
 # 해당 인텐트에 trainging phrases 추가하기
 # 이와 같이 코드로 default 답을 수정 할 수도 있을듯
+
 def update_intent():
-  dialogflow_setting()
+  #dialogflow_setting()
 
   intents=intents_client.list_intents(parent)
   intent_path=[
@@ -61,7 +63,7 @@ def update_intent():
   #intent = intents_client.get_intent(intent_path[0])
 
   part = dialogflow.types.Intent.TrainingPhrase.Part(
-      text = "업데이트 확인입니다!!!!")
+      text = "10/26일 업데이트 확인할거야!!!")
   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=[part])
   training_phrases.append(training_phrase)
   # training_phrases가 여러개일 경우
