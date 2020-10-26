@@ -115,7 +115,18 @@ def answerCreate(request, question_id):
     question_answer.save()
     questLists=Question.objects.all()
     #create_intent()
-    update_intent()
+    create_intent(question_answer.question, answer, question_answer.q_id)
     """return render(request, 'index2.html',{'questLists':questLists})"""
     return redirect('answerQuestions:detail',question_id=question_answer.q_id)
 
+
+def answerCreate2(request, question_id):
+    question_answer=Question.objects.get(q_id=question_id)
+    answer2=request.POST['answer2']
+    question_answer.answer=answer2
+    question_answer.save()
+    questLists=Question.objects.all()
+    #create_intent()
+    update_intent(question_answer.question, answer2, question_answer.q_id)
+    """return render(request, 'index2.html',{'questLists':questLists})"""
+    return redirect('answerQuestions:detail',question_id=question_answer.q_id)
