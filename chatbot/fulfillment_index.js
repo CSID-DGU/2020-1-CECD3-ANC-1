@@ -178,7 +178,13 @@ function connectToDatabase(){
   //       });
   //     });
   //   }
-    
+  function handleQuestion_HW(agent){
+    var answer;
+    const datetime = parameter.date;
+    const dp = agent.parameters['date-period']
+    answer = "어떻게 하는건데2 "+datetime+" "+dp['startDate']+" "+dp['endDate'];
+    agent.add(answer);
+  }
   // Run the proper function handler based on the matched Dialogflow intent name
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
@@ -191,6 +197,7 @@ function connectToDatabase(){
   intentMap.set('CH1_IC', handleCH1_IC);
   intentMap.set('CH1_CS', handleCH1_CS);
   intentMap.set('CH1_CGT', handleCH1_CGT);
+  intentMap.set('question_HW', handleQuestion_HW);
   // intentMap.set('regi_question-custom', handleregi_question_custom);
   agent.handleRequest(intentMap);
 	});
