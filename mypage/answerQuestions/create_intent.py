@@ -72,3 +72,22 @@ def update_intent():
         training_phrases.append(training_phrase)'''
   intent.training_phrases.extend(training_phrases)
   response  = intents_client.update_intent(intent, language_code='ko')
+
+# 저장된 entity 목록 불러오기
+def get_entity_list:
+    entity_type_client = dialogflow.EntityTypesClient()
+    parent = entity_type_client.project_agent_path('kobaksa-1b59d')
+
+    entity_types = entity_type_client.list_entity_types(parent)
+
+    for entity_type in entity_types:
+        print(entity_type)
+        #print(entity_type.name)
+        #print(entity_type.display_name)
+        
+        # entity에서 value 값 출력하기
+        #entities = entity_type.entities
+        #entity_values = [entity.value for entity in entities]
+        #for enti in entity_values:
+            #print(enti, "\n")
+            
