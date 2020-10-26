@@ -94,6 +94,8 @@ def update_intent(question, answer, q_id):
 
   text = dialogflow.types.Intent.Message.Text(text=[answer])  # responses에 답변 추가
   text_message = dialogflow.types.Intent.Message(text=text)
+  # 이전 답 제거
+  intent.messages.pop()
   messages.append(text_message)
 
 
