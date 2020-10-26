@@ -63,7 +63,7 @@ def update_intent():
   #intent = intents_client.get_intent(intent_path[0])
 
   part = dialogflow.types.Intent.TrainingPhrase.Part(
-      text = "업데이트 확인입니다!!!!")
+      text = "10/26일 업데이트 확인할거야!!!")
   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=[part])
   training_phrases.append(training_phrase)
   # training_phrases가 여러개일 경우

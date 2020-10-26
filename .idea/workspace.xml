@@ -4,6 +4,7 @@
     <list default="true" id="a42e750d-2735-4e77-9c7b-0e2dfeba0930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/create_intent.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/create_intent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
