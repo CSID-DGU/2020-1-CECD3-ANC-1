@@ -120,15 +120,25 @@
       {% endif %}
       </div>
       <br>
+      {% if question.answer %}
+      <div>
+        <form action="{% url 'answerQuestions:answerCreate2' question.q_id %}" method="post" >
+          {% csrf_token %}
+          <textarea name="answer2" id="answer2" rows="5" cols="100"></textarea>
+          <br><br>
+          <input type="submit" class="btn btn-secondary" value="답변수정">
+        </form>
+      </div>
+      {% else %}
       <div>
         <form action="{% url 'answerQuestions:answerCreate' question.q_id %}" method="post" >
           {% csrf_token %}
           <textarea name="answer" id="answer" rows="5" cols="100"></textarea>
           <br><br>
-          <input type="submit" class="btn btn-secondary" value="답변등록/수정">
+          <input type="submit" class="btn btn-secondary" value="답변등록">
         </form>
       </div>
-
+      {% endif %}
     </main>
   </div>
 </div>
