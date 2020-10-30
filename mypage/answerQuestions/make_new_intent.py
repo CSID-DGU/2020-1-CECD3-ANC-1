@@ -160,3 +160,28 @@ def set_intent_entity():
 set_intent_entity()
 #get_entity_list()
 
+
+###문장에서 단어로 entity 설정
+def test_set_entity():
+  parts = [
+    dialogflow.types.Intent.TrainingPhrase.Part(text="오토마타", entity_type='@automata',alias="automata"),
+    dialogflow.types.Intent.TrainingPhrase.Part(text="가 뭐야?")
+  ]
+
+  training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
+
+  messages = []
+
+  #이게 default message
+  text = dialogflow.types.Intent.Message.Text(text = ["First message"])
+  text_message = dialogflow.types.Intent.Message(text=text)
+  messages.append(text_message)
+
+  intent = dialogflow.types.Intent(
+          display_name="aaaaaa",
+          training_phrases=[training_phrase],
+          messages=messages,
+  )
+
+  response = intents_client.create_intent(parent, intent)
+  print("Intent created: {}".format(response))
