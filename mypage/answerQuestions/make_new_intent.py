@@ -160,3 +160,36 @@ def set_intent_entity():
 set_intent_entity()
 #get_entity_list()
 
+
+### 반쪽짜리 성공
+def test_set_entity():
+  parts = [
+    dialogflow.types.Intent.TrainingPhrase.Part(text="오토마타", entity_type='@automata'),
+    dialogflow.types.Intent.TrainingPhrase.Part(text="가 뭐야?")
+  ]
+
+  training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
+
+  messages = []
+
+  #이게 default message
+  text = dialogflow.types.Intent.Message.Text(text = ["First message"])
+  text_message = dialogflow.types.Intent.Message(text=text)
+  messages.append(text_message)
+
+  param = dialogflow.types.Intent.Parameter(
+          display_name="automata",
+          entity_type_display_name="@automata",
+          mandatory=False,
+          name="",
+          value="$automata",
+  )
+  intent = dialogflow.types.Intent(
+          display_name="aaaaaa",
+          parameters=[param],
+          training_phrases=[training_phrase],
+          messages=messages,
+  )
+
+  response = intents_client.create_intent(parent, intent)
+  print("Intent created: {}".format(response))
