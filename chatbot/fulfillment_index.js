@@ -59,14 +59,20 @@ function connectToDatabase(){
       });
     });
   }
-  function queryDatabase(connection){
+  function queryHomeworkDatabase1(connection, date){
     return new Promise((resolve, reject)=>{
-    	connection.query('SELECT * from users',(error, results, fields)=>{
+    	connection.query("SELECT * from learningLevel_homework where DATE(end) = '"+date+"'",(error, results, fields)=>{
           resolve(results);
         });
     });
   }
-  
+  function queryHomeworkDatabase2(connection, start, end){
+    return new Promise((resolve, reject)=>{
+    	connection.query("SELECT * from learningLevel_homework where DATE(start) BETWEEN '"+start+"' AND '"+end+"' OR DATE(end) BETWEEN '"+start+"' AND '"+end+"'",(error, results, fields)=>{
+          resolve(results);
+        });
+    });
+  }
   function handleReadFromMySQL(agent){
   	return connectToDatabase().then(connection =>{
       return queryDatabase(connection).then(result => {
@@ -180,10 +186,53 @@ function connectToDatabase(){
   //   }
   function handleQuestion_HW(agent){
     var answer;
-    const datetime = parameter.date;
-    const dp = agent.parameters['date-period']
-    answer = "어떻게 하는건데2 "+datetime+" "+dp['startDate']+" "+dp['endDate'];
-    agent.add(answer);
+    var datetime = parameter.date;
+    datetime = datetime.split("T");
+    datetime = datetime[0];
+    var dp = agent.parameters['date-period'];
+    var start = dp['startDate'];
+    var end = dp['endDate'];
+
+    return connectToDatabase().then(connection => {
+      if(start===undefined&&end===undefined){
+        return queryHomeworkDatabase1(connection, datetime).then(result => {
+          if(result.length>0){
+            answer = datetime+"까지인 과제는 ";
+            for(var i=0;i<result.length;i++){
+              answer+=result[0].title
+              if(i<result.length-1)
+                answer+=", ";
+            }answer+="가 있습니다.";
+            agent.add(answer);
+          }
+          else{
+            answer = datetime+"까지인 과제는 아직 없습니다.";
+            agent.add(answer);
+          }
+        });
+      }
+      else{
+        start = start.split("T");
+        start = start[0];
+        end = end.split("T");
+        end = end[0];
+        return queryHomeworkDatabase2(connection, start, end).then(result => {
+          if(result.length>0){
+            answer = start+" ~ "+end+" 까지인 과제는 ";
+            for(var i=0;i<result.length;i++){
+              answer+=result[i].title
+              if(i<result.length-1)
+                answer+=", ";
+            }answer+="가 있습니다.";
+            agent.add(answer);
+          }
+          else{
+            answer = start+" ~ "+end+" 까지인 과제는 아직 없습니다!";
+            agent.add(answer);
+          }
+        });
+      }
+    });
   }
   // Run the proper function handler based on the matched Dialogflow intent name
   let intentMap = new Map();
