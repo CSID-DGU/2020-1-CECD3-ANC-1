@@ -5,13 +5,13 @@ from konlpy.tag import Kkma
 from konlpy.utils import pprint
 
 
-def dialogflow_setting():
-    GOOGLE_AUTHENTICATION_FILE_NAME = "kobaksa.json"
-    current_directory = os.path.dirname(os.path.realpath(__file__))
-    path = os.path.join(current_directory, GOOGLE_AUTHENTICATION_FILE_NAME)
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = path
-    intents_client = dialogflow.IntentsClient()
-    parent = intents_client.project_agent_path('kobaksa-1b59d')
+#def dialogflow_setting():
+GOOGLE_AUTHENTICATION_FILE_NAME = "kobaksa.json"
+current_directory = os.path.dirname(os.path.realpath(__file__))
+path = os.path.join(current_directory, GOOGLE_AUTHENTICATION_FILE_NAME)
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = path
+intents_client = dialogflow.IntentsClient()
+parent = intents_client.project_agent_path('kobaksa-1b59d')
 
 def create_intent():
     dialogflow_setting()
@@ -85,21 +85,46 @@ def get_entity_list():
   entity_type_client = dialogflow.EntityTypesClient()
   parent = entity_type_client.project_agent_path('kobaksa-1b59d')
   entity_types = entity_type_client.list_entity_types(parent)
+  #print('entity_types')
+  #print(entity_types)
+  count=0
 
   for entity_type in entity_types:
     #print(entity_type)
     # print(entity_type.name)
     # print(entity_type.display_name)
+    #print('entity_type')
+    #print(entity_type)
+    #print('entity_type.name')
+    #print(entity_type)
       
     #entity에서 value 값 출력하기
     entities = entity_type.entities
+    #print('entities')
+    #print(entities)
     # entity_values = [entity.value for entity in entities]
     entity_synonyms = [entity.synonyms for entity in entities]
+    #print('entitiy_synonyms')
+    #print(entity_synonyms)
+    #print('entity_synonyms[0]')
+    #print(entity_synonyms[0])
 
-    keys.append(entity_type.display_name) 
+    keys.append(entity_type.display_name)
+    #print('keys')
+    #print(keys)
+    #print('keys[count]')
+    #print(keys[count])
 
     #dic = dict.fromkeys(keys,entity_synonyms) 
-    dic = dict.fromkeys(keys) 
+    #dic = dict.fromkeys(keys)
+    dic[keys[count]]=entity_synonyms
+    #print('dic',dic)
+
+    #print('dic[compiler]',dic['compiler'])
+
+    count=count+1
+#key-value로 저장된 값 출력
+  print('dic',dic)
 
   #print(dic)
   return dic    
@@ -141,7 +166,7 @@ def set_intent_entity():
 # messages.append(text_message)
 
   intent = dialogflow.types.Intent(
-    display_name = "asking fruit",
+    display_name = "asking fruit 222",
     training_phrases=training_phrases,
     messages=[text_message],
     # webhook_state = 'WEBHOOK_STATE_ENABLED'
@@ -157,8 +182,8 @@ def set_intent_entity():
 # print('Intent created: {}'.format(response))
 
 
-set_intent_entity()
-#get_entity_list()
+#set_intent_entity()
+get_entity_list()
 
 
 ###문장에서 단어로 entity 설정

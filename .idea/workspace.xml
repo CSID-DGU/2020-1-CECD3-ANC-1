@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a42e750d-2735-4e77-9c7b-0e2dfeba0930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/create_intent.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/create_intent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/templates/detailInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/templates/detailInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mypage/answerQuestions/make_new_intent.py" beforeDir="false" afterPath="$PROJECT_DIR$/mypage/answerQuestions/make_new_intent.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,5 +94,16 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1601710849190" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mypage/answerQuestions/make_new_intent.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
