@@ -197,12 +197,12 @@ function connectToDatabase(){
       if(start===undefined&&end===undefined){
         return queryHomeworkDatabase1(connection, datetime).then(result => {
           if(result.length>0){
-            answer = datetime+"까지인 과제는 ";
+            answer = datetime+"까지인 과제는 \n";
             for(var i=0;i<result.length;i++){
-              answer+=result[0].title
+              answer+=result[i].title+"\n("+result[i].start+" ~ "+result[i].end+")"
               if(i<result.length-1)
-                answer+=", ";
-            }answer+="가 있습니다.";
+                answer+=", \n";
+            }answer+="\n가 있습니다.";
             agent.add(answer);
           }
           else{
@@ -218,16 +218,16 @@ function connectToDatabase(){
         end = end[0];
         return queryHomeworkDatabase2(connection, start, end).then(result => {
           if(result.length>0){
-            answer = start+" ~ "+end+" 까지인 과제는 ";
+            answer = start+" ~ "+end+"의 과제는 \n";
             for(var i=0;i<result.length;i++){
-              answer+=result[i].title
+              answer+=result[i].title+"\n("+result[i].start+" ~ "+result[i].end+")"
               if(i<result.length-1)
-                answer+=", ";
-            }answer+="가 있습니다.";
+                answer+=", \n";
+            }answer+="\n가 있습니다.";
             agent.add(answer);
           }
           else{
-            answer = start+" ~ "+end+" 까지인 과제는 아직 없습니다!";
+            answer = start+" ~ "+end+"의 과제는 아직 없습니다.";
             agent.add(answer);
           }
         });
