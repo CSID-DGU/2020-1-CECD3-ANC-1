@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 # Create your views here.
 from .models import *
+from student.models import SComment
 from .create_intent import create_intent
 from .create_intent import update_intent
 
@@ -10,30 +11,21 @@ def index2(request,course_id):
         questLists=Question.objects.filter(q_c_id=course_id)
         user = (MdlUser.objects.get(username=request.session.get('user', False)))
         userid = user.id
-        """if MdlRoleAssignments.objects.filter(userid=userid, roleid=4):"""
-
         enrolList = []
         for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
             enrolList.append(i)
-        print(enrolList)
         enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-        print('enrolid', enrolid)
 
         courseList = []
         cnt = 0
         for i in range(0, len(enrolList)):
             courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
-
-        # int('결과',courseList)
-        # print((courseList[0][0])[0])
-        # print((courseList[1][0])[0])
         fullname = []
 
         courseIdList = []
 
         for i in range(0, len(courseList)):
             courseIdList.append((courseList[i][0])[0])
-        print('courseIdList', courseIdList)
 
         cnt = 0
         mol = []
@@ -49,10 +41,6 @@ def index2(request,course_id):
 
         print('mol', mol)
         print('molang', molang)
-
-
-        #teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
-        #course = MdlEnrolFlatfile.objects.get(userid=userid, courseid=course_id)
         course=MdlCourse.objects.get(id=course_id)
         return render(request, 'index2.html', {'questLists':questLists,'teachList':molang,'course':course})
         """else:
@@ -66,31 +54,19 @@ def detail(request, question_id):
     if request.session.get('user', False):
         user = (MdlUser.objects.get(username=request.session.get('user', False)))
         userid = user.id
-        """if MdlRoleAssignments.objects.filter(userid=userid, roleid=4):"""
-        #teachList = MdlEnrolFlatfile.objects.filter(userid=userid)
         enrolList = []
         for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
             enrolList.append(i)
-        print(enrolList)
         enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-        print('enrolid', enrolid)
-
         courseList = []
         cnt = 0
         for i in range(0, len(enrolList)):
             courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
-
-        # int('결과',courseList)
-        # print((courseList[0][0])[0])
-        # print((courseList[1][0])[0])
         fullname = []
-
         courseIdList = []
 
         for i in range(0, len(courseList)):
             courseIdList.append((courseList[i][0])[0])
-        print('courseIdList', courseIdList)
-
         cnt = 0
         mol = []
 
@@ -102,9 +78,9 @@ def detail(request, question_id):
         molang = MdlCourse.objects.filter(id=100000)
         for i in range(0, len(courseList)):
             molang = molang | mol[i]
-
-
-        return render(request, 'detailInfo.html', {'question':question,'teachList':molang})
+        commentList=SComment.objects.filter(q_id=question_id)
+        answerNo=SComment.objects.filter(q_id=question_id).count()
+        return render(request, 'detailInfo.html', {'question':question,'teachList':molang, 'commentList':commentList, 'answerNo':answerNo})
     else:
         return render(request,'signin.html',context)
 
@@ -114,9 +90,7 @@ def answerCreate(request, question_id):
     question_answer.answer=answer
     question_answer.save()
     questLists=Question.objects.all()
-    #create_intent()
     create_intent(question_answer.question, answer, question_answer.q_id)
-    """return render(request, 'index2.html',{'questLists':questLists})"""
     return redirect('answerQuestions:detail',question_id=question_answer.q_id)
 
 
@@ -126,7 +100,5 @@ def answerCreate2(request, question_id):
     question_answer.answer=answer2
     question_answer.save()
     questLists=Question.objects.all()
-    #create_intent()
     update_intent(question_answer.question, answer2, question_answer.q_id)
-    """return render(request, 'index2.html',{'questLists':questLists})"""
     return redirect('answerQuestions:detail',question_id=question_answer.q_id)

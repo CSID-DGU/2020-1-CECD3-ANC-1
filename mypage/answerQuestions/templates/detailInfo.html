@@ -104,15 +104,13 @@
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">미해결질문 답변</h1>
       </div>
-
-
         <div>
-          <b>{{question.question}}</b>
+          <b><font size="6">{{question.question}}</font></b>
         </div><br>
-
       <div>
 
-      현재 등록되어 있는 답변 :   
+      <b>현재 등록되어 있는 답변</b>
+      <br><br>
       {% if question.answer %}
       <div>{{question.answer}}</div>
       {% else %}
@@ -139,6 +137,22 @@
         </form>
       </div>
       {% endif %}
+      <hr>
+      <div>
+        <font size="4"><b>{{answerNo}}</b>개의 댓글</font>
+      </div>
+      <br>
+        {% for comment in commentList %}
+      <div style="background-color:#F2F2F2;border-radius:1em;height:50px">
+            {{comment.answer}}
+        <a href="{% url 'student:like' comment.q_id comment.id%}" class="btn btn=secondary">
+          <img src="{% static 'img/like.png' %}" width="20px" height="20px"></img></a>
+        {%if comment.like %}
+        {{comment.like}}
+        {% else %}
+        {% endif %}
+      </div><br>
+        {%endfor %}
     </main>
   </div>
 </div>

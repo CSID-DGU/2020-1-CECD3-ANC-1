@@ -92,52 +92,39 @@
               고박사
             </a>
           </li>
-
         </ul>
-
-
-
       </div>
     </nav>
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">미해결질문 답변</h1>
-
       </div>
-
-
         <div>
           <b><font size="6">{{question.question}}</font></b>
         </div><br>
-
       <div>
-
-        <b>현재 관리자에 의해 등록된 답변</b> =>   {{question.answer}}
-
+        <b>관리자 등록 답변</b>
+        <br><br>
+        {{question.answer}}
       </div>
       <br>
+      <hr>
       <div>
-        <font size="5">{{answerNo}} Answers</font>
+        <font size="4"><b>{{answerNo}}</b>개의 댓글</font>
       </div>
       <br>
-
         {% for comment in commentList %}
       <div style="background-color:#F2F2F2;border-radius:1em;height:50px">
             {{comment.answer}}
         <a href="{% url 'student:like' comment.q_id comment.id%}" class="btn btn=secondary">
-          <img src="{% static 'img/like.png' %}" width="35px" height="35px"></img></a>
+          <img src="{% static 'img/like.png' %}" width="20px" height="20px"></img></a>
         {%if comment.like %}
         {{comment.like}}
         {% else %}
-
         {% endif %}
       </div><br>
         {%endfor %}
-
-
-
-
       <div>
         <form action="{% url 'student:writeComment' question.q_id %}" method="post" >
           {% csrf_token %}
