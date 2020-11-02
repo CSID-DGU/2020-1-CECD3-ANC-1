@@ -44,7 +44,6 @@ def chat_view(request):
                context_short_name.lower()
 
     parameters = dialogflow.types.struct_pb2.Struct()
-    #parameters["foo"] = "bar"
 
     context_1 = dialogflow.types.context_pb2.Context(
         name=context_name,
@@ -69,11 +68,9 @@ def detect_intent_with_parameters(project_id, session_id, query_params, language
     Using the same `session_id` between requests allows continuation
     of the conversaion."""
     session_client = dialogflow.SessionsClient()
-
     session = session_client.session_path(project_id, session_id)
     print('Session path: {}\n'.format(session))
 
-    #text = "this is as test"
     text = user_input
 
     text_input = dialogflow.types.TextInput(
@@ -96,6 +93,7 @@ def detect_intent_with_parameters(project_id, session_id, query_params, language
     if "ask" in response.query_result.intent.display_name or "CH" in response.query_result.intent.display_name or "UQ" in response.query_result.intent.display_name:
         print('')
         # 여기에 해당 학생 참여도 점수에 +1 하는 코드 작성.
+        print("course_id를 정해야 할듯... 어떤 과목 질문할래 같은게 선행되어야 할듯...")
     print('Fulfillment text: {}\n'.format(
         response.query_result.fulfillment_text))
 

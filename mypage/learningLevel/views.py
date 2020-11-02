@@ -134,8 +134,6 @@ def crawler2(request, name):
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
         if MdlRoleAssignments.objects.filter(userid=userid, roleid=4) :
-
-
             """start"""
             enrolList = []
             for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
@@ -153,7 +151,6 @@ def crawler2(request, name):
             # print((courseList[0][0])[0])
             # print((courseList[1][0])[0])
             fullname = []
-
             courseIdList = []
 
             for i in range(0, len(courseList)):
@@ -172,11 +169,7 @@ def crawler2(request, name):
             for i in range(0, len(courseList)):
                 molang = molang | mol[i]
 
-
             """end"""
-
-
-
 
             if request.method == 'GET':
                 item = HomeWork.objects.filter(name=name)
@@ -263,25 +256,17 @@ def crawlAct(request):
             enrolList = []
             for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
                 enrolList.append(i)
-            print(enrolList)
             enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-            print('enrolid', enrolid)
-
             courseList = []
             cnt = 0
             for i in range(0, len(enrolList)):
                 courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
-
-            # int('결과',courseList)
-            # print((courseList[0][0])[0])
-            # print((courseList[1][0])[0])
             fullname = []
 
             courseIdList = []
 
             for i in range(0, len(courseList)):
                 courseIdList.append((courseList[i][0])[0])
-            print('courseIdList', courseIdList)
 
             cnt = 0
             mol = []
@@ -294,12 +279,7 @@ def crawlAct(request):
             molang = MdlCourse.objects.filter(id=100000)
             for i in range(0, len(courseList)):
                 molang = molang | mol[i]
-
-
             """end"""
-
-
-
             context = {'task': task, 'name': inputName, 'update': 1, 'teachList':molang}
             return render(request, 'crawler.html', context)
         else:
@@ -309,8 +289,6 @@ def crawlAct(request):
         return render(request, 'signin.html')
 
 def learningLevelDetail(request,course_id):
-
-
     enrolid=(MdlEnrol.objects.get(courseid=course_id,enrol='manual')).id
     students=MdlUserEnrolments.objects.filter(enrolid=enrolid)
     enrolPeople=[]
@@ -318,34 +296,22 @@ def learningLevelDetail(request,course_id):
     """start"""
     for i in MdlUserEnrolments.objects.filter(enrolid=enrolid).values_list('userid'):
         enrolPeople.append(i)
-    print('enrolPeople', enrolPeople)
     studentList=[]
 
     for i in range(0, len(enrolPeople)):
         if ((MdlRoleAssignments.objects.filter(userid=enrolPeople[i][0],roleid=5)).values_list('userid')):
             studentList.append(enrolPeople[i][0])
-
     cnt = 0
     mol2 = []
-    print('studentList',studentList)
-
     for i in range(0, len(studentList)):
         if MdlUserEnrolments.objects.filter(userid=studentList[i],enrolid=enrolid) and cnt == 0:
             mol2.append(MdlUserEnrolments.objects.filter(userid=studentList[i],enrolid=enrolid))
         #elif MdlUserEnrolments.objects.filter(userid=studentList[i]) and cnt != 0:
             #mol2.append(MdlUserEnrolments.objects.filter(userid=studentList[i]))
     molang2 = MdlUserEnrolments.objects.filter(id=10000)
-
-    print('mol2',mol2)
     for i in range(0, len(studentList)):
         molang2 = molang2 | mol2[i]
-
     """end"""
-    #for i in range(0, len(enrolPeople)):
-        #studentList.append(MdlRoleAssignments.objects.filter(id=enrolPeople[i][0]).values_list(''))
-
-
-
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
@@ -354,7 +320,6 @@ def learningLevelDetail(request,course_id):
             teachList=MdlCourse.objects.filter(id=course_id)
 
             x_data = ['A', 'B', 'C', 'D']
-            #y_data = [1, 2, 1, 0]
             y_data=[]
 
             A=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=50)).count()
@@ -376,25 +341,17 @@ def learningLevelDetail(request,course_id):
             enrolList = []
             for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
                 enrolList.append(i)
-            print(enrolList)
             enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-            print('enrolid', enrolid)
 
             courseList = []
             cnt = 0
             for i in range(0, len(enrolList)):
                 courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
-
-            # int('결과',courseList)
-            # print((courseList[0][0])[0])
-            # print((courseList[1][0])[0])
             fullname = []
-
             courseIdList = []
 
             for i in range(0, len(courseList)):
                 courseIdList.append((courseList[i][0])[0])
-            print('courseIdList', courseIdList)
 
             cnt = 0
             mol = []
@@ -408,19 +365,11 @@ def learningLevelDetail(request,course_id):
             for i in range(0, len(courseList)):
                 molang = molang | mol[i]
 
-            print('mol', mol)
-            print('molang', molang)
-
-
             context = {'students': molang2, 'teachList':molang,'plot_div':plot_div,'course':course,
                        'x_data':x_data,'y_data':y_data}
-
-
             return render(request, 'learningLevelDetail.html',context)
         else :
-
             context={'students': students}
             return render(request, 'learningLevelDetail.html',context)
-
-
-    #return render(request, 'index.html',context)
+    else:
+        return render(request, 'signin.html')
