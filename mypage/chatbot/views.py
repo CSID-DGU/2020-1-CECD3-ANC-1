@@ -94,6 +94,7 @@ def detect_intent_with_parameters(project_id, session_id, query_params, language
 
     #ask, CH, UQ 관련 인텐트 일때만 참여도 점수 +1
     if "ask" in response.query_result.intent.display_name or "CH" in response.query_result.intent.display_name or "UQ" in response.query_result.intent.display_name:
+        print('')
         # 여기에 해당 학생 참여도 점수에 +1 하는 코드 작성.
     print('Fulfillment text: {}\n'.format(
         response.query_result.fulfillment_text))
