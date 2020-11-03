@@ -3,7 +3,7 @@ import dialogflow_v2 as dialogflow
 import os
 from konlpy.tag import Kkma
 from konlpy.utils import pprint
-
+import datetime
 
 #def dialogflow_setting():
 GOOGLE_AUTHENTICATION_FILE_NAME = "kobaksa.json"
@@ -124,89 +124,122 @@ def get_entity_list():
 
     count=count+1
 #key-value로 저장된 값 출력
-  print('dic',dic)
-
+  #print('dic',dic)
   #print(dic)
   return dic    
   
-####2. 입력값에 영어+한글 혼합인 경우가 많다... 심지어 딕셔너리의 키(entity의 display name)는 전부 영어 > nouns 대신 Pos로 대체
-def set_intent_entity():
-  
+
+##문장에서 단어로 entity 설정
+# def test_set_entity():
+#   parts = [
+#     dialogflow.types.Intent.TrainingPhrase.Part(text="오토마타", entity_type='@automata',alias="automata"),
+#     dialogflow.types.Intent.TrainingPhrase.Part(text="가 뭐야?")
+#   ]
+
+#   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
+
+#   messages = []
+
+#   #이게 default message
+#   text = dialogflow.types.Intent.Message.Text(text = ["First message"])
+#   text_message = dialogflow.types.Intent.Message(text=text)
+#   messages.append(text_message)
+
+#   intent = dialogflow.types.Intent(
+#           display_name="aaaaaa",
+#           training_phrases=[training_phrase],
+#           messages=messages,
+#   )
+
+#   response = intents_client.create_intent(parent, intent)
+#   print("Intent created: {}".format(response))
+
+
+# 전체 엔티티 딕셔너리의 value 리스트에서 질문 띄어쓰기 단위로 자른것과 같은 거 찾아 새로운 딕셔너리(text_key) 생성   
+# 실제로 dialogFlow와 연동해 새로운 intent 저장하는 set_entity() 함수 호출
+def reg_Intent_with_Entity():
   entity_type_client = dialogflow.EntityTypesClient()
   parent = entity_type_client.project_agent_path('kobaksa-1b59d')
   entity_types = entity_type_client.list_entity_types(parent)
   intents_client = dialogflow.IntentsClient()
   
   training_phrases = []
-
+  text_key = {}
   dic = get_entity_list()
-  #print(dic, "\n")
+
+  input = "cross-compiler 아침형 인터프리터 새벽에는 아주 졸리네요"
+  input_tag = input.split(" ")
+
+
+  # 형태소분석, 영어 단어면 nouns에 안들어감, 따로 영어인 경우 더해줌
+  # kkma = Kkma()
+  # input_tag = kkma.noun(input)
+  # input_eng = kkma.pos(input)  
+  # for it in input_eng:
+  #   if it[1] in 'OL':
+  #     input_tag.append(it[0])
+
+  # k : key 값, v : 2차원 리스트 value 저장 
+  for k,v in dic.items():
+    for i in range(len(v)):         # 세로 크기
+      for j in range(len(v[i])):    # 가로 크기
+        #print(vals[i][j], end=' ')
+
+        for it in input_tag:
+          # 질문의 키워드를 동의어 리스트에서 찾았을 때 text_key에 저장
+          # text_key 내 key > text : 찾은 entity의 키 값, text_key 내 value > ettt : entity 설정할 질문의 일부
+          if it == v[i][j]:
+            #print("found! "+ it +" in "+ v[i][j])
+            #print("key : "+ k)
+            text_key[k] = it
   
-  input = "Fruit 아침형 인간이라 새벽에는 아주 졸리네요"
+  #set_entity(input_tag, text_key)
 
-  kkma = Kkma()
-  input_tag = kkma.pos(input)
-
-  for it in input_tag:
-    if it[0] in dic.keys():
-      et = "@" + it[0] + ":" + it[0]
-      
-####3. entity 부분적으로 설정 어떻게행.. 꼭 해야하나?
-  part = dialogflow.types.Intent.TrainingPhrase.Part(text=input, entity_type=et)
-  # #part = dialogflow.types.Intent.TrainingPhrase.Part(text=training_phrases_part, entity_type='@sys.given-name', alias='name')
-  # # Here we create a new training phrase for each provided part.
-  training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=[part])
-  training_phrases.append(training_phrase)
-
+  parts=[]
   messages = []
+  count = 0
 
-#default message 설정
-  text = dialogflow.types.Intent.Message.Text(text=["나도 그래", "나도 졸려"])
-  text_message = dialogflow.types.Intent.Message(text=text)
-# messages.append(text_message)
+  #사용자의 질문에서 엔티티와 매핑되지 않는 부분
+  # plain_list = [] 
+  # plain_list_dic = {}
+  # plain_list.append(str)
+  # # k : 엔티티의 키, v : 질문 내 키워드
+  # for k,v in t_k.items():
+  #   for pl in plain_list:
+  #     plain_list = pl.split(sep = v)
 
-  intent = dialogflow.types.Intent(
-    display_name = "asking fruit 222",
-    training_phrases=training_phrases,
-    messages=[text_message],
-    # webhook_state = 'WEBHOOK_STATE_ENABLED'
-    # training_phrases = [training_phrase],
-    # messages = messages
-  )
-
-  try:
-    response = intents_client.create_intent(parent, intent)
-    #response = client.create_entity_type(parent, entity_type)
-  except InvalidArgument:
-    raise
-# print('Intent created: {}'.format(response))
-
-
-#set_intent_entity()
-get_entity_list()
-
-
-###문장에서 단어로 entity 설정
-def test_set_entity():
-  parts = [
-    dialogflow.types.Intent.TrainingPhrase.Part(text="오토마타", entity_type='@automata',alias="automata"),
-    dialogflow.types.Intent.TrainingPhrase.Part(text="가 뭐야?")
-  ]
-
+  for str in input_tag:
+    if str in text_key.values():
+      k = list(text_key)[count]
+      et = "@" + k
+      parts.append(
+        dialogflow.types.Intent.TrainingPhrase.Part(text=str+" ", entity_type=et, alias=k)
+      )
+      count+=1
+    else:
+      parts.append(
+        dialogflow.types.Intent.TrainingPhrase.Part(text=str+" ")
+      )
+  
   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
 
-  messages = []
-
-  #이게 default message
-  text = dialogflow.types.Intent.Message.Text(text = ["First message"])
+  #default message
+  text = dialogflow.types.Intent.Message.Text(text = ["잘 되나요?"])
   text_message = dialogflow.types.Intent.Message(text=text)
   messages.append(text_message)
 
+  now = datetime.datetime.now()
+  dName = now.strftime("%Y%m%d_%H%M%S")
+
   intent = dialogflow.types.Intent(
-          display_name="aaaaaa",
+          display_name="add_" + dName,
           training_phrases=[training_phrase],
           messages=messages,
   )
 
-  response = intents_client.create_intent(parent, intent)
-  print("Intent created: {}".format(response))
+  try:
+    response = intents_client.create_intent(parent, intent)
+  except InvalidArgument:
+    raise
+
+reg_Intent_with_Entity()

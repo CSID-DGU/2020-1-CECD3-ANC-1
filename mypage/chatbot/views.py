@@ -55,6 +55,7 @@ def chat_view(request):
     language_code = 'ko'
     
     response = detect_intent_with_parameters(
+        request=request,
         project_id=GOOGLE_PROJECT_ID,
         session_id=session_id,
         query_params=query_params_1,
@@ -63,7 +64,7 @@ def chat_view(request):
     )
     return HttpResponse(response.query_result.fulfillment_text, status=200)
 
-def detect_intent_with_parameters(project_id, session_id, query_params, language_code, user_input):
+def detect_intent_with_parameters(request, project_id, session_id, query_params, language_code, user_input):
     """Returns the result of detect intent with texts as inputs.
     Using the same `session_id` between requests allows continuation
     of the conversaion."""
@@ -91,9 +92,13 @@ def detect_intent_with_parameters(project_id, session_id, query_params, language
 
     #ask, CH, UQ 관련 인텐트 일때만 참여도 점수 +1
     if "ask" in response.query_result.intent.display_name or "CH" in response.query_result.intent.display_name or "UQ" in response.query_result.intent.display_name:
-        print('')
         # 여기에 해당 학생 참여도 점수에 +1 하는 코드 작성.
-        print("course_id를 정해야 할듯... 어떤 과목 질문할래 같은게 선행되어야 할듯...")
+        enrolid=(MdlEnrol.objects.get(courseid=4,enrol='manual')).id
+        user=(MdlUser.objects.get(username=request.session.get('user',False)))
+        userid=user.id
+        uinstance = MdlUserEnrolments.objects.filter(enrolid=enrolid, userid=userid)[0]
+        uinstance.grade = uinstance.grade+1
+        uinstance.save()
     print('Fulfillment text: {}\n'.format(
         response.query_result.fulfillment_text))
 
