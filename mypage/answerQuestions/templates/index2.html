@@ -133,7 +133,7 @@
                 <td>{{forloop.counter}}</td>
                 <td>{{request.q_c_name}}</td>
                 <td>{{request.q_s_id}}</td>
-                <td><a href="{%url 'answerQuestions:detail' request.q_id %}">{{request.question}}</a></td>
+                <td><a href="{%url 'answerQuestions:detail' request.q_id request.q_s_id course.id%}">{{request.question}}</a></td>
             </tr>
             {%endfor %}
 

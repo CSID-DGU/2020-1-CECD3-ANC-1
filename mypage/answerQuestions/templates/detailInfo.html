@@ -30,6 +30,16 @@
           font-size: 3.5rem;
         }
       }
+      .button{
+      background-color:white;
+      border:none;
+      color:gray;
+      cursor:pointer;
+      }
+      .button:hover{color:white;}
+      .hover1:hover{
+      box-shadow:200px 0 0 0 rgba(0,0,0,1) inset;
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
@@ -102,12 +112,19 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">미해결질문 답변</h1>
+        <h1 class="h2">"{{course.fullname}}" 미해결질문 답변</h1>
+
       </div>
+      <div>{{student.username}}</div>
         <div>
           <b><font size="6">{{question.question}}</font></b>
+
+          <a href="{% url 'answerQuestions:incParticipation' question.q_id question.q_s_id course.id%}" class="btn btn=secondary">
+          <input type="button" class="button hover1" value="good question?"></a>
+
         </div><br>
       <div>
+
 
       <b>현재 등록되어 있는 답변</b>
       <br><br>
@@ -120,7 +137,7 @@
       <br>
       {% if question.answer %}
       <div>
-        <form action="{% url 'answerQuestions:answerCreate2' question.q_id %}" method="post" >
+        <form action="{% url 'answerQuestions:answerCreate2' question.q_id question.q_s_id course.id%}" method="post" >
           {% csrf_token %}
           <textarea name="answer2" id="answer2" rows="5" cols="100"></textarea>
           <br><br>
@@ -129,7 +146,7 @@
       </div>
       {% else %}
       <div>
-        <form action="{% url 'answerQuestions:answerCreate' question.q_id %}" method="post" >
+        <form action="{% url 'answerQuestions:answerCreate' question.q_id question.q_s_id course.id %}" method="post" >
           {% csrf_token %}
           <textarea name="answer" id="answer" rows="5" cols="100"></textarea>
           <br><br>
