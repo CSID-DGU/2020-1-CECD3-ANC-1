@@ -110,8 +110,11 @@ def detect_intent_with_parameters(request, project_id, session_id, query_params,
         page = "1"
         # if문: mysql에 분류해서 얻은 단어 페이지가 있어서 제공해줄 수 있는경우.. 이 반대의 경우는 코드 작성할 필요X
         # 밑에 답도 예시
-            response.query_result.fulfillment_text = " 무슨 말인지 잘 모르겠네요.." +entity+"는 "+ page+"페이지 설명을 참고해보세요. 참고해도 모르겠다면 미해결 질문답변 게시판에 미해결 질문으로 등록해주세요. 하시겠어요?"
+        response.query_result.fulfillment_text = " 무슨 말인지 잘 모르겠네요.." +entity+"는 "+ page+"페이지 설명을 참고해보세요. 참고해도 모르겠다면 미해결 질문답변 게시판에 미해결 질문으로 등록해주세요. 하시겠어요?"
     
+    #사용자가 '응' 이라고 답하여 미해결 질문 게시판으로 이동
+    if response.query_result.intent.display_name == "Default Fallback Intent - yes":
+        response.query_result.fulfillment_text = "미해결 질문 게시판 url제공"
     return response
 
 def index3(request):
