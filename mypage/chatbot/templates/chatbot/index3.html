@@ -249,6 +249,14 @@
               }
             }
           });
+          //미해결 게시판 링크로 이동
+          function createBtn(){
+            var $row = $('<li class="you"><h2>고박사</h2><div class="btn"></div></li>');
+            var button = '<li class="you"><h2>고박사</h2><div class="message"><a href="#">미해결 질문 게시판 이동</a></div></li>'
+
+            $row.text(button);
+            $chatlog.append(button);
+          }
           //챗봇
           function createRow(text) {
             var $row = $('<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"></div></li>'); 
@@ -297,8 +305,10 @@
               contentType: 'application/json',
             });
             $submit.done(function(statement) {
-                //createRow(statement.text);
                 createRow(statement);
+                if(statement == "미해결 질문 게시판 url제공"){
+                  createBtn();
+                }
                 console.log("this is", statement)
                 // Clear the input field
             });
