@@ -118,12 +118,35 @@ def detect_intent_with_parameters(request, project_id, session_id, query_params,
     return response
 
 def index3(request):
-    if request.session.get('user',False) :
+    if request.session.get('user',False):
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
-            enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
-            return render(request, 'chatbot/index3.html',{'enrolList':enrolList})
-        else :
-            return render(request, 'chatbot/index3.html')
-    return render(request, 'signin.html')
+        enrolList = []
+        for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+            enrolList.append(i)
+        enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+        courseList = []
+        cnt = 0
+        for i in range(0, len(enrolList)):
+            courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+        fullname = []
+        courseIdList = []
+
+        for i in range(0, len(courseList)):
+            courseIdList.append((courseList[i][0])[0])
+
+        cnt = 0
+        mol = []
+
+        for i in range(0, len(courseList)):
+            if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                 mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+            elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+        molang = MdlCourse.objects.filter(id=100000)
+        for i in range(0, len(courseList)):
+            molang = molang | mol[i]
+
+        return render(request, 'chatbot/index3.html',{'enrolList':molang})
+    else :
+        return render(request, 'signin.html')

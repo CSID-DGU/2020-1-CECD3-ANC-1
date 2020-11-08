@@ -188,8 +188,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file"></span>
-              {{request.coursename}} <span class="sr-only">(current)</span>
-              <a href="{%url 'student:studentMain' request.courseid %}"><ul class="sub">미해결 질문답변</ul></a>
+              {{request.fullname}} <span class="sr-only">(current)</span>
+              <a href="{%url 'student:studentMain' request.id %}"><ul class="sub">미해결 질문답변</ul></a>
             </a>
           </li>
           {% endfor %}
@@ -252,8 +252,8 @@
           //미해결 게시판 링크로 이동
           function createBtn(){
             var $row = $('<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="btn"></div></li>');
-            //var button = '<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"><a href="/student/post/questions/4/'+inputText+'">미해결 질문 게시판 이동</a></div></li>'
-            var button = '<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"><a href="/student/post/questions/4">미해결 질문 게시판 이동</a></div></li>'
+            var button = '<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"><a href="/student/post/questions/4/'+inputText+'">미해결 질문 게시판 이동</a></div></li>'
+            //var button = '<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"><a href="/student/post/questions/4">미해결 질문 게시판 이동</a></div></li>'
             $row.text(button);
             $chatlog.append(button);
           }
@@ -295,7 +295,6 @@
             }
             $input.val('');
             // Display the user's input on the web page
-            inputText = inputData.text
             createRow_user(inputData.text);
             var dialogflowChatUrl = '{% url "chat-home" %}';
             var $submit = $.ajax({
@@ -308,6 +307,9 @@
                 createRow(statement);
                 if(statement == "미해결 질문 게시판 url제공"){
                   createBtn();
+                }
+                else{
+                  inputText = inputData.text
                 }
                 console.log("this is", statement)
                 // Clear the input field
