@@ -167,7 +167,7 @@ def reg_Intent_with_Entity():
   text_key = {}
   dic = get_entity_list()
 
-  input = "cross-compiler 아침형 인터프리터 새벽에는 아주 졸리네요"
+  input = "컴파일러 의 전단부를 scanner와 parser로 구성하는 이유가 무엇인가요?"
   input_tag = input.split(" ")
 
 
@@ -224,7 +224,7 @@ def reg_Intent_with_Entity():
   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
 
   #default message
-  text = dialogflow.types.Intent.Message.Text(text = ["잘 되나요?"])
+  text = dialogflow.types.Intent.Message.Text(text = ["scanner와 parser로 전단부를 구성하는 이유는 ~입니다"])
   text_message = dialogflow.types.Intent.Message(text=text)
   messages.append(text_message)
 
@@ -238,6 +238,7 @@ def reg_Intent_with_Entity():
   )
 
   try:
+
     response = intents_client.create_intent(parent, intent)
   except InvalidArgument:
     raise
