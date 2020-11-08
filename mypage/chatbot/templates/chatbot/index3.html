@@ -236,7 +236,7 @@
           var $sayButton = $('.js-say');
           var dialogflowUrl = '{% url "index3" %}';
           var csrftoken = Cookies.get('csrftoken');
-
+          var inputText = ""
           function csrfSafeMethod(method) {
             // these HTTP methods do not require CSRF protection
             return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
@@ -254,6 +254,9 @@
             var $row = $('<li class="you"><h2>고박사</h2><div class="btn"></div></li>');
             var button = '<li class="you"><h2>고박사</h2><div class="message"><a href="http://localhost:8000/student/4">미해결 질문 게시판 이동</a></div></li>'
 
+            var $row = $('<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="btn"></div></li>');
+            //var button = '<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"><a href="/student/post/questions/4/'+inputText+'">미해결 질문 게시판 이동</a></div></li>'
+            var button = '<li class="you"><div style="float:left;" class="font_01"><img src="{% static 'img/robotcat.png' %}" width="35px" height="35px"><br><b>고박사</b></div>&nbsp;&nbsp;<div class="message"><a href="/student/post/questions/4">미해결 질문 게시판 이동</a></div></li>'
             $row.text(button);
             $chatlog.append(button);
           }
@@ -292,10 +295,10 @@
           function submitInput() {
             var inputData = {
               'text': $input.val()
-              
             }
             $input.val('');
             // Display the user's input on the web page
+            inputText = inputData.text
             createRow_user(inputData.text);
             var dialogflowChatUrl = '{% url "chat-home" %}';
             var $submit = $.ajax({
