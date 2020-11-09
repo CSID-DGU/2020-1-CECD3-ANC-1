@@ -5,6 +5,7 @@ from .models import *
 from student.models import SComment
 from .create_intent import create_intent
 from .create_intent import update_intent
+from .make_new_intent import reg_Intent_with_Entity
 
 def index2(request,course_id):
     if request.session.get('user',False):
@@ -97,7 +98,8 @@ def answerCreate(request, question_id, student_id, course_id):
     question_answer.answer=answer
     question_answer.save()
     questLists=Question.objects.all()
-    create_intent(question_answer.question, answer, question_answer.q_id)
+    #create_intent(question_answer.question, answer, question_answer.q_id)
+    reg_Intent_with_Entity(question_answer.question, answer, question_answer.q_id)
     return redirect('answerQuestions:detail',question_id=question_answer.q_id,student_id=student_id, course_id=course_id)
 
 
@@ -107,7 +109,8 @@ def answerCreate2(request, question_id, student_id, course_id):
     question_answer.answer=answer2
     question_answer.save()
     questLists=Question.objects.all()
-    update_intent(question_answer.question, answer2, question_answer.q_id)
+    #update_intent(question_answer.question, answer2, question_answer.q_id)
+    reg_Intent_with_Entity(question_answer.question, answer2, question_answer.q_id)
     return redirect('answerQuestions:detail',question_id=question_answer.q_id, student_id=student_id, course_id=course_id)
 
 def incParticipation(request, question_id, student_id, course_id):

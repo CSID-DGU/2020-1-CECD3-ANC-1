@@ -47,11 +47,12 @@ def index(request):
 
             return render(request, 'index.html',{'courses':molang})
         elif MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
+            grades = []
+            
             enrolList = []
             for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
                 enrolList.append(i)
             enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-
             courseList = []
             cnt = 0
             for i in range(0, len(enrolList)):
@@ -66,8 +67,16 @@ def index(request):
 
             cnt = 0
             mol = []
-
+            grades = []
             for i in range(0, len(courseList)):
+                grade = 0
+                enrolid=(MdlEnrol.objects.get(courseid=courseIdList[i],enrol='manual')).id
+                students=(MdlUserEnrolments.objects.filter(enrolid=enrolid)).order_by('-grade')
+                for j in students:
+                    grade += 1
+                    if j.userid==userid:
+                        grades.append({'fullname':MdlCourse.objects.filter(id=courseIdList[i])[0].fullname, 'grade': grade})
+                        break
                 if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
                     mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
                 elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
@@ -75,8 +84,7 @@ def index(request):
             molang = MdlCourse.objects.filter(id=100000)
             for i in range(0, len(courseList)):
                 molang = molang | mol[i]
-
-            return render(request, 'student.html',{'enrolList':molang})
+            return render(request, 'student.html',{'enrolList':molang, 'grades':grades})
         else:
             return render(request, 'index.html')
     else:
@@ -170,25 +178,19 @@ def crawler(request):
             enrolList = []
             for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
                 enrolList.append(i)
-            print(enrolList)
             enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-            print('enrolid', enrolid)
 
             courseList = []
             cnt = 0
             for i in range(0, len(enrolList)):
                 courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
 
-            # int('결과',courseList)
-            # print((courseList[0][0])[0])
-            # print((courseList[1][0])[0])
             fullname = []
 
             courseIdList = []
 
             for i in range(0, len(courseList)):
                 courseIdList.append((courseList[i][0])[0])
-            print('courseIdList', courseIdList)
 
             cnt = 0
             mol = []
@@ -201,8 +203,6 @@ def crawler(request):
             molang = MdlCourse.objects.filter(id=100000)
             for i in range(0, len(courseList)):
                 molang = molang | mol[i]
-
-
             """end"""
 
             return render(request, 'crawler.html', {'teachList':molang})
@@ -268,7 +268,7 @@ def crawlAct(request):
 
 def learningLevelDetail(request,course_id):
     enrolid=(MdlEnrol.objects.get(courseid=course_id,enrol='manual')).id
-    students=MdlUserEnrolments.objects.filter(enrolid=enrolid)
+    students=(MdlUserEnrolments.objects.filter(enrolid=enrolid)).order_by('-grade')
     enrolPeople=[]
 
     """start"""
@@ -289,6 +289,7 @@ def learningLevelDetail(request,course_id):
     molang2 = MdlUserEnrolments.objects.filter(id=10000)
     for i in range(0, len(studentList)):
         molang2 = molang2 | mol2[i]
+    molang2=molang2.order_by('-grade')
     """end"""
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
@@ -300,13 +301,13 @@ def learningLevelDetail(request,course_id):
             x_data = ['A', 'B', 'C', 'D']
             y_data=[]
 
-            A=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=50)).count()
+            A=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=10)).count()
             y_data.append(A)
-            B=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=40,grade__lte=49)).count()
+            B=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=6,grade__lte=9)).count()
             y_data.append(B)
-            C = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=30, grade__lte=40)).count()
+            C = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=3, grade__lte=5)).count()
             y_data.append(C)
-            D = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__lte=20)).count()
+            D = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__lte=2)).count()
             D=D-1
             y_data.append(D)
 
