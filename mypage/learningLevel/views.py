@@ -16,30 +16,22 @@ def index(request):
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
         temp=MdlRoleAssignments.objects.filter(userid=userid)
-        print('temp',temp)
         if MdlRoleAssignments.objects.filter(userid=userid, roleid=4):
             enrolList=[]
             for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
                 enrolList.append(i)
-            print(enrolList)
             enrolid=MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-            print('enrolid',enrolid)
 
             courseList=[]
             cnt = 0
             for i in range(0,len(enrolList)):
                 courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
-
-            #int('결과',courseList)
-            #print((courseList[0][0])[0])
-            #print((courseList[1][0])[0])
             fullname=[]
 
             courseIdList=[]
 
             for i in range(0,len(courseList)):
                 courseIdList.append((courseList[i][0])[0])
-            print('courseIdList',courseIdList)
 
             cnt=0
             mol=[]
@@ -53,35 +45,24 @@ def index(request):
             for i in range(0,len(courseList)):
                 molang=molang|mol[i]
 
-            print('mol',mol)
-            print('molang',molang)
-
             return render(request, 'index.html',{'courses':molang})
         elif MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
             enrolList = []
             for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
                 enrolList.append(i)
-            print(enrolList)
             enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
-            print('enrolid', enrolid)
 
             courseList = []
             cnt = 0
             for i in range(0, len(enrolList)):
                 courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
 
-            print('courseList', list(courseList))
-
-            print('결과', courseList)
-            print((courseList[0][0])[0])
-            print((courseList[1][0])[0])
             fullname = []
 
             courseIdList = []
 
             for i in range(0, len(courseList)):
                 courseIdList.append((courseList[i][0])[0])
-            print('courseIdList', courseIdList)
 
             cnt = 0
             mol = []
@@ -94,9 +75,6 @@ def index(request):
             molang = MdlCourse.objects.filter(id=100000)
             for i in range(0, len(courseList)):
                 molang = molang | mol[i]
-
-            print('mol', mol)
-            print('molang', molang)
 
             return render(request, 'student.html',{'enrolList':molang})
         else:

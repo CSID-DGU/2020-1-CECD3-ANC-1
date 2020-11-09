@@ -132,6 +132,49 @@ def postQuestions(request, course_id):
             return render(request,'postQuestions.html')
     return render(request, 'postQuestions.html')
 
+def postQuestions2(request, course_id, quest):
+    if request.session.get('user',False):
+        questLists=Question.objects.filter(q_c_id=course_id)
+        user = (MdlUser.objects.get(username=request.session.get('user', False)))
+        userid = user.id
+        if MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
+
+            """start"""
+            enrolList = []
+            for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+                enrolList.append(i)
+            enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+            courseList = []
+            cnt = 0
+            for i in range(0, len(enrolList)):
+                courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+
+            fullname = []
+            courseIdList = []
+
+            for i in range(0, len(courseList)):
+                courseIdList.append((courseList[i][0])[0])
+
+            cnt = 0
+            mol = []
+
+            for i in range(0, len(courseList)):
+                if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                    mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+                elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                    mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+            molang = MdlCourse.objects.filter(id=100000)
+            for i in range(0, len(courseList)):
+                molang = molang | mol[i]
+
+            """end"""
+            course=(MdlCourse.objects.get(id=course_id))
+
+            return render(request, 'postQuestions.html', {'enrolList':molang,'course':course,'quest':quest})
+        else :
+            return render(request,'postQuestions.html')
+    return render(request, 'postQuestions.html')
+
 def askQuestion(request, course_id):
     """start"""
     course_name=(MdlCourse.objects.get(id=course_id)).fullname

@@ -48,7 +48,7 @@ def index2(request,course_id):
     else :
         return render(request, 'signin.html')
 
-def detail(request, question_id):
+def detail(request, question_id, student_id, course_id):
     question=Question.objects.get(q_id=question_id)
     context={'question':question}
     if request.session.get('user', False):
@@ -80,25 +80,85 @@ def detail(request, question_id):
             molang = molang | mol[i]
         commentList=SComment.objects.filter(q_id=question_id)
         answerNo=SComment.objects.filter(q_id=question_id).count()
-        return render(request, 'detailInfo.html', {'question':question,'teachList':molang, 'commentList':commentList, 'answerNo':answerNo})
+
+
+        student=MdlUser.objects.filter(username=student_id)
+
+        course = MdlCourse.objects.get(id=course_id)
+
+        return render(request, 'detailInfo.html', {'question':question,'teachList':molang, 'commentList':commentList,
+                                                   'answerNo':answerNo,'student':student,'course':course})
     else:
         return render(request,'signin.html',context)
 
-def answerCreate(request, question_id):
+def answerCreate(request, question_id, student_id, course_id):
     question_answer=Question.objects.get(q_id=question_id)
     answer=request.POST['answer']
     question_answer.answer=answer
     question_answer.save()
     questLists=Question.objects.all()
     create_intent(question_answer.question, answer, question_answer.q_id)
-    return redirect('answerQuestions:detail',question_id=question_answer.q_id)
+    return redirect('answerQuestions:detail',question_id=question_answer.q_id,student_id=student_id, course_id=course_id)
 
 
-def answerCreate2(request, question_id):
+def answerCreate2(request, question_id, student_id, course_id):
     question_answer=Question.objects.get(q_id=question_id)
     answer2=request.POST['answer2']
     question_answer.answer=answer2
     question_answer.save()
     questLists=Question.objects.all()
     update_intent(question_answer.question, answer2, question_answer.q_id)
-    return redirect('answerQuestions:detail',question_id=question_answer.q_id)
+    return redirect('answerQuestions:detail',question_id=question_answer.q_id, student_id=student_id, course_id=course_id)
+
+def incParticipation(request, question_id, student_id, course_id):
+
+
+    userid=(MdlUser.objects.get(username=student_id)).id
+    enrolid=(MdlEnrol.objects.get(courseid=course_id,enrol='manual')).id
+
+    student=MdlUserEnrolments.objects.get(userid=userid,enrolid=enrolid)
+    presentGrade=(MdlUserEnrolments.objects.get(userid=userid,enrolid=enrolid)).grade
+    presentGrade=presentGrade + 1
+    student.grade=presentGrade
+    student.save()
+
+    #-------------------------------------------------------------------------------------------------------------
+    question = Question.objects.get(q_id=question_id)
+    context = {'question': question}
+    if request.session.get('user', False):
+        user = (MdlUser.objects.get(username=request.session.get('user', False)))
+        userid = user.id
+        enrolList = []
+        for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+            enrolList.append(i)
+        enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+        courseList = []
+        cnt = 0
+        for i in range(0, len(enrolList)):
+            courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+        fullname = []
+        courseIdList = []
+
+        for i in range(0, len(courseList)):
+            courseIdList.append((courseList[i][0])[0])
+        cnt = 0
+        mol = []
+
+        for i in range(0, len(courseList)):
+            if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+            elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+        molang = MdlCourse.objects.filter(id=100000)
+        for i in range(0, len(courseList)):
+            molang = molang | mol[i]
+        commentList = SComment.objects.filter(q_id=question_id)
+        answerNo = SComment.objects.filter(q_id=question_id).count()
+
+        student = MdlUser.objects.filter(username=student_id)
+
+        course = MdlCourse.objects.get(id=course_id)
+    #-----------------------------------------------------------------------------------------------------------
+
+    return render(request, 'detailInfo.html', {'question': question, 'teachList': molang, 'commentList': commentList,
+                                               'answerNo': answerNo, 'student': student, 'course': course})

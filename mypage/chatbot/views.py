@@ -62,6 +62,7 @@ def chat_view(request):
         language_code=language_code,
         user_input=input_text
     )
+    
     return HttpResponse(response.query_result.fulfillment_text, status=200)
 
 def detect_intent_with_parameters(request, project_id, session_id, query_params, language_code, user_input):
@@ -89,6 +90,8 @@ def detect_intent_with_parameters(request, project_id, session_id, query_params,
     print('Detected intent: {} (confidence: {})\n'.format(
         response.query_result.intent.display_name,
         response.query_result.intent_detection_confidence))
+    print('Fulfillment text: {}\n'.format(
+        response.query_result.fulfillment_text))
 
     #ask, CH, UQ 관련 인텐트 일때만 참여도 점수 +1
     if "ask" in response.query_result.intent.display_name or "CH" in response.query_result.intent.display_name or "UQ" in response.query_result.intent.display_name:
@@ -99,18 +102,51 @@ def detect_intent_with_parameters(request, project_id, session_id, query_params,
         uinstance = MdlUserEnrolments.objects.filter(enrolid=enrolid, userid=userid)[0]
         uinstance.grade = uinstance.grade+1
         uinstance.save()
-    print('Fulfillment text: {}\n'.format(
-        response.query_result.fulfillment_text))
 
+    # Default Fallback Intent일 때 
+    if response.query_result.intent.display_name == "Default Fallback Intent":
+        # 질문 entity, page 예시
+        entity = "오토마타"
+        page = "1"
+        # if문: mysql에 분류해서 얻은 단어 페이지가 있어서 제공해줄 수 있는경우.. 이 반대의 경우는 코드 작성할 필요X
+        # 밑에 답도 예시
+        response.query_result.fulfillment_text = " 무슨 말인지 잘 모르겠네요.." +entity+"는 "+ page+"페이지 설명을 참고해보세요. 참고해도 모르겠다면 미해결 질문답변 게시판에 미해결 질문으로 등록해주세요. 하시겠어요?"
+    
+    #사용자가 '응' 이라고 답하여 미해결 질문 게시판으로 이동
+    if response.query_result.intent.display_name == "Default Fallback Intent - yes":
+        response.query_result.fulfillment_text = "미해결 질문 게시판 url제공"
     return response
 
 def index3(request):
-    if request.session.get('user',False) :
+    if request.session.get('user',False):
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
         userid=user.id
-        if MdlRoleAssignments.objects.filter(userid=userid, roleid=5):
-            enrolList=MdlEnrolFlatfile.objects.filter(userid=userid)
-            return render(request, 'chatbot/index3.html',{'enrolList':enrolList})
-        else :
-            return render(request, 'chatbot/index3.html')
-    return render(request, 'signin.html')
+        enrolList = []
+        for i in MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid'):
+            enrolList.append(i)
+        enrolid = MdlUserEnrolments.objects.filter(userid=userid).values_list('enrolid')
+        courseList = []
+        cnt = 0
+        for i in range(0, len(enrolList)):
+            courseList.append(MdlEnrol.objects.filter(id=enrolList[i][0]).values_list('courseid'))
+        fullname = []
+        courseIdList = []
+
+        for i in range(0, len(courseList)):
+            courseIdList.append((courseList[i][0])[0])
+
+        cnt = 0
+        mol = []
+
+        for i in range(0, len(courseList)):
+            if MdlCourse.objects.filter(id=courseIdList[i]) and cnt == 0:
+                 mol.append(MdlCourse.objects.filter(id=courseIdList[i]))
+            elif MdlCourse.objects.filter(id=courseIdList[i]) and cnt != 0:
+                mol.appen(MdlCourse.objects.filter(id=courseIdList[i]))
+        molang = MdlCourse.objects.filter(id=100000)
+        for i in range(0, len(courseList)):
+            molang = molang | mol[i]
+
+        return render(request, 'chatbot/index3.html',{'enrolList':molang})
+    else :
+        return render(request, 'signin.html')
