@@ -75,6 +75,9 @@ def update_intent():
     intent.training_phrases.extend(training_phrases)
     response  = intents_client.update_intent(intent, language_code='ko')
 
+
+
+
 ###1. 딕셔너리의 키 값으로 display_name 을, 값으로 동의어를 넣을 생각인데, 값에 각각의 리스트가 안들어감,,
 # 저장된 entity 목록 불러오기
 def get_entity_list():
@@ -127,36 +130,7 @@ def get_entity_list():
   #print('dic',dic)
   #print(dic)
   return dic    
-  
-
-##문장에서 단어로 entity 설정
-# def test_set_entity():
-#   parts = [
-#     dialogflow.types.Intent.TrainingPhrase.Part(text="오토마타", entity_type='@automata',alias="automata"),
-#     dialogflow.types.Intent.TrainingPhrase.Part(text="가 뭐야?")
-#   ]
-
-#   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
-
-#   messages = []
-
-#   #이게 default message
-#   text = dialogflow.types.Intent.Message.Text(text = ["First message"])
-#   text_message = dialogflow.types.Intent.Message(text=text)
-#   messages.append(text_message)
-
-#   intent = dialogflow.types.Intent(
-#           display_name="aaaaaa",
-#           training_phrases=[training_phrase],
-#           messages=messages,
-#   )
-
-#   response = intents_client.create_intent(parent, intent)
-#   print("Intent created: {}".format(response))
-
-
-# 전체 엔티티 딕셔너리의 value 리스트에서 질문 띄어쓰기 단위로 자른것과 같은 거 찾아 새로운 딕셔너리(text_key) 생성   
-# 실제로 dialogFlow와 연동해 새로운 intent 저장하는 set_entity() 함수 호출
+   
 def reg_Intent_with_Entity():
   entity_type_client = dialogflow.EntityTypesClient()
   parent = entity_type_client.project_agent_path('kobaksa-1b59d')
@@ -167,17 +141,18 @@ def reg_Intent_with_Entity():
   text_key = {}
   dic = get_entity_list()
 
-  input = "컴파일러 의 전단부를 scanner와 parser로 구성하는 이유가 무엇인가요?"
-  input_tag = input.split(" ")
+  input = "컴파일러의 전단부를 스캐너와 parser로 구성하는 이유가 무엇인가요?"
 
-
-  # 형태소분석, 영어 단어면 nouns에 안들어감, 따로 영어인 경우 더해줌
-  # kkma = Kkma()
-  # input_tag = kkma.noun(input)
-  # input_eng = kkma.pos(input)  
+  #영어 단어면 nouns에 안들어감, 따로 영어인 경우 더해줌
+  
+  #input_eng = kkma.pos(input)  
   # for it in input_eng:
   #   if it[1] in 'OL':
   #     input_tag.append(it[0])
+
+  #morphs로 형태소분석
+  kkma = Kkma()
+  input_tag = kkma.morphs(input)
 
   # k : key 값, v : 2차원 리스트 value 저장 
   for k,v in dic.items():
@@ -189,38 +164,44 @@ def reg_Intent_with_Entity():
           # 질문의 키워드를 동의어 리스트에서 찾았을 때 text_key에 저장
           # text_key 내 key > text : 찾은 entity의 키 값, text_key 내 value > ettt : entity 설정할 질문의 일부
           if it == v[i][j]:
-            #print("found! "+ it +" in "+ v[i][j])
-            #print("key : "+ k)
             text_key[k] = it
-  
-  #set_entity(input_tag, text_key)
 
   parts=[]
   messages = []
   count = 0
 
   #사용자의 질문에서 엔티티와 매핑되지 않는 부분
-  # plain_list = [] 
-  # plain_list_dic = {}
-  # plain_list.append(str)
-  # # k : 엔티티의 키, v : 질문 내 키워드
-  # for k,v in t_k.items():
-  #   for pl in plain_list:
-  #     plain_list = pl.split(sep = v)
+  plain_list = [] 
+  plain_list_dic = {}
+  plain_list.append(input)
+  #print(plain_list)
+  value_key = {}
 
-  for str in input_tag:
-    if str in text_key.values():
-      k = list(text_key)[count]
-      et = "@" + k
-      parts.append(
-        dialogflow.types.Intent.TrainingPhrase.Part(text=str+" ", entity_type=et, alias=k)
-      )
-      count+=1
-    else:
-      parts.append(
-        dialogflow.types.Intent.TrainingPhrase.Part(text=str+" ")
-      )
-  
+
+  # k : 엔티티의 키, v : 질문 내 키워드 
+  # value_key 에 키와 값 반대로 저장함
+  # 엔티티로 설정할 v 를 기준으로 split()
+  for k,v in text_key.items():
+    value_key[v] = k
+    for pl in plain_list:
+      plain_list = pl.split(sep = v)
+      plain_list_dic[v] = plain_list
+ 
+
+  keyList = plain_list_dic.keys()
+  for item in list(keyList):
+    k = value_key[item]
+    et = "@" + k
+    parts.append(
+      dialogflow.types.Intent.TrainingPhrase.Part(text=plain_list_dic[item][0])
+    )
+    parts.append(
+      dialogflow.types.Intent.TrainingPhrase.Part(text=item, entity_type=et, alias=k)
+    )
+  parts.append(
+    dialogflow.types.Intent.TrainingPhrase.Part(text=plain_list_dic[item][1])
+  )
+
   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
 
   #default message
@@ -232,13 +213,12 @@ def reg_Intent_with_Entity():
   dName = now.strftime("%Y%m%d_%H%M%S")
 
   intent = dialogflow.types.Intent(
-          display_name="add_" + dName,
+          display_name="test_" + dName,
           training_phrases=[training_phrase],
           messages=messages,
   )
 
   try:
-
     response = intents_client.create_intent(parent, intent)
   except InvalidArgument:
     raise
