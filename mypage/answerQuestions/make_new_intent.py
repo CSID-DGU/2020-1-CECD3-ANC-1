@@ -162,7 +162,6 @@ def get_entity_list():
 # 전체 엔티티 딕셔너리의 value 리스트에서 질문 띄어쓰기 단위로 자른것과 같은 거 찾아 새로운 딕셔너리(text_key) 생성   
 # 실제로 dialogFlow와 연동해 새로운 intent 저장하는 set_entity() 함수 호출
 def reg_Intent_with_Entity(question, answer, q_id):
->>>>>>> 228a46585c67c821a453c47845626546c80d4224
   entity_type_client = dialogflow.EntityTypesClient()
   parent = entity_type_client.project_agent_path('kobaksa-1b59d')
   entity_types = entity_type_client.list_entity_types(parent)
