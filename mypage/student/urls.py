@@ -11,5 +11,6 @@ urlpatterns=[
     path('ask/questions/<int:course_id>',views.askQuestion,name="askQuestion"),
     path('write/comment/<int:question_id>/',views.writeComment, name="writeComment"),
     path('like/<int:question_id>/<int:id>',views.like, name="like"),
+    path('like2/<int:question_id>/<int:id>/<int:course_id>',views.like2, name="like2"),
 
 ]

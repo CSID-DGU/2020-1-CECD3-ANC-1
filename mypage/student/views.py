@@ -211,3 +211,19 @@ def like(request, question_id, id):
     comment.save()
 
     return redirect('student:sdetail', question_id=question_id, )
+
+def like2(request, question_id, id, course_id):
+    comment = SComment.objects.get(q_id=question_id, id=id)
+    like=SComment.objects.get(q_id=question_id, id=id).like
+    if comment.like:
+        like = like + 1
+    else:
+        like=1
+    comment.like=like
+    comment.save()
+
+    student_id=request.session.get('user', False)
+
+    return redirect('answerQuestions:detail',question_id=question_id, student_id=student_id,
+                            course_id=course_id)
+

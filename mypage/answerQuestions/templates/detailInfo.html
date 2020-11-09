@@ -162,7 +162,7 @@
         {% for comment in commentList %}
       <div style="background-color:#F2F2F2;border-radius:1em;height:50px">
             {{comment.answer}}
-        <a href="{% url 'student:like' comment.q_id comment.id%}" class="btn btn=secondary">
+        <a href="{% url 'student:like2' comment.q_id comment.id course.id%}" class="btn btn=secondary">
           <img src="{% static 'img/like.png' %}" width="20px" height="20px"></img></a>
         {%if comment.like %}
         {{comment.like}}
