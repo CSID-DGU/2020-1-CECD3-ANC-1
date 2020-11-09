@@ -157,7 +157,7 @@ def get_entity_list():
 
 # 전체 엔티티 딕셔너리의 value 리스트에서 질문 띄어쓰기 단위로 자른것과 같은 거 찾아 새로운 딕셔너리(text_key) 생성   
 # 실제로 dialogFlow와 연동해 새로운 intent 저장하는 set_entity() 함수 호출
-def reg_Intent_with_Entity():
+def reg_Intent_with_Entity(question, answer, q_id):
   entity_type_client = dialogflow.EntityTypesClient()
   parent = entity_type_client.project_agent_path('kobaksa-1b59d')
   entity_types = entity_type_client.list_entity_types(parent)
@@ -167,7 +167,8 @@ def reg_Intent_with_Entity():
   text_key = {}
   dic = get_entity_list()
 
-  input = "cross-compiler 아침형 인터프리터 새벽에는 아주 졸리네요"
+  #input = "cross-compiler 아침형 인터프리터 새벽에는 아주 졸리네요"
+  input = question
   input_tag = input.split(" ")
 
 
@@ -188,7 +189,7 @@ def reg_Intent_with_Entity():
         for it in input_tag:
           # 질문의 키워드를 동의어 리스트에서 찾았을 때 text_key에 저장
           # text_key 내 key > text : 찾은 entity의 키 값, text_key 내 value > ettt : entity 설정할 질문의 일부
-          if it == v[i][j]:
+          if v[i][j] in it:
             #print("found! "+ it +" in "+ v[i][j])
             #print("key : "+ k)
             text_key[k] = it
@@ -224,7 +225,8 @@ def reg_Intent_with_Entity():
   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
 
   #default message
-  text = dialogflow.types.Intent.Message.Text(text = ["잘 되나요?"])
+  #text = dialogflow.types.Intent.Message.Text(text = ["잘 되나요?"])
+  text = dialogflow.types.Intent.Message.Text(text=[answer])
   text_message = dialogflow.types.Intent.Message(text=text)
   messages.append(text_message)
 
@@ -232,7 +234,7 @@ def reg_Intent_with_Entity():
   dName = now.strftime("%Y%m%d_%H%M%S")
 
   intent = dialogflow.types.Intent(
-          display_name="add_" + dName,
+          display_name="ask_" + dName,
           training_phrases=[training_phrase],
           messages=messages,
   )
@@ -242,4 +244,4 @@ def reg_Intent_with_Entity():
   except InvalidArgument:
     raise
 
-reg_Intent_with_Entity()
+#reg_Intent_with_Entity()
