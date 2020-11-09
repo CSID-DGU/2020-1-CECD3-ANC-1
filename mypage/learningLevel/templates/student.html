@@ -66,7 +66,31 @@
             <a class="nav-link" href="#">
               <h5>{{ request.session.user }}님</h5>
             </a>
+            <hr>
           </li>
+          {% if  grades %}
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <b>질문왕</b>
+            </a>
+            {% for g in grades %}
+            {% if g.grade == 1 %}
+            <a class="nav-link" href="#">
+              <img src="{% static 'img/gold.png' %}" width="25px" height="35px">&nbsp;&nbsp;{{g.fullname}}
+            </a>
+            {% elif g.grade == 2 %}
+            <a class="nav-link" href="#">
+              <img src="{% static 'img/silver.png' %}" width="25px" height="35px">&nbsp;&nbsp;{{g.fullname}}
+            </a>
+            {% elif g.grade == 3 %}
+            <a class="nav-link" href="#">
+              <img src="{% static 'img/bronze.png' %}" width="35px" height="50px"> {{g.fullname}} 질문왕
+            </a>
+            {% endif %}
+            {% endfor %}
+            <hr>
+          </li>
+          {% endif %}
           {% else %}
           <br>
           <li class="nav-item">
@@ -75,7 +99,6 @@
             </a>
           </li>
           {% endif %}
-          <br>
           {% for request in enrolList %}
           <li class="nav-item">
             <a class="nav-link" href="#">

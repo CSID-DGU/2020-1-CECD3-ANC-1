@@ -155,11 +155,11 @@
           {% for student in students %}
             <tr>
               {% if forloop.counter == 1 %}
-              <td><img src="{% static 'img/gold.png' %}" width="50px" height="60px"></td>
+              <td><img src="{% static 'img/gold.png' %}" width="35px" height="50px"></td>
               {% elif forloop.counter == 2 %}
-              <td><img src="{% static 'img/silver.png' %}" width="50px" height="60px"></td>
+              <td><img src="{% static 'img/silver.png' %}" width="35px" height="50px"></td>
               {% elif forloop.counter == 3 %}
-              <td><img src="{% static 'img/bronze.png' %}" width="50px" height="60px"></td>
+              <td><img src="{% static 'img/bronze.png' %}" width="35px" height="50px"></td>
               {% else %}
               <td>{{forloop.counter}}</td>
               {% endif %}
