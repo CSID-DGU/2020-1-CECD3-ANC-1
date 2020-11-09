@@ -121,6 +121,7 @@
       <div id="container" style="width:75%;">
         <canvas id="line-chart" width="200" height="100"></canvas>
       </div>
+      <br><br>
       <script>
         window.onload=function(){
        var ctx = document.getElementById("line-chart").getContext("2d");
@@ -137,6 +138,24 @@
                ]
            },
            options: {
+            scales: {
+              yAxes: [{
+                scaleLabel: {
+                  display: true,
+                    labelString: '학생수',
+
+         },
+              ticks : {
+              precision : 0
+              }
+       }],
+       xAxes: [{
+                scaleLabel: {
+                  display: true,
+                    labelString: '참여도 등급'
+         }
+       }]
+     }
            }
        });
 }
@@ -148,7 +167,7 @@
             <tr>
               <th>순위</th>
               <th>학생번호</th>
-              <th>참여 점수</th>
+              <th>참여 점수(=질문개수)/참여 등급</th>
             </tr>
           </thead>
           <tbody>
@@ -164,7 +183,15 @@
               <td>{{forloop.counter}}</td>
               {% endif %}
               <td>{{student.userid}}</td>
-              <td>{{student.grade}}</td>
+              {% if student.grade <= 2 %}
+              <td>{{student.grade}} / D </td>
+              {% elif student.grade <= 5 %}
+              <td>{{student.grade}} / C </td>
+              {% elif student.grade <= 9 %}
+              <td>{{student.grade}} / B </td>
+              {% elif student.grade >= 10 %}
+              <td>{{student.grade}} / A </td>
+              {% endif %}
             </tr>
           {% endfor %}
 
