@@ -268,7 +268,7 @@ def crawlAct(request):
 
 def learningLevelDetail(request,course_id):
     enrolid=(MdlEnrol.objects.get(courseid=course_id,enrol='manual')).id
-    students=MdlUserEnrolments.objects.filter(enrolid=enrolid)
+    students=(MdlUserEnrolments.objects.filter(enrolid=enrolid)).order_by('-grade')
     enrolPeople=[]
 
     """start"""
@@ -289,6 +289,7 @@ def learningLevelDetail(request,course_id):
     molang2 = MdlUserEnrolments.objects.filter(id=10000)
     for i in range(0, len(studentList)):
         molang2 = molang2 | mol2[i]
+    molang2=molang2.order_by('-grade')
     """end"""
     if request.session.get('user',False) :
         user=(MdlUser.objects.get(username=request.session.get('user',False)))
@@ -300,13 +301,13 @@ def learningLevelDetail(request,course_id):
             x_data = ['A', 'B', 'C', 'D']
             y_data=[]
 
-            A=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=50)).count()
+            A=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=10)).count()
             y_data.append(A)
-            B=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=40,grade__lte=49)).count()
+            B=(MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=6,grade__lte=9)).count()
             y_data.append(B)
-            C = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=30, grade__lte=40)).count()
+            C = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__gte=3, grade__lte=5)).count()
             y_data.append(C)
-            D = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__lte=20)).count()
+            D = (MdlUserEnrolments.objects.filter(enrolid=enrolid,grade__lte=2)).count()
             D=D-1
             y_data.append(D)
 
