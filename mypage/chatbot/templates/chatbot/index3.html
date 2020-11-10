@@ -308,7 +308,7 @@
             });
             $submit.done(function(statement) {
                 createRow(statement);
-                if(statement == "미해결 질문 게시판 url제공"){
+                if(statement == "미해결 질문 게시판 url제공" || statement.indexOf("미해결 질문 게시판으로 이동") != -1){
                   createBtn();
                 }
                 else{
