@@ -8,6 +8,8 @@ import os
 import json
 from django.views.decorators.csrf import csrf_exempt
 from learningLevel.models import *
+from konlpy.tag import Kkma
+from konlpy.utils import pprint
 # Create your views here.
 
 @require_http_methods(['GET'])
@@ -103,14 +105,31 @@ def detect_intent_with_parameters(request, project_id, session_id, query_params,
         uinstance.grade = uinstance.grade+1
         uinstance.save()
 
+    kkma = Kkma()
     # Default Fallback Intent일 때 
-    if response.query_result.intent.display_name == "Default Fallback Intent":
-        # 질문 entity, page 예시
-        entity = "오토마타"
-        page = "1"
+    if response.query_result.intent.display_name == "Default Fallback Intent" or "미해결 질문" in response.query_result.fulfillment_text:
+        query_text = '{}'.format(response.query_result.query_text)
+        entitylist = kkma.morphs(query_text)
+        indexlist = []
+        for i in entitylist:
+            if len(i) >= 2:
+                enrolid = Indexkeyword.objects.filter(keyword__contains=i)
+            else:
+                enrolid = Indexkeyword.objects.filter(keyword=i)
+            try:
+                entity = enrolid[0].keyword
+                page = str(enrolid[0].indexnum)
+                indexlist.append({'entity': entity, 'page': page})
+            except:
+                pass
+                
         # if문: mysql에 분류해서 얻은 단어 페이지가 있어서 제공해줄 수 있는경우.. 이 반대의 경우는 코드 작성할 필요X
         # 밑에 답도 예시
-        response.query_result.fulfillment_text = " 무슨 말인지 잘 모르겠네요.." +entity+"는 "+ page+"페이지 설명을 참고해보세요. 참고해도 모르겠다면 미해결 질문답변 게시판에 미해결 질문으로 등록해주세요. 하시겠어요?"
+        if len(indexlist)>0:
+            response.query_result.fulfillment_text = "아직 배우지 못한 질문이에요..\n"
+            for i in indexlist:
+                response.query_result.fulfillment_text += i["entity"]+"는 교재 "+ i["page"]+"페이지 설명을 참고해보세요.\n"
+            response.query_result.fulfillment_text += "이후에도 모르겠다면 미해결 질문 게시판에 등록해주세요. 등록하시겠어요?"
     
     #사용자가 '응' 이라고 답하여 미해결 질문 게시판으로 이동
     if response.query_result.intent.display_name == "Default Fallback Intent - yes":
