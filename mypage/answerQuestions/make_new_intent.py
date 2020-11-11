@@ -173,7 +173,7 @@ def reg_Intent_with_Entity(question, answer, q_id):
 
   #input = "cross-compiler 아침형 인터프리터 새벽에는 아주 졸리네요"
   input = question
-  input_tag = input.split(" ")
+  #input_tag = input.split(" ")
 
   #영어 단어면 nouns에 안들어감, 따로 영어인 경우 더해줌
   
@@ -239,7 +239,7 @@ def reg_Intent_with_Entity(question, answer, q_id):
 
   #default message
 
-  text = dialogflow.types.Intent.Message.Text(text = ["scanner와 parser로 전단부를 구성하는 이유는 ~입니다"])
+  #text = dialogflow.types.Intent.Message.Text(text = ["scanner와 parser로 전단부를 구성하는 이유는 ~입니다"])
   #text = dialogflow.types.Intent.Message.Text(text = ["잘 되나요?"])
   text = dialogflow.types.Intent.Message.Text(text=[answer])
 
