@@ -119,16 +119,17 @@ def detect_intent_with_parameters(request, project_id, session_id, query_params,
             try:
                 entity = enrolid[0].keyword
                 page = str(enrolid[0].indexnum)
-                indexlist.append({'entity': entity, 'page': page})
+                indexlist.append((entity, page))
             except:
                 pass
                 
         # if문: mysql에 분류해서 얻은 단어 페이지가 있어서 제공해줄 수 있는경우.. 이 반대의 경우는 코드 작성할 필요X
         # 밑에 답도 예시
+        indexlist = list(set(indexlist))
         if len(indexlist)>0:
             response.query_result.fulfillment_text = "아직 배우지 못한 질문이에요..\n"
             for i in indexlist:
-                response.query_result.fulfillment_text += i["entity"]+"는 교재 "+ i["page"]+"페이지 설명을 참고해보세요.\n"
+                response.query_result.fulfillment_text += i[0]+"는 교재 "+ i[1]+"페이지 설명을 참고해보세요.\n"
             response.query_result.fulfillment_text += "이후에도 모르겠다면 미해결 질문 게시판에 등록해주세요. 등록하시겠어요?"
     
     #사용자가 '응' 이라고 답하여 미해결 질문 게시판으로 이동
