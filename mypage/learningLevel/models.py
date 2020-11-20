@@ -202,3 +202,11 @@ class MdlCourse(models.Model):
     class Meta:
         managed = False
         db_table = 'mdl_course'
+
+class Indexkeyword(models.Model):
+    keyword = models.CharField(max_length=50, blank=True, null=True)
+    indexnum = models.CharField(db_column='indexNum', max_length=50, blank=True, null=True)
+    k_id = models.IntegerField(primary_key=True)
+    class Meta:
+        managed = False
+        db_table = 'indexKeyword'
