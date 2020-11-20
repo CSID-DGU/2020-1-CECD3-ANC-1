@@ -173,7 +173,7 @@ def reg_Intent_with_Entity(question, answer, q_id):
 
   #input = "cross-compiler 아침형 인터프리터 새벽에는 아주 졸리네요"
   input = question
-  input_tag = input.split(" ")
+  #input_tag = input.split(" ")
 
   #영어 단어면 nouns에 안들어감, 따로 영어인 경우 더해줌
   
@@ -210,36 +210,40 @@ def reg_Intent_with_Entity(question, answer, q_id):
   #print(plain_list)
   value_key = {}
 
-
+  if(text_key):
   # k : 엔티티의 키, v : 질문 내 키워드 
   # value_key 에 키와 값 반대로 저장함
   # 엔티티로 설정할 v 를 기준으로 split()
-  for k,v in text_key.items():
-    value_key[v] = k
-    for pl in plain_list:
-      plain_list = pl.split(sep = v)
-      plain_list_dic[v] = plain_list
- 
+    for k,v in text_key.items():
+      value_key[v] = k
+      for pl in plain_list:
+        plain_list = pl.split(sep = v)
+        plain_list_dic[v] = plain_list
 
-  keyList = plain_list_dic.keys()
-  for item in list(keyList):
-    k = value_key[item]
-    et = "@" + k
+    keyList = plain_list_dic.keys()
+
+    for item in list(keyList):
+      k = value_key[item]
+      et = "@" + k
+      parts.append(
+        dialogflow.types.Intent.TrainingPhrase.Part(text=plain_list_dic[item][0])
+      )
+      parts.append(
+        dialogflow.types.Intent.TrainingPhrase.Part(text=item, entity_type=et, alias=k)
+      )
     parts.append(
-      dialogflow.types.Intent.TrainingPhrase.Part(text=plain_list_dic[item][0])
+      dialogflow.types.Intent.TrainingPhrase.Part(text=plain_list_dic[item][1])
     )
+  else:
     parts.append(
-      dialogflow.types.Intent.TrainingPhrase.Part(text=item, entity_type=et, alias=k)
+      dialogflow.types.Intent.TrainingPhrase.Part(text=input)
     )
-  parts.append(
-    dialogflow.types.Intent.TrainingPhrase.Part(text=plain_list_dic[item][1])
-  )
 
   training_phrase = dialogflow.types.Intent.TrainingPhrase(parts=parts)
 
   #default message
 
-  text = dialogflow.types.Intent.Message.Text(text = ["scanner와 parser로 전단부를 구성하는 이유는 ~입니다"])
+  #text = dialogflow.types.Intent.Message.Text(text = ["scanner와 parser로 전단부를 구성하는 이유는 ~입니다"])
   #text = dialogflow.types.Intent.Message.Text(text = ["잘 되나요?"])
   text = dialogflow.types.Intent.Message.Text(text=[answer])
 
