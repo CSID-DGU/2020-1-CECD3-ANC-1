@@ -19,7 +19,7 @@ pip -V
 ```
 
 2. Django 설치
-Python를 설치한 다음 cmd 창에서 다음 명령어를 입력하여 Django를 설치한다. 
+- Python 설치한 다음 cmd 창에서 다음 명령어를 입력하여 Django를 설치한다. 
 ```sh
 pip install django
 ```
