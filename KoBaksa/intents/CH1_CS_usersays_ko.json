@@ -1,0 +1,268 @@
+[
+  {
+    "id": "cde836a4-c29b-4aea-9750-0f98284fb34f",
+    "data": [
+      {
+        "text": "오류 수정",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "이 정확히 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "bc74a456-9df3-4f7d-833e-d236e0f70ae3",
+    "data": [
+      {
+        "text": "오류 복구",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 설명해주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "d7d0f2f2-dcd1-4274-bf0c-564fa1486539",
+    "data": [
+      {
+        "text": "오류",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 설명해주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "5d53d17f-5ab5-4797-a89b-cd271639439e",
+    "data": [
+      {
+        "text": "Error Recovery",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 설명해주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "99e294c6-4fd6-4de5-8738-23a5dd6160b0",
+    "data": [
+      {
+        "text": "Target Code Generator",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a9680da7-42d5-4ed6-8c5f-c57a7cb088a3",
+    "data": [
+      {
+        "text": "Code Optimizer",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "313a00d0-85f6-4b73-b35a-141751dc6058",
+    "data": [
+      {
+        "text": "Intermediate Code Generator",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "42b0c230-6464-441c-a7a6-5953d4304372",
+    "data": [
+      {
+        "text": "Syntax Analyzer",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "5f382fd7-afec-4fa8-87a3-4e95c5b11098",
+    "data": [
+      {
+        "text": "Lexical Analyzer",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3438892b-4f1e-437c-888a-12a9350fa91d",
+    "data": [
+      {
+        "text": "타겟 코드 생성기",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "14ea757a-8d8f-4658-a5f3-65f4b2b3301a",
+    "data": [
+      {
+        "text": "코드 최적화",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2eed562b-2ccb-4169-90af-e31b261b5bc3",
+    "data": [
+      {
+        "text": "중간 코드 생성기",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "d608177d-fdab-4ede-99af-c9939209802b",
+    "data": [
+      {
+        "text": "구문 분석기",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "66e6ebce-89cf-493b-b1c6-aa191b811a3b",
+    "data": [
+      {
+        "text": "어휘 분석기",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

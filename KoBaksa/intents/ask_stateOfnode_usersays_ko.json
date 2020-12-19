@@ -1,0 +1,31 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "시작상태",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "도 ",
+        "userDefined": false
+      },
+      {
+        "text": "종결상태",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "가 될 수 있는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

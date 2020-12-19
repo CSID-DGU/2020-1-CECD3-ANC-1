@@ -1,0 +1,25 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "작년 프로그래밍언어개념시간에는 시맨틱 체킹 단계까지 ",
+        "userDefined": false
+      },
+      {
+        "text": "인터프리터",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": true
+      },
+      {
+        "text": "를 구현하였는데, 만약 저희가 코드로 직접 IC를 구현하려면 어떻게 해야 되나요? 토큰을 클래스로 정의했던 것처럼 IC코드도 클래스로 나타내면 되나요? 더 나아가서 object code도 코드상 어떻게 표현할 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "752571eb-0a45-4c44-9d66-e167556df2be",
+  "name": "express",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

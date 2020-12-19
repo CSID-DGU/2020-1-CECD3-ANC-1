@@ -1,0 +1,129 @@
+[
+  {
+    "id": "859896f6-cf50-4267-8554-864061dcfc6c",
+    "data": [
+      {
+        "text": "전처리기",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": false
+      },
+      {
+        "text": " 모듈화가 가능한가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "0f791d4d-f112-4202-88e2-cacd32ee6a54",
+    "data": [
+      {
+        "text": "전처리기",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "도 ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "처럼 모듈화가 이루어져 있는지 아닌지 ",
+        "userDefined": false
+      },
+      {
+        "text": "궁금",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "합니다.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "전처리기",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "도 ",
+        "userDefined": false
+      },
+      {
+        "text": "전처리기",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "의 기본언어를 가지고 있고 그것을 해석하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "해석기",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": true
+      },
+      {
+        "text": "인데 그러면 ",
+        "userDefined": false
+      },
+      {
+        "text": "전처리기",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "도  ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "처럼 모듈화가 이루어져 있는지 아닌지 모듈화가 이루어져 있지 않다면 그것은 굳이 그럴 필요가 없을 정도로 ",
+        "userDefined": false
+      },
+      {
+        "text": "전처리기",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "가 단순해서 그런 건가요 아니면 모듈화 시키지 못하는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

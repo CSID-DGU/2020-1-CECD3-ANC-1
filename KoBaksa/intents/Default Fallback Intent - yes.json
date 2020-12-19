@@ -1,0 +1,59 @@
+{
+  "id": "6c9e140f-8614-4152-a3d1-dc47f2919b74",
+  "parentId": "6e456132-31f0-4e7b-8d63-55254cda0b6b",
+  "rootParentId": "6e456132-31f0-4e7b-8d63-55254cda0b6b",
+  "name": "Default Fallback Intent - yes",
+  "auto": true,
+  "contexts": [
+    "DefaultFallbackIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultFallbackIntent.DefaultFallbackIntent-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "button",
+                  "link": "https://weather.naver.com",
+                  "text": "미해결 질문 게시판으로 이동하기",
+                  "icon": {
+                    "color": "#FF9800",
+                    "type": "link"
+                  }
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "ko",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

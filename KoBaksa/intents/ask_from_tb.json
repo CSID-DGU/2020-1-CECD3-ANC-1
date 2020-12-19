@@ -1,0 +1,78 @@
+{
+  "id": "f41d4d42-b971-4067-86a9-06ada6dc4d31",
+  "name": "ask_from_tb",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1a932ee9-c087-457c-b6be-f91e5dc943c5",
+          "name": "Chapter",
+          "required": false,
+          "dataType": "@Chapter",
+          "value": "$Chapter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4864dcd1-23ca-4706-9622-c4b426e23ba9",
+          "name": "hierarchy",
+          "required": false,
+          "dataType": "@hierarchy",
+          "value": "$hierarchy",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b51977f0-92b0-4b39-9bdd-e4cbf987ee9e",
+          "name": "hierarchy1",
+          "required": false,
+          "dataType": "@hierarchy",
+          "value": "$hierarchy1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "촘스키 계층은 가장 상위인 Type3 문법(regular grammar): 정규문법부터 정규 문법 \u003e context-free 문법 \u003e context-sensitive 문법 \u003e unrestricted문법 의 계층구조를 가지므로 상위 문법의 조건을 하위 문법도 만족하여 상위 문법으로 하위 문법을 만들 수 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

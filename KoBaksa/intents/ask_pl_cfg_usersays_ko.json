@@ -1,0 +1,157 @@
+[
+  {
+    "id": "2ccbcb0b-31d5-4ca9-b5b9-76c85e6db0d5",
+    "data": [
+      {
+        "text": "어떻게 ",
+        "userDefined": false
+      },
+      {
+        "text": "CFG",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "보다 ",
+        "userDefined": false
+      },
+      {
+        "text": "상위집합",
+        "meta": "@kind_of_set",
+        "alias": "kind_of_set",
+        "userDefined": true
+      },
+      {
+        "text": "인 ",
+        "userDefined": false
+      },
+      {
+        "text": "UG, CSG",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "의 언어인 ",
+        "userDefined": false
+      },
+      {
+        "text": "REL",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": ", CSL를 ",
+        "userDefined": false
+      },
+      {
+        "text": "표현",
+        "meta": "@express",
+        "alias": "express",
+        "userDefined": true
+      },
+      {
+        "text": "할 수 ",
+        "userDefined": false
+      },
+      {
+        "text": "있는건가요?",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "bbc88e36-5450-47af-ae90-4a29030ad80e",
+    "data": [
+      {
+        "text": "프로그래밍 언어",
+        "meta": "@PL",
+        "alias": "PL",
+        "userDefined": true
+      },
+      {
+        "text": "가 ",
+        "userDefined": false
+      },
+      {
+        "text": "Context Free Grammar",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": " 를 따르는 ",
+        "userDefined": false
+      },
+      {
+        "text": "REL",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "CSL",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": true
+      },
+      {
+        "text": "이라는 글을 봤는데 이게 맞는 말인가요? 맞는 말이라면 어떻게 CFG보다 ",
+        "userDefined": false
+      },
+      {
+        "text": "상위집합",
+        "meta": "@kind_of_set",
+        "alias": "kind_of_set",
+        "userDefined": true
+      },
+      {
+        "text": "인 ",
+        "userDefined": false
+      },
+      {
+        "text": "UG",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "CSG",
+        "meta": "@CHType",
+        "alias": "CHType2",
+        "userDefined": true
+      },
+      {
+        "text": "의 언어인 REL, CSL를 ",
+        "userDefined": false
+      },
+      {
+        "text": "표현",
+        "meta": "@express",
+        "alias": "express",
+        "userDefined": true
+      },
+      {
+        "text": "할 수 있는건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

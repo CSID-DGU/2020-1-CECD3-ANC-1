@@ -1,0 +1,92 @@
+{
+  "id": "10f0a74d-a645-4529-b672-f67d0aa10976",
+  "name": "ask_NTSandTS_meaning",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3aa0614d-6c13-4dab-a305-9e39b9105ccb",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b45d735b-69b7-451c-bc61-d70868d7808a",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c2c745ea-0470-4598-bcf0-7400577c40a5",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a4f6f152-a51b-4444-9da8-0ccbd8e46b27",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "\u003c\u003e는 int_dict, id_list와 같이 Non-Terminal symbol을 묶어주기 위한 것이라고 볼 수 있습니다. \u003c\u003e로 묶이지 않은 ;, int 등은 Terminal symbol로 볼 수 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

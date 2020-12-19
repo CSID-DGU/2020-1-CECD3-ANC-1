@@ -1,0 +1,30 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "은 모든 형태의 ",
+        "userDefined": false
+      },
+      {
+        "text": "context-free language",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": "를 표현할 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

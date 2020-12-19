@@ -1,0 +1,74 @@
+[
+  {
+    "id": "4eaa95e2-6805-4289-8f90-db66fb611fb9",
+    "data": [
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "를 실제로 사용하나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": " 효율성때문에 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": true
+      },
+      {
+        "text": "로 바꾼다고 하셨는데 그러면 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "는 실제 ",
+        "userDefined": false
+      },
+      {
+        "text": "사용",
+        "meta": "@use",
+        "alias": "use",
+        "userDefined": true
+      },
+      {
+        "text": "은 하지 않는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

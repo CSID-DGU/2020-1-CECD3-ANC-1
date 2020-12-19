@@ -1,0 +1,9 @@
+{
+  "id": "9e69d9ac-1178-4990-b8d1-c8482c65bafe",
+  "name": "create",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "db2866a3-dd84-40f1-9e83-41568b43ce20",
+    "data": [
+      {
+        "text": "Derivation ",
+        "userDefined": false
+      },
+      {
+        "text": "개념",
+        "meta": "@QuestionType",
+        "alias": "questiontype",
+        "userDefined": false
+      },
+      {
+        "text": "에 대해 ",
+        "userDefined": false
+      },
+      {
+        "text": "설명",
+        "meta": "@QuestionType",
+        "alias": "questiontype1",
+        "userDefined": false
+      },
+      {
+        "text": "해주세요.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "252fded6-388e-4ef0-8fff-25a2f3f57e33",
+    "data": [
+      {
+        "text": "Derivation ",
+        "userDefined": false
+      },
+      {
+        "text": "\u003d\u003e,\u003d\u003e*",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "에 대한 ",
+        "userDefined": false
+      },
+      {
+        "text": "개념",
+        "meta": "@QuestionType",
+        "alias": "questiontype",
+        "userDefined": false
+      },
+      {
+        "text": "에 대해 다시한번 ",
+        "userDefined": false
+      },
+      {
+        "text": "설명",
+        "meta": "@QuestionType",
+        "alias": "questiontype1",
+        "userDefined": false
+      },
+      {
+        "text": "해주실 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

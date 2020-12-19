@@ -1,0 +1,51 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "정규표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "에서 언제 ",
+        "userDefined": false
+      },
+      {
+        "text": "+, *",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "기호",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "를 쓰고 ",
+        "userDefined": false
+      },
+      {
+        "text": "concatenation",
+        "meta": "@concatenate",
+        "alias": "concatenate",
+        "userDefined": true
+      },
+      {
+        "text": "하는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

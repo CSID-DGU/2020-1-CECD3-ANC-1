@@ -1,0 +1,57 @@
+{
+  "id": "3f60cd7d-04a3-43fa-b68c-f98d366122ff",
+  "name": "regi_question",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "regi_question-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "e5795d4d-6f45-4156-a2de-13915126680b",
+          "name": "teacher",
+          "required": false,
+          "dataType": "@teacher",
+          "value": "$teacher",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "미해결 질문에 등록할래?",
+            "미해결 질문에 등록하고 싶다는 뜻인가요?",
+            "미해결 질문 등록 페이지로 이동하고 싶은가요?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

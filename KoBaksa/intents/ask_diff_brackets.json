@@ -1,0 +1,148 @@
+{
+  "id": "d67ab1df-b61e-4f8a-a8a0-4089770132e1",
+  "name": "ask_diff_brackets",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "269e8caa-4ffc-4637-b1b8-50dcbd17f7c5",
+          "name": "number",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9d49120f-5ad2-493a-87a2-b68b1bfab9b7",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "eecc99b4-0409-487d-abd2-fd4f18a66d32",
+          "name": "NFA",
+          "required": false,
+          "dataType": "@NFA",
+          "value": "$NFA",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d4d59138-f239-405e-81bf-0e2e70d44d65",
+          "name": "DFA",
+          "required": false,
+          "dataType": "@DFA",
+          "value": "$DFA",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "13fe524e-ea06-4814-b35a-55b2e9470967",
+          "name": "standard",
+          "required": false,
+          "dataType": "@standard",
+          "value": "$standard",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2f7f25d5-49c1-4be0-ac4c-cb63e539ee3f",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f0d29b94-9c3b-4dd8-b733-f73b8d3d12d5",
+          "name": "different",
+          "required": false,
+          "dataType": "@different",
+          "value": "$different",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e6dcfab9-2e9c-46ff-a7ff-96dedfee8b63",
+          "name": "bracket",
+          "required": false,
+          "dataType": "@bracket",
+          "value": "$bracket",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "중괄호는 NFA에서 집합을 의미합니다. δ에서 q0와 q1은 모두 원소가 하나이므로 중괄호로 묶어도, 안 묶어도 상관이 없습니다. 하지만 {q0, q1}과 같은 결과는 집합이므로 중괄호로 묶어 주어야 합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

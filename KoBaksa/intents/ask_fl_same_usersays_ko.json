@@ -1,0 +1,45 @@
+[
+  {
+    "id": "f2144b01-a32d-42c0-9268-b5ff9bb1beaf",
+    "data": [
+      {
+        "text": "처음의 반과 뒤쪽의 반이 같은 즉, aAb와 같은 형태의 ",
+        "userDefined": false
+      },
+      {
+        "text": "언어",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "을 묻는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문제 해답",
+        "meta": "@QuestionType",
+        "alias": "QuestionType1",
+        "userDefined": true
+      },
+      {
+        "text": "은 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

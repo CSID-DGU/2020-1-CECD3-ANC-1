@@ -1,0 +1,15 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "3장 part4에서 교안 30-31페이지 내용 질문 드립니다.30페이지의 예시를 Regular Expression으로 표현하면 A \u003d 0A+1A\u003d0BB \u003d 1A + 1B + ε \u003d 1*(1A+ε) \u003d 1*1A+1A \u003d 0A + 1A + 01*1A + 01* \u003d (01*1 + 0 + 1)*01*이 맞나요?그리고 31페이지에서 inaccessible state를 제외시켜 만든 정규표현과 위의 정규표현이 같은 것인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

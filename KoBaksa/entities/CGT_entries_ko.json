@@ -1,0 +1,46 @@
+[
+  {
+    "value": "cgt",
+    "synonyms": [
+      "Compiler Generating Tools",
+      "컴파일러 자동화 도구"
+    ]
+  },
+  {
+    "value": "lexical_ag",
+    "synonyms": [
+      "lexical analyzer generator",
+      "어휘 분석기 생성기",
+      "LEX"
+    ]
+  },
+  {
+    "value": "parser_g",
+    "synonyms": [
+      "parser generator",
+      "PGS",
+      "파서 생성기",
+      "Stanford PGS",
+      "Wisonsin PGS",
+      "YACC",
+      "parser 생성기"
+    ]
+  },
+  {
+    "value": "acg",
+    "synonyms": [
+      "Automatic Code Generation",
+      "자동 코드 생성"
+    ]
+  },
+  {
+    "value": "ccs",
+    "synonyms": [
+      "compiler compiler system",
+      "컴파일러 컴파일러 시스템",
+      "PQCC",
+      "ACK",
+      "compiler compiler 시스템"
+    ]
+  }
+]

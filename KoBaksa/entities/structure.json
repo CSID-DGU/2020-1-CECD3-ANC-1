@@ -1,0 +1,9 @@
+{
+  "id": "d7bf26d7-a1d3-49c7-9805-fb6f2a54c2c9",
+  "name": "structure",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,241 @@
+[
+  {
+    "id": "b3fd4824-c91f-4f06-8a76-a15490e7a40e",
+    "data": [
+      {
+        "text": "type1",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "type2",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 설명해줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "155ecd3a-2973-442c-8510-3071f4c48f25",
+    "data": [
+      {
+        "text": "촘스키",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "type1",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "type2",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 설명해줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "66fb25ce-91d0-4019-abbc-44ef5384cae2",
+    "data": [
+      {
+        "text": "촘스키",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "type1",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "type2",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "의미",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "는 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "d33598a7-061d-41d3-b082-aff1831cf652",
+    "data": [
+      {
+        "text": "촘스키",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "type1",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "type2",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이점",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "은 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "2",
+        "userDefined": false
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Chomsky",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "type1",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "type2",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "의미",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이점",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "은 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

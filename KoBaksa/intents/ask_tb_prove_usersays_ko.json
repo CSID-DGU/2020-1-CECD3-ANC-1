@@ -1,0 +1,61 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "컴파일러 입문",
+        "meta": "@textbook",
+        "alias": "textbook",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "78",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "page의 ",
+        "userDefined": false
+      },
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "이 대수학적 성질을 만족하는 부분에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "11번",
+        "meta": "@sys.number",
+        "alias": "number1",
+        "userDefined": true
+      },
+      {
+        "text": "에대한 자세한 ",
+        "userDefined": false
+      },
+      {
+        "text": "증명",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "을 올려 주실 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

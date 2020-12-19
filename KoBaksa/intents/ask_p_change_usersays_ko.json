@@ -1,0 +1,65 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "생성규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule1",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "P",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": ": ",
+        "userDefined": false
+      },
+      {
+        "text": "A-\u003ea",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "이면 ",
+        "userDefined": false
+      },
+      {
+        "text": "δ(A,a)",
+        "meta": "@mathFormula",
+        "alias": "mathFormula1",
+        "userDefined": true
+      },
+      {
+        "text": " ∋",
+        "userDefined": false
+      },
+      {
+        "text": " F",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode1",
+        "userDefined": true
+      },
+      {
+        "text": "가 되는게 맞는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "Chomsky Hierarchy",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "type 0~3",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "의 언어들의 인식기는 ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "의 어느 단계에서 적용이 되는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

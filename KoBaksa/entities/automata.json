@@ -1,0 +1,9 @@
+{
+  "id": "0aaae991-88e0-436b-9c20-6d7991d140c0",
+  "name": "automata",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "a9a68825-4ac5-428c-ac00-2c445c289da6",
+  "name": "convert",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

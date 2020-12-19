@@ -1,0 +1,78 @@
+{
+  "id": "3fa87e50-fefb-4fac-bd34-f8df651d6925",
+  "name": "ask_fl_same",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6a40414b-242c-41a3-bd61-000061622fd4",
+          "name": "language",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b6e9928f-e013-4daf-9114-398e2763532a",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a9754203-5c42-415d-bbe4-24f6b74753f0",
+          "name": "QuestionType1",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "언어 L \u003d {(a^n)(b^n)|n\u003e\u003d1}을 생성하는 문법을 보면 언에 L에 속하는 문장의 형태는 a가 먼저 나오고 b가 나오는데 a와 b의 개수가 같습니다. \n같은 수의 terminal 심벌을 생성해야 하기 때문에 생성 규칙의 형태가 nonterminal 심벌이 terminal 심벌의 사이에 있어야 하고, 이에 따른 생성 규칙은 A-\u003eaAb가 되어 n이 증가함에 따라 aAb, aaAbb…가 됩니다. 그리고 이러한 생성규칙을 embedded 생성 규칙이라 부릅니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

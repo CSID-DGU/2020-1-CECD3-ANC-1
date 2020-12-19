@@ -1,0 +1,106 @@
+{
+  "id": "b36d69ea-0a06-4de6-a84e-950badf0caea",
+  "name": "ask_fini_RE",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6a7608c2-9512-4aa6-8fd1-2bb5670e0ad1",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8b7d9a0d-8276-454d-9ed5-e05ab30831cb",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7f620768-e899-4f6f-ae92-423cf8677c45",
+          "name": "StateOfNode",
+          "required": false,
+          "dataType": "@StateOfNode",
+          "value": "$StateOfNode",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7184d208-ef57-424e-a731-b609f1b32402",
+          "name": "RE",
+          "required": false,
+          "dataType": "@RE",
+          "value": "$RE",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f7692522-83da-4f3a-9650-5cb39e71bc22",
+          "name": "operator",
+          "required": false,
+          "dataType": "@operator",
+          "value": "$operator",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "종결상태일때에는 구성할 수 있는 모든 string의 집합을 표현하기 때문에 입실론이 더해집니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

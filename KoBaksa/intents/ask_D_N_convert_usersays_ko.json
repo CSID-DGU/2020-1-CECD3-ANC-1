@@ -1,0 +1,224 @@
+[
+  {
+    "id": "24190507-e198-4da4-8206-3fa157051822",
+    "data": [
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": false
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA1",
+        "userDefined": false
+      },
+      {
+        "text": "로 바꿀 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "87314340-953c-4449-8761-8c118c8fc56b",
+    "data": [
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": false
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA1",
+        "userDefined": false
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "컨버팅",
+        "meta": "@convert",
+        "alias": "convert",
+        "userDefined": false
+      },
+      {
+        "text": " 가능?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "5f991f98-f12d-406b-8f41-5fd23df11fff",
+    "data": [
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": false
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA1",
+        "userDefined": false
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "컨버팅",
+        "meta": "@convert",
+        "alias": "convert",
+        "userDefined": false
+      },
+      {
+        "text": " 할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 없어요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3a5ad2ee-9eae-4d24-b3e4-c1040760de8b",
+    "data": [
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": false
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA1",
+        "userDefined": false
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "컨버팅",
+        "meta": "@convert",
+        "alias": "convert",
+        "userDefined": false
+      },
+      {
+        "text": " 할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있어요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "Deterministic Finite Automata",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": true
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "컨버팅",
+        "meta": "@convert",
+        "alias": "convert",
+        "userDefined": true
+      },
+      {
+        "text": "할 수 없는 ",
+        "userDefined": false
+      },
+      {
+        "text": "Nondeterministic Finite Automata",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "도 존재할 수 있을지 궁금합니다. 또한, 컨버팅이 불가능한 경우, 이러한 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA1",
+        "userDefined": true
+      },
+      {
+        "text": "를어떻게 처리하는 것이 바람직한 가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

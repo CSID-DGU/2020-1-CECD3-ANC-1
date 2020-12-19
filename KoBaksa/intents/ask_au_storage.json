@@ -1,0 +1,120 @@
+{
+  "id": "08fcbd9e-d4a1-4b8d-840a-6faec5edb140",
+  "name": "ask_au_storage",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "52ae187b-e1be-43c2-bcb0-62d0f3389e76",
+          "name": "automata",
+          "required": false,
+          "dataType": "@automata",
+          "value": "$automata",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "35882e84-be14-40cd-a2af-8b9295d890c8",
+          "name": "storage",
+          "required": false,
+          "dataType": "@storage",
+          "value": "$storage",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7073d100-9c3e-434a-a597-b106445d99d9",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "19557788-b55d-4e95-b462-cf55300ce128",
+          "name": "efficiency",
+          "required": false,
+          "dataType": "@efficiency",
+          "value": "$efficiency",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "db229797-35e6-41e7-af10-a739dc0be7ae",
+          "name": "recognizer",
+          "required": false,
+          "dataType": "@recognizer",
+          "value": "$recognizer",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5afadc28-1bbd-4d7e-bfce-916eaab7cfe7",
+          "name": "exist",
+          "required": false,
+          "dataType": "@exist",
+          "value": "$exist",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "문장을 입력 받아 그 문장을 해당 문법에 대하여 yes or no를 판단하는 간단한 기능을 하는 인식기 때문에 storage가 존재하지않습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

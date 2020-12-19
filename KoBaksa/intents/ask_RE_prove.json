@@ -1,0 +1,92 @@
+{
+  "id": "de9e39dd-d859-425d-96c1-3da77a5256b4",
+  "name": "ask_RE_prove",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4a4ebafd-77dd-4ccb-b83b-fc22a187fb80",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5aa86705-b902-4d2c-a596-6b618ee9b041",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a3b81d92-ac54-43b1-8d7c-d7c2cb2c4bf8",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "52b104f9-e5ad-4426-862d-3320b0c58193",
+          "name": "RE",
+          "required": false,
+          "dataType": "@RE",
+          "value": "$RE",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "X\u003daX+b의 해를 구하고, X\u003da(star)b를 대입함으로써 a(star)b가 해임을 알 수 있습니다.   X\u003daX+b    \u003da(a*b)+b    \u003da(dagger)b+b \u003d (a(dagger)+E(epsilon))b \u003d a(star)b"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

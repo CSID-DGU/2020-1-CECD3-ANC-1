@@ -1,0 +1,133 @@
+[
+  {
+    "id": "193df3c7-79d0-46eb-8f4f-2581aa49feeb",
+    "data": [
+      {
+        "text": "튜링 기계",
+        "meta": "@turingMachine",
+        "alias": "turingMachine",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "촘스키 계층",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "연관성",
+        "meta": "@connection",
+        "alias": "connection",
+        "userDefined": true
+      },
+      {
+        "text": "이 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "b4de65ae-4a14-4b12-96c4-a004a20195d3",
+    "data": [
+      {
+        "text": "튜링 머신",
+        "meta": "@turingMachine",
+        "alias": "turingMachine",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "촘스키 계층",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 ",
+        "userDefined": false
+      },
+      {
+        "text": "설명",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "해 주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "튜링머신",
+        "meta": "@turingMachine",
+        "alias": "turingMachine",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "Chomsky hierarchy",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "연관성",
+        "meta": "@connection",
+        "alias": "connection",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 조금 더 자세히 ",
+        "userDefined": false
+      },
+      {
+        "text": "설명",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "해 주실 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

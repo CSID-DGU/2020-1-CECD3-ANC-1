@@ -1,0 +1,131 @@
+[
+  {
+    "id": "6da9027c-3718-43e4-b4ec-f8324cf2c9b4",
+    "data": [
+      {
+        "text": "오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "를 언어",
+        "userDefined": false
+      },
+      {
+        "text": "로 구현",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "하면 ",
+        "userDefined": false
+      },
+      {
+        "text": "epsilon",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "은 NULL",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 되나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1d8fa24d-4a45-4fea-a7b3-b99a87220aaa",
+    "data": [
+      {
+        "text": "오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "를 구현할 때 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "에 해당되는 것이 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "실제로 ",
+        "userDefined": false
+      },
+      {
+        "text": "automata",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": " 를 구현할 때 ",
+        "userDefined": false
+      },
+      {
+        "text": "epsilon",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "에 해당되는 것이 ",
+        "userDefined": false
+      },
+      {
+        "text": "어떤 것",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": " 인가요?(예를 들어, 공백문자나 C계열 언어에서 semicolon 같은 심볼들인가요?)",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

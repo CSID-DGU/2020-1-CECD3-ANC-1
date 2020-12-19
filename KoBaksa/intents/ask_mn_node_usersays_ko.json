@@ -1,0 +1,28 @@
+[
+  {
+    "id": "7303e8bc-3d32-4608-9252-a7ecb4b63c85",
+    "data": [
+      {
+        "text": "m^n이 의미하는 바가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "m이 그 레벨에서 나올 수 있는 노드(레벨)의 개수이고 n이 깊이라면 m^n은 다음 레벨의 개수인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

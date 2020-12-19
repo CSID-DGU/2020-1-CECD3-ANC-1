@@ -1,0 +1,72 @@
+[
+  {
+    "value": "COBOL",
+    "synonyms": [
+      "COBOL",
+      "코볼",
+      "common business oriented language"
+    ]
+  },
+  {
+    "value": "FORTRAN",
+    "synonyms": [
+      "FORTRAN",
+      "포트란",
+      "formula translation",
+      "과학 계산용 언어"
+    ]
+  },
+  {
+    "value": "ALGOL",
+    "synonyms": [
+      "ALGOL",
+      "algorithmic language",
+      "알골"
+    ]
+  },
+  {
+    "value": "Pascal",
+    "synonyms": [
+      "Pascal",
+      "파스칼",
+      "전산학적 언어"
+    ]
+  },
+  {
+    "value": "Ada",
+    "synonyms": [
+      "Ada",
+      "에이다"
+    ]
+  },
+  {
+    "value": "C++",
+    "synonyms": [
+      "C++",
+      "씨쁠쁠",
+      "씨쁠"
+    ]
+  },
+  {
+    "value": "Java",
+    "synonyms": [
+      "Java",
+      "자바"
+    ]
+  },
+  {
+    "value": "C#",
+    "synonyms": [
+      "C#",
+      "씨샾"
+    ]
+  },
+  {
+    "value": "pl",
+    "synonyms": [
+      "pl",
+      "programming language",
+      "프로그래밍 언어"
+    ]
+  }
+]

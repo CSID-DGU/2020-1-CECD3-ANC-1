@@ -1,0 +1,64 @@
+{
+  "id": "b8283983-8f08-4835-ad9f-197b37bc4461",
+  "name": "ask_ep_lhs",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e54c0f46-aa74-47dc-9c10-6bdcd01243f7",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "cf298726-e522-437b-a1e4-4b149f4ef55d",
+          "name": "bnfRule",
+          "required": false,
+          "dataType": "@bnfRule",
+          "value": "$bnfRule",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "E(epsilon)은 스트링의 길이가 영인 empty 스트링입니다. 따라서 어떤 값도 대치가 될 수 없기 때문에 LHS에 위치할 수 없습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

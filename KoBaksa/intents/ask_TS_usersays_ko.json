@@ -1,0 +1,61 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "파스칼",
+        "meta": "@PL",
+        "alias": "PL",
+        "userDefined": true
+      },
+      {
+        "text": "에서는 ",
+        "userDefined": false
+      },
+      {
+        "text": ";",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "가 ",
+        "userDefined": false
+      },
+      {
+        "text": "두",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": " 가지 ",
+        "userDefined": false
+      },
+      {
+        "text": "의미",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "로 쓰인다고 하셨는데 둘 다 ",
+        "userDefined": false
+      },
+      {
+        "text": "terminal symbol",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "에 해당되는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

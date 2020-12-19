@@ -1,0 +1,33 @@
+[
+  {
+    "value": "plus",
+    "synonyms": [
+      "plus",
+      "더하다",
+      "더함",
+      "더하는",
+      "더해주는",
+      "더해준다",
+      "+"
+    ]
+  },
+  {
+    "value": "minus",
+    "synonyms": [
+      "minus",
+      "빼다",
+      "뺌",
+      "-",
+      "빼는"
+    ]
+  },
+  {
+    "value": "multiply",
+    "synonyms": [
+      "multiply",
+      "곱하다",
+      "곱하는",
+      "*"
+    ]
+  }
+]

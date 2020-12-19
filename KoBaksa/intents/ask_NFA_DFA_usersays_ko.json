@@ -1,0 +1,57 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "ppt",
+        "meta": "@pdf",
+        "alias": "pdf",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Ch",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": "03",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": " 30p 중 ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": " -\u003e ",
+        "userDefined": false
+      },
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": true
+      },
+      {
+        "text": " 에서 δ\u0027 ([q0,q1],0) \u003d δ({q0,q1},0) \u003d {q0,q1} \u003d [q0,q1] δ\u0027 ([q0,q1],1) \u003d δ({q0,q1},1) \u003d {q0,q1} \u003d [q0,q1]위 두 값은 어떻게 가지나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

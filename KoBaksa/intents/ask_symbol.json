@@ -1,0 +1,50 @@
+{
+  "id": "26591a04-fe46-434a-a5d0-578bbf8a5a44",
+  "name": "ask_symbol",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fb05a591-8907-4037-8b4d-36c0804b738a",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "정규 문법에 같은 경우 ab는 a•b 로 표현되기 때문에 a•b로 생각하시면 됩니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

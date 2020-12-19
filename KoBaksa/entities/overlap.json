@@ -1,0 +1,9 @@
+{
+  "id": "15a8b26e-cb14-4b82-a5e5-a75b4b4123f4",
+  "name": "overlap",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

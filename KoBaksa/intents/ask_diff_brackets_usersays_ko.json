@@ -1,0 +1,214 @@
+[
+  {
+    "id": "ad713444-e803-4242-b7ba-5eaecc05dd1b",
+    "data": [
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": true
+      },
+      {
+        "text": "로 바꿀 때 바뀌는 ",
+        "userDefined": false
+      },
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": true
+      },
+      {
+        "text": "의 상태전이 델타프라임에서 상태에 중괄호를 씌워주는 ",
+        "userDefined": false
+      },
+      {
+        "text": "기준",
+        "meta": "@standard",
+        "alias": "standard",
+        "userDefined": true
+      },
+      {
+        "text": "이 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "교안 ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장 ",
+        "userDefined": false
+      },
+      {
+        "text": "30",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "페이지의 ",
+        "userDefined": false
+      },
+      {
+        "text": "예제",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 궁금한점이 있습니다. ",
+        "userDefined": false
+      },
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": true
+      },
+      {
+        "text": "로 바꿀 때 바뀌는 ",
+        "userDefined": false
+      },
+      {
+        "text": "DFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "의 상태전이 델타프라임에서 상태에 ",
+        "userDefined": false
+      },
+      {
+        "text": "중괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": "를 씌워주는 ",
+        "userDefined": false
+      },
+      {
+        "text": "기준",
+        "meta": "@standard",
+        "alias": "standard",
+        "userDefined": true
+      },
+      {
+        "text": "이 무엇가요? 변환 과정에 있어서 ",
+        "userDefined": false
+      },
+      {
+        "text": "대괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": "를 사용하는 것은 이해했습니다. 예제에서",
+        "userDefined": false
+      },
+      {
+        "text": "δ\u0027([q0],0) \u003d δ({q0},0) \u003d {q0,q1} \u003d [q0,q1] δ\u0027([q0],1) \u003d {q0} \u003d [q0] δ\u0027 ([q1],0) \u003d δ(q1,0) \u003d ∅",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "라고 나와 있는데  첫번째 줄의 q0에는 ",
+        "userDefined": false
+      },
+      {
+        "text": "중괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": "가 있고, 3번째 줄의 q1에는 ",
+        "userDefined": false
+      },
+      {
+        "text": "중괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": "가 없습니다. 변환 과정에 있어서 ",
+        "userDefined": false
+      },
+      {
+        "text": "대괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": "를 사용하는 것은 이해 했지만 ",
+        "userDefined": false
+      },
+      {
+        "text": "중괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": "에 대한 것은 잘 모르겠어서 질문 드립니다. 둘의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이점",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "은 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

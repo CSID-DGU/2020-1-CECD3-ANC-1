@@ -1,0 +1,254 @@
+[
+  {
+    "id": "ef86cc5f-04ea-4414-af64-6303b15e0144",
+    "data": [
+      {
+        "text": "왜 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 2",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "Storage",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "를 사용해야하고 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 3",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "저장공간",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "이 필요 없는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a182e740-ffd4-4256-bb3a-6fdb4278dfdc",
+    "data": [
+      {
+        "text": "왜 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 1",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "Storage",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "를 사용해야하고 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 3",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "저장공간",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "이 필요 없는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "4a189552-616a-42b5-9cdd-2f0c4ad48f95",
+    "data": [
+      {
+        "text": "왜 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 0",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "Storage",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "를 사용해야하고 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 3",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "저장공간",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "이 필요 없는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "5450edf2-44de-4703-be64-2613427e01e6",
+    "data": [
+      {
+        "text": "왜 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 0~2",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "Storage",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "를 사용해야하고 ",
+        "userDefined": false
+      },
+      {
+        "text": "type 3",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "저장공간",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "이 필요 없는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

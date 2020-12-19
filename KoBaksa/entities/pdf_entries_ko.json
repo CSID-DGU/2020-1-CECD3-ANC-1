@@ -1,0 +1,16 @@
+[
+  {
+    "value": "pdf",
+    "synonyms": [
+      "pdf",
+      "교안",
+      "pdf 파일"
+    ]
+  },
+  {
+    "value": "ppt",
+    "synonyms": [
+      "ppt"
+    ]
+  }
+]

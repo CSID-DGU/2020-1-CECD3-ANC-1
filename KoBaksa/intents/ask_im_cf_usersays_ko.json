@@ -1,0 +1,80 @@
+[
+  {
+    "id": "37e209a1-1647-459f-9606-a36ff6c27b5a",
+    "data": [
+      {
+        "text": "임베디드 생성규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "이 ",
+        "userDefined": false
+      },
+      {
+        "text": "type2",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "일 수 밖에 없는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f8afd034-c4e8-409b-8fea-c576f4c3e757",
+    "data": [
+      {
+        "text": "imbedded production",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "이 ",
+        "userDefined": false
+      },
+      {
+        "text": "context-free language",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "일 수 밖에 없는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

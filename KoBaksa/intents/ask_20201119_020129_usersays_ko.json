@@ -1,0 +1,21 @@
+[
+  {
+    "id": "f23312fa-00db-4a78-bbdc-260945e365d4",
+    "data": [
+      {
+        "text": "펌핑렘마",
+        "meta": "@pumpinglemma",
+        "alias": "pumpinglemma",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭔가요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "Grammar",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "부분에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "Terminal Symbol",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "Non-Terminal Symbol",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": " 부분의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "가 정확하게 이해가 가지 않는데 두개의 명확한 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "는 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

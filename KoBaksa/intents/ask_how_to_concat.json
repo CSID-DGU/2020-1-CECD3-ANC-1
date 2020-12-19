@@ -1,0 +1,78 @@
+{
+  "id": "d7b0fd58-4f3d-4a15-92ee-055b98d862ee",
+  "name": "ask_how_to_concat",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e8565841-7254-498d-9557-66003cdd7e45",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "215c6ca9-8f3c-4730-9bb2-5670f354b25d",
+          "name": "RE",
+          "required": false,
+          "dataType": "@RE",
+          "value": "$RE",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4e32e9b7-17e0-42ae-986a-fd73354fc1af",
+          "name": "concatenate",
+          "required": false,
+          "dataType": "@concatenate",
+          "value": "$concatenate",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "플러스 기호(+) 같은 경우 L(a+b)인 경우 L(a) U L(b) (UNION), *는(closure)로 ε을 포함한 모든 string의 집합을 표현합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

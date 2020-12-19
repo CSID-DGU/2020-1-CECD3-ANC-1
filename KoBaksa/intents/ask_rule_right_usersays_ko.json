@@ -1,0 +1,90 @@
+[
+  {
+    "id": "8f6be6b2-911a-4068-ac40-2080532fcc04",
+    "data": [
+      {
+        "text": "ε",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "을 유도가능한 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성규칙 S",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "는 다른 생성규칙의 오른쪽에 나타나면 안되는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "ε",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "을 유도가능한 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성규칙 S",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "는 다른 생성규칙의 오른쪽에 나타나면 안된다. 라는 규칙이 있었는데, 이 규칙이 ",
+        "userDefined": false
+      },
+      {
+        "text": "존재",
+        "meta": "@exist",
+        "alias": "exist",
+        "userDefined": true
+      },
+      {
+        "text": "하는 특별한 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가 있는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

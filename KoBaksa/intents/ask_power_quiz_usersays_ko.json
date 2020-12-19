@@ -1,0 +1,69 @@
+[
+  {
+    "id": "2ffdfd2c-ff00-4426-b393-40c04b389add",
+    "data": [
+      {
+        "text": "{a^nb^m|n,m\u003e\u003d1},",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": " 여기서 ^n은 power of n을 뜻함이라는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문제의 해답",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "은 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "df149717-cc98-438d-8c3e-622560442ed0",
+    "data": [
+      {
+        "text": "{a^nb^m|n,m\u003e\u003d1}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": ", 여기서 ^n은 power of n을 뜻함 문제의 ",
+        "userDefined": false
+      },
+      {
+        "text": "답",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

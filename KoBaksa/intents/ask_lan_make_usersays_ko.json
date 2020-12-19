@@ -1,0 +1,172 @@
+[
+  {
+    "id": "30a9d551-b46b-4d18-aa1f-39aba4b62e6f",
+    "data": [
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "로 언어를 생성할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있어?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2da37453-63f5-4f4a-ad31-5c2260e6d4a1",
+    "data": [
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "로 언어를 생성할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "6713aed9-e266-4fb0-a59d-3ba7fbb7f450",
+    "data": [
+      {
+        "text": "regular expression",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "으로 언어를 생성할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "0caa3647-99ca-4362-8554-36987f6a6d32",
+    "data": [
+      {
+        "text": "regular expression",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "finite automata",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "는 언어를 생성하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "수단",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "grammar",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "regular expression,",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "finite automation",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " 등 언어를 생성하는 수단이 여러가지인 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "는 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

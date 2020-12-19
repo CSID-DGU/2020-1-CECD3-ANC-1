@@ -1,0 +1,78 @@
+{
+  "id": "efde1f3d-ca76-4d21-ba5c-3a4d434bc893",
+  "name": "ask_d_rl_cfl",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5f16379a-b71d-4867-8dfd-efce5f6339f8",
+          "name": "language",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "54f369d5-650c-491f-a128-08e797d2cb84",
+          "name": "language1",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4905909e-5f1e-44d4-86bb-20ad11fef957",
+          "name": "different",
+          "required": false,
+          "dataType": "@different",
+          "value": "$different",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "context free language같은 경우 Push Down오토마타를 인식기로 사용하며 regular language같은 경우 Finite 오토마타를 인식기로 사용하고있습니다. 언어 L 에 대해서 L \u003d L(G) 를 만족하는 문맥-자유 문법 G가 존재해야만 context free language 라고 할 수 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

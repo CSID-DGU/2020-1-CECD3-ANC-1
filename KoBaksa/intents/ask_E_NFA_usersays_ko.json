@@ -1,0 +1,108 @@
+[
+  {
+    "id": "187816c7-978d-434b-a998-4136dc7acf2e",
+    "data": [
+      {
+        "text": "소규모 ",
+        "userDefined": false
+      },
+      {
+        "text": "오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "병합",
+        "meta": "@merge",
+        "alias": "merge",
+        "userDefined": true
+      },
+      {
+        "text": "하는 과정에서 왜 ",
+        "userDefined": false
+      },
+      {
+        "text": "E-NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "가 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성",
+        "meta": "@create",
+        "alias": "create",
+        "userDefined": true
+      },
+      {
+        "text": "되나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "소규모 ",
+        "userDefined": false
+      },
+      {
+        "text": "오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "병합",
+        "meta": "@merge",
+        "alias": "merge",
+        "userDefined": true
+      },
+      {
+        "text": "하는 과정에서 왜 ",
+        "userDefined": false
+      },
+      {
+        "text": "ε-NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "가 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성",
+        "meta": "@create",
+        "alias": "create",
+        "userDefined": true
+      },
+      {
+        "text": "되는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

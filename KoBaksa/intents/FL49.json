@@ -1,0 +1,35 @@
+{
+  "id": "9c2931d2-da5a-4d8f-9aaa-c82f93ea510a",
+  "name": "FL49",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "마지막 슬라이드에서 E(epsilon)-NFA를 DFA로 간략화 시키는데 간략화 시키는 과정에서 슬라이드에서 보여지는 형태로 바뀌는데 종결상태 A,C,D를 가지게 되고 A에서 D의 종결상태로 가기 위해 a와b를 인식해서 ab를 인식하고 C는 c를 인식해 스스로 종결상태 C가 되기 때문에 C*를 인식합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

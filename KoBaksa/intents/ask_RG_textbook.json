@@ -1,0 +1,148 @@
+{
+  "id": "c49f2df5-ff38-4301-b59d-4c16f7a5632c",
+  "name": "ask_RG_textbook",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "c0d69834-ed3d-46b6-991c-7f535863095a",
+          "name": "Chapter",
+          "required": false,
+          "dataType": "@Chapter",
+          "value": "$Chapter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f9041092-a27b-4699-86e1-63cfaff2cb4d",
+          "name": "number",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "bb607525-70fe-4429-9de4-9c3bcbbc01d8",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "55d5044b-3836-4b13-9670-66092f1aafcb",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "ce98ad94-0299-40d1-b334-a76575884b23",
+          "name": "mathFormula1",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "0cd6b87c-9399-4e33-9bcb-8973e1d52d70",
+          "name": "CHType",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9f0d7500-c8ab-418e-b6e1-c1518dd70603",
+          "name": "grammar1",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9c855dfc-3b0d-45b2-ab22-0d66693fce9c",
+          "name": "different",
+          "required": false,
+          "dataType": "@different",
+          "value": "$different",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "1번과 2번은 둘 다 type3의 형태이고 type3는 Regular Grammar를 뜻합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

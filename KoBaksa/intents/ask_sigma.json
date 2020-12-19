@@ -1,0 +1,64 @@
+{
+  "id": "30cac6e4-72cb-45f5-b6cd-dcc2f152fd8a",
+  "name": "ask_sigma",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5079b1b8-b8ef-4e6a-b660-3566a71b990c",
+          "name": "automata",
+          "required": false,
+          "dataType": "@automata",
+          "value": "$automata",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a87cdff1-6ba1-42fc-aca5-fc92e73f17fc",
+          "name": "FiniteAutomata",
+          "required": false,
+          "dataType": "@FiniteAutomata",
+          "value": "$FiniteAutomata",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "시그마는 Non-Terminal Symbol들의 집합입니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

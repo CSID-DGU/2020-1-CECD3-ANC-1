@@ -1,0 +1,9 @@
+{
+  "id": "3a123524-4e29-4b58-b784-725bcbc56e45",
+  "name": "GPFactor",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

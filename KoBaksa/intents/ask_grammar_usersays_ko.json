@@ -1,0 +1,80 @@
+[
+  {
+    "id": "d78baa77-647c-4e1c-b18f-35573cdbc1d4",
+    "data": [
+      {
+        "text": "type0",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "type3",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": "을 ",
+        "userDefined": false
+      },
+      {
+        "text": "만들 수",
+        "meta": "@create",
+        "alias": "create",
+        "userDefined": true
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "type0",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "로, ",
+        "userDefined": false
+      },
+      {
+        "text": "RG",
+        "meta": "@CHType",
+        "alias": "CHType1",
+        "userDefined": true
+      },
+      {
+        "text": "(type3)로 만들어진 ",
+        "userDefined": false
+      },
+      {
+        "text": "언어",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "의 문법(RG)을 만들 수 있는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

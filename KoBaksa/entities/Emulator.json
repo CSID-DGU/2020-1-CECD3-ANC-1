@@ -1,0 +1,9 @@
+{
+  "id": "a33d146a-a3f0-4089-ba00-8bb3a7bc6511",
+  "name": "Emulator",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

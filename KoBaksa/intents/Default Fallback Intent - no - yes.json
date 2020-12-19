@@ -1,0 +1,39 @@
+{
+  "id": "c7f12ab1-bc7d-4315-9d6a-acda00e29521",
+  "parentId": "4fbcccc9-b996-433f-b229-471c366d1bdc",
+  "rootParentId": "6e456132-31f0-4e7b-8d63-55254cda0b6b",
+  "name": "Default Fallback Intent - no - yes",
+  "auto": true,
+  "contexts": [
+    "DefaultFallbackIntent-no-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultFallbackIntent.DefaultFallbackIntent-custom-2.DefaultFallbackIntent-no-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "질문을 입력하세요."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

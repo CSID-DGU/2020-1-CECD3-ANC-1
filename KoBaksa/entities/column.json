@@ -1,0 +1,9 @@
+{
+  "id": "cb65df05-37d2-456f-9f94-58c836f80cbf",
+  "name": "column",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

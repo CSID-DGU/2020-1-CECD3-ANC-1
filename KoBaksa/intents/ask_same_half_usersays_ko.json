@@ -1,0 +1,460 @@
+[
+  {
+    "id": "8d6ad204-025e-4264-9f2d-1f132083ce2e",
+    "data": [
+      {
+        "text": "quiz",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "에서 나온 ",
+        "userDefined": false
+      },
+      {
+        "text": "ww",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "형태",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "언어",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "에 대한 ",
+        "userDefined": false
+      },
+      {
+        "text": "답",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "8ede7239-461e-4da8-b76d-72b38be3d839",
+    "data": [
+      {
+        "text": "퀴즈",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "에서 나왔던 ",
+        "userDefined": false
+      },
+      {
+        "text": "{ω ω | ω {a, b}*}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "의 문제 ",
+        "userDefined": false
+      },
+      {
+        "text": "해답",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "07ad1245-3381-46e7-a509-005e09211447",
+    "data": [
+      {
+        "text": "{ωω | ω ∈ {a, b}*}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": ", 즉 ",
+        "userDefined": false
+      },
+      {
+        "text": "처음의 반과 나중의 반이 같은 스트링의 집합",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 의 ",
+        "userDefined": false
+      },
+      {
+        "text": "정답",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f7a38b7d-4f4d-40c2-869d-e7c8be1020d2",
+    "data": [
+      {
+        "text": "퀴즈",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "로 나왔던 문제 중에 ",
+        "userDefined": false
+      },
+      {
+        "text": "ww 스트링",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "을 만들어내는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "풀이",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2ce7f54a-cd72-442a-8305-4899736b5321",
+    "data": [
+      {
+        "text": "{ωω | ω ∈ {a, b}*}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "language",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "의 production rules을 ",
+        "userDefined": false
+      },
+      {
+        "text": "정의",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "하는 문제의 ",
+        "userDefined": false
+      },
+      {
+        "text": "해답",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "을 알려주실 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2a81fd94-20a3-41fc-9579-818b2f53aa27",
+    "data": [
+      {
+        "text": "Assignment#",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "형식",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "언어 퀴즈에서   ",
+        "userDefined": false
+      },
+      {
+        "text": "L(G) \u003d { εε | ε ∈ {a, b}*}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": ", 즉 ",
+        "userDefined": false
+      },
+      {
+        "text": "처음",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "의 반과 ",
+        "userDefined": false
+      },
+      {
+        "text": "나중",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "의 반",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " 같은 알파벳 ",
+        "userDefined": false
+      },
+      {
+        "text": "{",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "a, b",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "}",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "에 ",
+        "userDefined": false
+      },
+      {
+        "text": "대한",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 스트링의 집합   문제의 풀이의 해답은 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1d7db2cd-4f98-4d9d-9d73-04f36f4d5b7d",
+    "data": [
+      {
+        "text": "2장",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "퀴즈",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 중 ",
+        "userDefined": false
+      },
+      {
+        "text": "{ωω | ω ∈ {a, b}*},",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": " 즉 ",
+        "userDefined": false
+      },
+      {
+        "text": "처음의 반과 나중의 반이 같은 스트링의 집합",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 문제에 대한 정확한 풀이와 ",
+        "userDefined": false
+      },
+      {
+        "text": "답",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "value": "type0",
+    "synonyms": [
+      "type0",
+      "type-0",
+      "type 0",
+      "type0 문법",
+      "type-0 문법",
+      "ug",
+      "무제약 문법",
+      "unrestricted 문법",
+      "unrestricted grammar"
+    ]
+  },
+  {
+    "value": "type1",
+    "synonyms": [
+      "type1",
+      "type 1",
+      "type-1",
+      "type1 문법",
+      "type-1 문법",
+      "csg",
+      "문맥 의존 문법",
+      "context sensitive 문법",
+      "context sensitive grammar"
+    ]
+  },
+  {
+    "value": "type2",
+    "synonyms": [
+      "type2",
+      "type 2",
+      "type-2",
+      "type2 문법",
+      "type-2 문법",
+      "cfg",
+      "문맥 자유 문법",
+      "context free 문법",
+      "context free grammar"
+    ]
+  },
+  {
+    "value": "type3",
+    "synonyms": [
+      "type3",
+      "type 3",
+      "type-3",
+      "type3 문법",
+      "type-3 문법",
+      "rg",
+      "정규 문법",
+      "regular 문법",
+      "regular grammar"
+    ]
+  }
+]

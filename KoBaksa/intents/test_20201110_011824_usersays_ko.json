@@ -1,0 +1,51 @@
+[
+  {
+    "id": "29adb78b-a852-403a-8d3f-adece759570f",
+    "data": [
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": "의 전단부를 ",
+        "userDefined": false
+      },
+      {
+        "text": "스캐너",
+        "meta": "@scanner",
+        "alias": "scanner",
+        "userDefined": false
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "parser",
+        "meta": "@parser",
+        "alias": "parser",
+        "userDefined": false
+      },
+      {
+        "text": "로 구성하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": false
+      },
+      {
+        "text": "가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

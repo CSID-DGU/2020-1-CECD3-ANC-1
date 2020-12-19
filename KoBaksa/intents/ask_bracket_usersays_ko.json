@@ -1,0 +1,118 @@
+[
+  {
+    "id": "8298b151-daaf-49b6-a20a-2563b708a7ac",
+    "data": [
+      {
+        "text": "괄호가 많이 나오는데 혹시 ",
+        "userDefined": false
+      },
+      {
+        "text": "소괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "중괄호",
+        "meta": "@bracket",
+        "alias": "bracket1",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "대괄호",
+        "meta": "@bracket",
+        "alias": "bracket2",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 다시 설명해 주실 수 있으신 가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "eefd25f2-9853-446d-beb8-e43023dbb2e0",
+    "data": [
+      {
+        "text": "강의 중 ",
+        "userDefined": false
+      },
+      {
+        "text": "괄호",
+        "meta": "@bracket",
+        "alias": "bracket",
+        "userDefined": true
+      },
+      {
+        "text": "가 많이 나오는데 혹시 ",
+        "userDefined": false
+      },
+      {
+        "text": "()",
+        "meta": "@bracket",
+        "alias": "bracket1",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "{}",
+        "meta": "@bracket",
+        "alias": "bracket2",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "[]",
+        "meta": "@bracket",
+        "alias": "bracket3",
+        "userDefined": true
+      },
+      {
+        "text": "에 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 다시 설명해 주실 수 있으신 가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "Regular Language",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "Context Free Language",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": " 이 둘의 ",
+        "userDefined": false
+      },
+      {
+        "text": "포함",
+        "meta": "@relation",
+        "alias": "relation",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "관계",
+        "meta": "@relation",
+        "alias": "relation",
+        "userDefined": true
+      },
+      {
+        "text": "가 헷갈립니다. ",
+        "userDefined": false
+      },
+      {
+        "text": "집합",
+        "meta": "@relation",
+        "alias": "relation",
+        "userDefined": true
+      },
+      {
+        "text": "으로 본다면 ",
+        "userDefined": false
+      },
+      {
+        "text": "RL",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "CFL",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": " 중 어떤 것이 더 큰 ",
+        "userDefined": false
+      },
+      {
+        "text": "집합",
+        "meta": "@relation",
+        "alias": "relation",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

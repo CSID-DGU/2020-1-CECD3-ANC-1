@@ -1,0 +1,9 @@
+{
+  "id": "ea136581-f7fc-4043-95ed-582fd4162e35",
+  "name": "prove",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

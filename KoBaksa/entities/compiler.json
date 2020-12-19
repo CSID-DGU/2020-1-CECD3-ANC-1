@@ -1,0 +1,9 @@
+{
+  "id": "02658940-d33d-4348-8002-b90fd03b4a5b",
+  "name": "compiler",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

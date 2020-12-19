@@ -1,0 +1,35 @@
+{
+  "id": "e0a6bb0d-6d89-4d43-abed-d679a74bce75",
+  "name": "ask_mn_node",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "M^n은 모든 상태의 개수입니다. n의 길이를 가지는 string에 각각의 자리에는 M개의 상태가 들어갈 수 있기 때문에 M^n의 가짓수가 나오는 겁니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

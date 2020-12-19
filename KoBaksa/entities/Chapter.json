@@ -1,0 +1,9 @@
+{
+  "id": "0d5c6c9e-1d38-451f-b2f9-fc1c4abb0e67",
+  "name": "Chapter",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

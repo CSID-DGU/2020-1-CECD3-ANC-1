@@ -1,0 +1,109 @@
+[
+  {
+    "id": "f6701c71-b06d-417f-99e5-cf909ad2fc1c",
+    "data": [
+      {
+        "text": "아니오",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "b814c49a-40e6-4de6-8109-041b97dfcff6",
+    "data": [
+      {
+        "text": "아닙니다.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "b5422027-c1c3-4c1e-8f02-e484c21d4612",
+    "data": [
+      {
+        "text": "놉",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3a6479bf-e0ab-4332-b817-9b7f4132d9c1",
+    "data": [
+      {
+        "text": "노",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2efcfdd4-9496-45fb-b3a3-a90625276e2c",
+    "data": [
+      {
+        "text": "아냐",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2e36b2c6-1880-47b1-915c-ad0554313e7f",
+    "data": [
+      {
+        "text": "아니야",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "42002c86-6293-4954-be6f-8e12993f66ff",
+    "data": [
+      {
+        "text": "그말이 아닌데",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "e34378ba-1d85-41e4-8cb3-2439cfd80b33",
+    "data": [
+      {
+        "text": "아니",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

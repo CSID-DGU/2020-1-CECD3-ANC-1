@@ -1,0 +1,41 @@
+{
+  "id": "eff2172d-3d59-43cf-941e-0817ed8aabf5",
+  "parentId": "2d4f7f74-74b1-45c4-a84b-dd691e807a71",
+  "rootParentId": "2d4f7f74-74b1-45c4-a84b-dd691e807a71",
+  "name": "Default Welcome Intent - question",
+  "auto": true,
+  "contexts": [
+    "DefaultWelcomeIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "질문이 뭔데?",
+            "말해 보세요",
+            "자세히 말해보세요"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

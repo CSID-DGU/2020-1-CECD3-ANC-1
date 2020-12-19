@@ -1,0 +1,25 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "mirror image language (ww^R)과 처음의 반과 나중의 반이 같은 string (ww), 이 2가지 경우에 해당하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "들은 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

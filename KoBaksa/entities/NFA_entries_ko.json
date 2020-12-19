@@ -1,0 +1,16 @@
+[
+  {
+    "value": "NFA",
+    "synonyms": [
+      "NFA",
+      "Non-deterministic Finite Automata"
+    ]
+  },
+  {
+    "value": "E-NFA",
+    "synonyms": [
+      "ε-NFA",
+      "E-NFA"
+    ]
+  }
+]

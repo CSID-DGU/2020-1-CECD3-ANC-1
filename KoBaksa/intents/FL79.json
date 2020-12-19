@@ -1,0 +1,50 @@
+{
+  "id": "120eb9ef-e6e3-4ed6-b583-7b133b08638e",
+  "name": "FL79",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "02218cf9-4246-43b4-8b88-a5964dc128c3",
+          "name": "interpreter",
+          "required": false,
+          "dataType": "@interpreter",
+          "value": "$interpreter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "IC는 Intermediate Code로 중간 언어이기 때문에 중간 언어를 사용하여 코딩을 진행하시면 됩니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

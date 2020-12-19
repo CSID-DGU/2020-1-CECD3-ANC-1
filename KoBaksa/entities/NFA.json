@@ -1,0 +1,9 @@
+{
+  "id": "1740d672-d2be-427f-8e28-ec73b0d8a6f1",
+  "name": "NFA",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

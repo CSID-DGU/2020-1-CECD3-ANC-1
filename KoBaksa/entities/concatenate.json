@@ -1,0 +1,9 @@
+{
+  "id": "ee51a321-6acc-4219-a497-15099f031baa",
+  "name": "concatenate",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

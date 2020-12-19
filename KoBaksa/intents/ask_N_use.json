@@ -1,0 +1,78 @@
+{
+  "id": "7ec32ba0-80bd-4476-a648-c33228b4a7e6",
+  "name": "ask_N_use",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d94d80ea-3ed1-4e0b-acfc-dda54b83a2d9",
+          "name": "use",
+          "required": false,
+          "dataType": "@use",
+          "value": "$use",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "bec71af7-87a8-4598-8d94-c300e7b77f56",
+          "name": "NFA",
+          "required": false,
+          "dataType": "@NFA",
+          "value": "$NFA",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b36fe475-e115-443a-bce5-7385b1dc7a94",
+          "name": "DFA",
+          "required": false,
+          "dataType": "@DFA",
+          "value": "$DFA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "DFA는 NFA보다 프로그램으로 구현하였을 때 효율성이 좋습니다. 언어의 구조로 표현할 때는 NFA를 사용합니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

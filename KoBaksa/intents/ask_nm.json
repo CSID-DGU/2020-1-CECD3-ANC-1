@@ -1,0 +1,35 @@
+{
+  "id": "a742c221-dac1-4403-80c1-c346ad290d4b",
+  "name": "ask_nm",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "컴파일러의 frontend는 소스 프로그램 관련 처리를 진행하고 backend는 machine 관련 처리를 진행합니다.language가 a, b, c의 세가지(N \u003d 3)가 있고 machine이 A, B의 두가지(M \u003d 2)가 있다고 가정해 봅시다.frontend와 backend가 나뉘어 있지 않다면 (a, A), (b, A), (c, A), (a, B), (b, B), (c, B)의 6가지(N * M) 컴파일러가 있어야 합니다.하지만 a를 처리하는 frontend와 b를 처리하는 frontend, c를 처리하는 frontend가 있고 A를 처리하는 backend, B를 처리하는 backend가 존재한다면총 5가지(N + M)로 a, b, c, A, B를 처리할 수 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

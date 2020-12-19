@@ -1,0 +1,352 @@
+[
+  {
+    "id": "a69c4de1-a357-4ced-bcb7-4d2a8591a0fc",
+    "data": [
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "구조",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "는 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "e4dccf1a-8b9c-4457-bdea-f51ace455b9e",
+    "data": [
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "구조",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "가 어떻게 돼요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "e984c043-948d-4706-90d6-3e2e352bb94b",
+    "data": [
+      {
+        "text": "전처리기",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "9ceb8f79-3472-4aa1-a0cb-e87f8c127126",
+    "data": [
+      {
+        "text": "preprocessor",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "711c645a-1e6a-4286-a4e4-dfd4b5e35ed8",
+    "data": [
+      {
+        "text": "프리프로세서",
+        "meta": "@preprocessor",
+        "alias": "preprocessor",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "de5d50c7-9fba-4cbb-ab3f-ebda95d30c05",
+    "data": [
+      {
+        "text": "인터프리터",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이점",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "e61dcc35-5f80-418a-9e00-d3000177ad01",
+    "data": [
+      {
+        "text": "interpreter",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a0285e8e-cd21-4188-b6fe-c09b48adfbde",
+    "data": [
+      {
+        "text": "인터프리터",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "5c841fd2-4ba1-4a87-b588-bc2caf35bf6f",
+    "data": [
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "크로스 컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "차이점",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "이 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "c8c630c3-b1a4-4c85-8265-dfbe753fcef0",
+    "data": [
+      {
+        "text": "Cross-Complier",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "6127136c-c3ee-4382-9eaa-e80f547d2e34",
+    "data": [
+      {
+        "text": "크로스 컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "827192fe-31e2-4b87-b414-bf0bc6221d1e",
+    "data": [
+      {
+        "text": "Compiler",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 설명해줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "34714ebe-94e2-41df-b689-789cb1372aa5",
+    "data": [
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해 설명해줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "8e6ba1bc-01c4-4ade-9f9b-3f79990360e0",
+    "data": [
+      {
+        "text": "Compiler",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2c10b972-18f2-4c05-815b-9ad0c017dbb8",
+    "data": [
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

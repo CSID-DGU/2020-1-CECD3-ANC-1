@@ -1,0 +1,120 @@
+{
+  "id": "ad670ea3-6e5b-425d-a9f9-6e486f817a8b",
+  "name": "ask_chomsky_mach",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "555e0ea0-228f-4547-bcc4-b14065b1d781",
+          "name": "ChomskyHierarchy",
+          "required": false,
+          "dataType": "@ChomskyHierarchy",
+          "value": "$ChomskyHierarchy",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f89b156a-4a02-4452-adca-effc13117040",
+          "name": "PL",
+          "required": false,
+          "dataType": "@PL",
+          "value": "$PL",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e4cd4d55-ffba-489d-ae4c-3515ef1f8034",
+          "name": "automata",
+          "required": false,
+          "dataType": "@automata",
+          "value": "$automata",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "60e6a83f-fb4a-473c-a62b-193dc6e78fc6",
+          "name": "use",
+          "required": false,
+          "dataType": "@use",
+          "value": "$use",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "26cfcb1c-59b3-4f56-bc31-713f52bf8326",
+          "name": "turingMachine",
+          "required": false,
+          "dataType": "@turingMachine",
+          "value": "$turingMachine",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b225a727-1121-4682-90e2-23ff7bd57857",
+          "name": "hierarchy",
+          "required": false,
+          "dataType": "@hierarchy",
+          "value": "$hierarchy",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "type0언어에서는 Turing machine을 인식기로 사용합니다. Turing machine은 기계어를 인식을 하기 때문에 상위계층의 언어를 인식을 할 수가 없습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

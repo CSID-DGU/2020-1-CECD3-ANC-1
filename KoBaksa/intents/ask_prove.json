@@ -1,0 +1,64 @@
+{
+  "id": "15a9016c-d82e-4d2f-bdc4-160266be843b",
+  "name": "ask_prove",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "548c67da-4dad-4ca6-8b74-a0956e0599f6",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f50209fa-2984-4e8a-8b1c-58b564822f00",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "δ(q,xa) \u003d δ(δ(q,x),a)는 q0에서 스트링 xa를 본다는 의미입니다.그러므로 q0으로부터 차례로 xa를 보는 것으로 모든 입력심벌을 보고 q1로 이동하는 것을 나타내면δ(q0,xa) \u003d δ(δ(q0,x),a)          \u003d δ(q0, a)          \u003d q1 이 됩니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,64 @@
+{
+  "id": "176eadd8-4a2f-4fb8-a82a-07964e4c3b8c",
+  "name": "ask_comp_usage",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f0760981-3315-4b95-90d5-8c280af8db12",
+          "name": "formalLanguage",
+          "required": false,
+          "dataType": "@formalLanguage",
+          "value": "$formalLanguage",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e442453a-e4db-4a9c-a338-3b5395ab98e1",
+          "name": "compiler",
+          "required": false,
+          "dataType": "@compiler",
+          "value": "$compiler",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "형식언어는 컴파일러를 구성하기 위해 사용되는 언어로 컴파일러 이외에 사용되는 곳은 없습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

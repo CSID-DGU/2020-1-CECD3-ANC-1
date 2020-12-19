@@ -1,0 +1,41 @@
+{
+  "id": "79dfa517-06fc-4774-b4bb-3b3971a28528",
+  "parentId": "17ebac2d-35ab-4b8d-a747-4c2e18596d97",
+  "rootParentId": "17ebac2d-35ab-4b8d-a747-4c2e18596d97",
+  "name": "unwanted_answer - no",
+  "auto": true,
+  "contexts": [
+    "unwanted_answer-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "unwanted_answer.unwanted_answer-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "도움이 안돼서 미안해",
+            "좀 더 똑똑한 고박사가 되도록 노력할게"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

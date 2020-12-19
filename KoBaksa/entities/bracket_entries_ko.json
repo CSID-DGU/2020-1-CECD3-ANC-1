@@ -1,0 +1,36 @@
+[
+  {
+    "value": "bracket",
+    "synonyms": [
+      "bracket",
+      "괄호"
+    ]
+  },
+  {
+    "value": "square bracket",
+    "synonyms": [
+      "square bracket",
+      "대괄호",
+      "[",
+      "]",
+      "[]"
+    ]
+  },
+  {
+    "value": "curly brackets",
+    "synonyms": [
+      "curly brackets",
+      "중괄호",
+      "{",
+      "}",
+      "{}"
+    ]
+  },
+  {
+    "value": "parentheses",
+    "synonyms": [
+      "parentheses",
+      "소괄호"
+    ]
+  }
+]

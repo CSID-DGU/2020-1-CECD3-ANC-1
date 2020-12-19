@@ -1,0 +1,68 @@
+[
+  {
+    "id": "b3c51f21-110d-4dfe-bdac-d069b30f0cd0",
+    "data": [
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "형식언어",
+        "meta": "@formalLanguage",
+        "alias": "formalLanguage",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "compiler",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": " 이외에도 사용되는 곳이 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "지금 배우는 ",
+        "userDefined": false
+      },
+      {
+        "text": "형식언어",
+        "meta": "@formalLanguage",
+        "alias": "formalLanguage",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": " 이외에 사용되는 곳이 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

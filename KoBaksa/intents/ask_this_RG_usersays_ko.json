@@ -1,0 +1,31 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "a^m b^m c^n",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": " 는 ",
+        "userDefined": false
+      },
+      {
+        "text": "정규문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

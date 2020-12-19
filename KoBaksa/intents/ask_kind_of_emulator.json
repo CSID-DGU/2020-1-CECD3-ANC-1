@@ -1,0 +1,78 @@
+{
+  "id": "415d2c13-c925-461d-abb3-8f3b7aa03e26",
+  "name": "ask_kind_of_emulator",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6dcc0bc6-59b8-4191-a374-9e35dd7f0f99",
+          "name": "interpreter",
+          "required": false,
+          "dataType": "@interpreter",
+          "value": "$interpreter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "88120d77-76bf-416c-af9e-54b9c4ee6f01",
+          "name": "Emulator",
+          "required": false,
+          "dataType": "@Emulator",
+          "value": "$Emulator",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2e1ed675-044b-42a0-a629-e2be4478bb6e",
+          "name": "kinds",
+          "required": false,
+          "dataType": "@kinds",
+          "value": "$kinds",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "emulator는 다른 시스템을 복제하는 시스템으로써 interpreter와는 다릅니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

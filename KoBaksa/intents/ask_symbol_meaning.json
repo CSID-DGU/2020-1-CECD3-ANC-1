@@ -1,0 +1,64 @@
+{
+  "id": "aca73072-db7d-46f2-84dc-44c6c2dace3a",
+  "name": "ask_symbol_meaning",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1081e161-a027-4e51-8a9a-09801fcb7c4e",
+          "name": "symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$symbol",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7a254fd1-1824-4536-8f5c-978ff9945f62",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "L(G)\u003d(Vn,Vt,P,S) L은 언어를 뜻하며 문장들을 원소로갖는 집합G는 문법을 뜻하며 총 4가지로 표현이됩니다. Vn은 유한집합의 nonterminal SymbolVt 는 유한집합의 terminal Symbol P 는  유한집합의 생성 규칙 S는 Vn의 한 symbol(Start Symbol)이며 시작단계를 표현할 때 사용됩니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

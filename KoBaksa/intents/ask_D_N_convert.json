@@ -1,0 +1,92 @@
+{
+  "id": "ab4d1a0b-a0ff-4c92-98c5-dba986a625f9",
+  "name": "ask_D_N_convert",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "eacccf39-bf99-4af5-a8f6-a9218b08f341",
+          "name": "DFA",
+          "required": false,
+          "dataType": "@DFA",
+          "value": "$DFA",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c5ef1938-690a-4798-89b8-c47e5bdbe0d9",
+          "name": "NFA",
+          "required": false,
+          "dataType": "@NFA",
+          "value": "$NFA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2443e6c5-1c2e-4f83-ae5c-bb6bb8a2faca",
+          "name": "convert",
+          "required": false,
+          "dataType": "@convert",
+          "value": "$convert",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a4926fc3-8639-448a-b62c-db23546adfcb",
+          "name": "NFA1",
+          "required": false,
+          "dataType": "@NFA",
+          "value": "$NFA1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "NFA to DFA Converting은 항상 가능합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

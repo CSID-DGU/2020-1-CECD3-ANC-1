@@ -1,0 +1,9 @@
+{
+  "id": "27296264-320c-4628-b297-325078827b09",
+  "name": "kind_of_set",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

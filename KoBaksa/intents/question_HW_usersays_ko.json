@@ -1,0 +1,218 @@
+[
+  {
+    "id": "36ca2ff4-c6b0-417b-9ef1-1b337e5d483b",
+    "data": [
+      {
+        "text": "오늘까지",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": false
+      },
+      {
+        "text": "인 ",
+        "userDefined": false
+      },
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 있어?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "66d95510-4a6b-42ac-a5cb-629c8c1795d3",
+    "data": [
+      {
+        "text": "오늘까지",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": false
+      },
+      {
+        "text": "인 ",
+        "userDefined": false
+      },
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ad3e0dc5-1ec1-4f50-829e-af314f3737a1",
+    "data": [
+      {
+        "text": "내가 아직 안한 ",
+        "userDefined": false
+      },
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐 있어?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "bf7c69a2-931c-452e-98c4-652db5a90f97",
+    "data": [
+      {
+        "text": "오늘",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": false
+      },
+      {
+        "text": " 새로 나온 ",
+        "userDefined": false
+      },
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 있어?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "8ee368d3-6e21-4473-89da-21927ee8caee",
+    "data": [
+      {
+        "text": "내일까지",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": false
+      },
+      {
+        "text": " 내야되는 ",
+        "userDefined": false
+      },
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 있어?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "06504e2a-2b87-4941-936f-9a3d09364c6a",
+    "data": [
+      {
+        "text": "이번주",
+        "meta": "@sys.date-period",
+        "alias": "date-period",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 몇개야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a42b88ca-05cd-4d76-93f3-f1ace1a0c27a",
+    "data": [
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 제출 기한 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a7b0a359-e36c-480b-8bf7-d59ca6964245",
+    "data": [
+      {
+        "text": "이번주",
+        "meta": "@sys.date-period",
+        "alias": "date-period",
+        "userDefined": false
+      },
+      {
+        "text": "까지 ",
+        "userDefined": false
+      },
+      {
+        "text": "과제",
+        "meta": "@Assignment",
+        "alias": "assignment",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐해야 돼?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

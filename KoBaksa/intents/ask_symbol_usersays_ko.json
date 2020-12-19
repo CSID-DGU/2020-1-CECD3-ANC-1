@@ -1,0 +1,64 @@
+[
+  {
+    "id": "72ae80e4-3679-4871-98e1-3f1e72172a45",
+    "data": [
+      {
+        "text": "ab",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "a•b",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "교수님이 칠판에 쓰신 것들 중 ",
+        "userDefined": false
+      },
+      {
+        "text": "ab",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": " 이런 식으로 쓰신 건 ",
+        "userDefined": false
+      },
+      {
+        "text": "a•b",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "라고 보면 되나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

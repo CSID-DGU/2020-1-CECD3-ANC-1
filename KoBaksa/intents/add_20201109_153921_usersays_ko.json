@@ -1,0 +1,39 @@
+[
+  {
+    "id": "6397ac71-b92a-4d47-afa0-ebee90a2dd51",
+    "data": [
+      {
+        "text": "컴파일러 ",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "인터프리터 ",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": false
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이는 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇인가요? ",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "id": "80eb61ae-101b-4ca1-8072-27ede6f9d4b6",
+  "name": "ask_content_lecture",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5711d87c-b0e4-42a4-9666-c3a8816fadc8",
+          "name": "Chapter",
+          "required": false,
+          "dataType": "@Chapter",
+          "value": "$Chapter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "bde8a318-995f-4611-a3e9-3a0228a2d996",
+          "name": "number",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a41cd871-5f57-4f8a-b6b9-14bd6fd1335f",
+          "name": "number1",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$number1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8c573c73-d3fb-4eb4-acca-3ad4cea61195",
+          "name": "kind_of_set",
+          "required": false,
+          "dataType": "@kind_of_set",
+          "value": "$kind_of_set",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "247fd18c-3517-44f1-9d9a-4c17cc52e125",
+          "name": "kind_of_set1",
+          "required": false,
+          "dataType": "@kind_of_set",
+          "value": "$kind_of_set1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "q로 조합할 수 있는 개수이기때문에 부분집합으로 표현이 되며 set으로 표기가됩니다.  오직 생성규칙(P)이 하나로만 구성된다면 DFA 로 부르게 됩니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "fe7202b2-ae51-4ca5-a7a4-06ed4a93b9a5",
+    "data": [
+      {
+        "text": "생성 규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "간소화",
+        "meta": "@simple",
+        "alias": "simple",
+        "userDefined": true
+      },
+      {
+        "text": " 된 ",
+        "userDefined": false
+      },
+      {
+        "text": "형태",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "가 아니면 틀린건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "7bf99dd7-3d4d-4f19-a6a6-6d198846dedc",
+    "data": [
+      {
+        "text": "생성 규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "겹쳐서",
+        "meta": "@overlap",
+        "alias": "overlap",
+        "userDefined": true
+      },
+      {
+        "text": " 만들어지면 틀린건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "94cce8a9-e060-4af5-9a9b-1d1681ea700a",
+    "data": [
+      {
+        "text": "G",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "로부터 ",
+        "userDefined": false
+      },
+      {
+        "text": "L",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "을 만드는 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성 규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "에서 생성 규칙",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "중복",
+        "meta": "@overlap",
+        "alias": "overlap",
+        "userDefined": true
+      },
+      {
+        "text": "된다면 틀린건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "G",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "로부터",
+        "userDefined": false
+      },
+      {
+        "text": " L",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "을 만드는 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성 규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "내에서 중복되는 항목들이 있는 것을 판단하지 못한 경우, 생성 규칙이 ",
+        "userDefined": false
+      },
+      {
+        "text": "겹쳐져서",
+        "meta": "@overlap",
+        "alias": "overlap",
+        "userDefined": true
+      },
+      {
+        "text": " 만들어질 수 있는데  최대한 ",
+        "userDefined": false
+      },
+      {
+        "text": "간소화",
+        "meta": "@simple",
+        "alias": "simple",
+        "userDefined": true
+      },
+      {
+        "text": "된 형태가 아니라면 틀린 생성 규칙인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

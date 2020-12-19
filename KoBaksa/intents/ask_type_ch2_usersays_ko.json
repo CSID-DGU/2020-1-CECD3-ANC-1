@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cb586362-1047-4a16-bac2-fdff13b90bbf",
+    "data": [
+      {
+        "text": "2",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " p22에서 왜  ",
+        "userDefined": false
+      },
+      {
+        "text": "|α|\u003e\u003d0",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "2",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " p22에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "type2",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "를 설명해주실 때, ",
+        "userDefined": false
+      },
+      {
+        "text": "A -\u003e α",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "에서 |A|\u003d1이고 |α|\u003e\u003d0라고 설명해주신거는 예외 케이스를 포함해서 |α|\u003d0의 경우를 ",
+        "userDefined": false
+      },
+      {
+        "text": "포함",
+        "meta": "@relation",
+        "alias": "relation",
+        "userDefined": true
+      },
+      {
+        "text": "시키신 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

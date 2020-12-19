@@ -1,0 +1,92 @@
+{
+  "id": "53016ae6-5db4-4501-b2de-d76423aad9ec",
+  "name": "ask_gr_method",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "9f10197d-8c2d-4466-bf41-1702c99c3fa0",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "bc080543-437b-4efe-9e8b-e6472ab2801f",
+          "name": "productionRule",
+          "required": false,
+          "dataType": "@productionRule",
+          "value": "$productionRule",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a429ec3c-b7fa-4855-9bb1-1db36901220a",
+          "name": "only",
+          "required": false,
+          "dataType": "@only",
+          "value": "$only",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "53059d13-9b97-4f73-99c9-3f5d4a628b7b",
+          "name": "exist",
+          "required": false,
+          "dataType": "@exist",
+          "value": "$exist",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "문법마다 생성규칙의 형태가 존재합니다. Type0문법: A → B일 때 A는 empty 스트링 될 수 없습니다. Type1문법: A → B에서 B길이는 A보다 길어야 합니다. Type2문법: A → a에서 좌측은 하나의 nonterminal 심벌 이며 , 우측은 nonterminal 심벌 과 terminal 심벌로 이루어진 스트링이어야 합니다. Type3문법: 생성규칙을  A → tB, A → Bt 형태로 두가지로 표현이 됩니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

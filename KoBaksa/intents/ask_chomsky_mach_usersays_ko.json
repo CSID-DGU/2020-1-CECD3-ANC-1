@@ -1,0 +1,239 @@
+[
+  {
+    "id": "021db8d1-ace2-46c0-9a8e-6dcb3f83a162",
+    "data": [
+      {
+        "text": "튜링 머신",
+        "meta": "@turingMachine",
+        "alias": "turingMachine",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "상위계층",
+        "meta": "@hierarchy",
+        "alias": "hierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "의 언어를 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 없어?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "7205d88e-f0c4-4dbf-abd3-fd93229713b2",
+    "data": [
+      {
+        "text": "Turing machine",
+        "meta": "@turingMachine",
+        "alias": "turingMachine",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "상위계층",
+        "meta": "@hierarchy",
+        "alias": "hierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "의 언어를 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 없나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "648e07e4-56a7-444a-85cf-3968f929546c",
+    "data": [
+      {
+        "text": "프로그래밍 언어",
+        "meta": "@PL",
+        "alias": "PL",
+        "userDefined": false
+      },
+      {
+        "text": "에 대해 유한 ",
+        "userDefined": false
+      },
+      {
+        "text": "상태",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "기계",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "쓸모",
+        "meta": "@use",
+        "alias": "use",
+        "userDefined": true
+      },
+      {
+        "text": "가 없어?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "436320fd-4cda-4ca0-859b-1817d1fbd305",
+    "data": [
+      {
+        "text": "프로그래밍 언어",
+        "meta": "@PL",
+        "alias": "PL",
+        "userDefined": false
+      },
+      {
+        "text": "에 대해서 유한 ",
+        "userDefined": false
+      },
+      {
+        "text": "상태",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "기계",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "쓸모",
+        "meta": "@use",
+        "alias": "use",
+        "userDefined": true
+      },
+      {
+        "text": "가 없나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "촘스키 계층",
+        "meta": "@ChomskyHierarchy",
+        "alias": "ChomskyHierarchy",
+        "userDefined": true
+      },
+      {
+        "text": "에서 하위 계층의 ",
+        "userDefined": false
+      },
+      {
+        "text": "오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "로는 상위계층의 언어를 인식할 수 없다고 배웠는데, 그러면 ",
+        "userDefined": false
+      },
+      {
+        "text": "프로그래밍 언어",
+        "meta": "@PL",
+        "alias": "PL",
+        "userDefined": true
+      },
+      {
+        "text": "에 대해서 유한 상태 기계는 ",
+        "userDefined": false
+      },
+      {
+        "text": "쓸모",
+        "meta": "@use",
+        "alias": "use",
+        "userDefined": true
+      },
+      {
+        "text": " 없는게 되는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

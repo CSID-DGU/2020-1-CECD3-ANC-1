@@ -1,0 +1,287 @@
+[
+  {
+    "id": "b08a52b9-477a-4ac2-8518-c186085e78a2",
+    "data": [
+      {
+        "text": "종결 상태",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": false
+      },
+      {
+        "text": "에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": false
+      },
+      {
+        "text": "를 생성할때 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": false
+      },
+      {
+        "text": "을 ",
+        "userDefined": false
+      },
+      {
+        "text": "더해주는",
+        "meta": "@operator",
+        "alias": "operator",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "는?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "5384c984-9f9a-4438-a54d-fd41edb37b15",
+    "data": [
+      {
+        "text": "종결 상태",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": false
+      },
+      {
+        "text": "에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": false
+      },
+      {
+        "text": "를 만들때 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": false
+      },
+      {
+        "text": "을 ",
+        "userDefined": false
+      },
+      {
+        "text": "더해주는",
+        "meta": "@operator",
+        "alias": "operator",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "는 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1bd9ff85-03cf-45d7-aca9-445cc84174a6",
+    "data": [
+      {
+        "text": "종결 상태",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": false
+      },
+      {
+        "text": "에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": false
+      },
+      {
+        "text": "를 만들때 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": false
+      },
+      {
+        "text": "을 더하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "6f5373e6-aed3-4abd-817a-8b6649c84d26",
+    "data": [
+      {
+        "text": "종결 상태",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "에는 ",
+        "userDefined": false
+      },
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "를 만들때 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "을 ",
+        "userDefined": false
+      },
+      {
+        "text": "더하는",
+        "meta": "@operator",
+        "alias": "operator",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "종결 상태",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "에는 ",
+        "userDefined": false
+      },
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": "을 만들때 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "을 ",
+        "userDefined": false
+      },
+      {
+        "text": "더해준다",
+        "meta": "@operator",
+        "alias": "operator",
+        "userDefined": true
+      },
+      {
+        "text": "고 하는데 그 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

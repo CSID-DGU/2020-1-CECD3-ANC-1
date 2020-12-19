@@ -1,0 +1,99 @@
+[
+  {
+    "id": "7e6abdc7-c543-4b42-9ed1-d4e24220db2f",
+    "data": [
+      {
+        "text": "Regular Grammar",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "는 어떻게 ",
+        "userDefined": false
+      },
+      {
+        "text": "쓰여",
+        "meta": "@use",
+        "alias": "use",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "4ee8721b-bb5f-44bc-a4ee-c4b9901433d7",
+    "data": [
+      {
+        "text": "정규문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "은 어떻게 ",
+        "userDefined": false
+      },
+      {
+        "text": "쓰이나",
+        "meta": "@use",
+        "alias": "use",
+        "userDefined": true
+      },
+      {
+        "text": "요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "Regular Grammar",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "(",
+        "userDefined": false
+      },
+      {
+        "text": "정규 문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": ")를 만드는 것은 실무에서 어떻게 ",
+        "userDefined": false
+      },
+      {
+        "text": "쓰일 수",
+        "meta": "@use",
+        "alias": "use",
+        "userDefined": true
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

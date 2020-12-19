@@ -1,0 +1,87 @@
+[
+  {
+    "id": "5b0a287b-60f6-4a4c-a6b6-68d9a55cf9e8",
+    "data": [
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " p5에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "A-\u003e tB",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "일 때, ",
+        "userDefined": false
+      },
+      {
+        "text": "t∈VT*",
+        "meta": "@mathFormula",
+        "alias": "mathFormula1",
+        "userDefined": true
+      },
+      {
+        "text": "인데, p4에서는 ",
+        "userDefined": false
+      },
+      {
+        "text": "A-\u003e aB, A-\u003ea",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "a∈VT",
+        "meta": "@mathFormula",
+        "alias": "mathFormula2",
+        "userDefined": true
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "terminal 심볼",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "이 속하는 집합이 다른 것을 확인할 수 있는데 그 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가, p4에서는 string이 concatenation되지 않은 길이 1인 문자열에 대해서 표현해서 그런 것이며, p5에서는 t가 T(2장 p1에서 말하는 alphabet)의 원소가 concatenate(붙여진) 상태이므로 VT*로 표현하는 것인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

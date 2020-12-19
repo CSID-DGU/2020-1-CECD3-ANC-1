@@ -1,0 +1,9 @@
+{
+  "id": "60809eb4-d253-4dbe-a61d-b5803ecee703",
+  "name": "preprocessor",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

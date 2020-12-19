@@ -1,0 +1,299 @@
+[
+  {
+    "id": "0c9df7e0-8a30-4a8c-843c-c135a666a9e6",
+    "data": [
+      {
+        "text": "자바",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "가 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "69fd0d72-7a8a-40ff-b7d8-20a2fc6ab98f",
+    "data": [
+      {
+        "text": "파스칼",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "cf3a425b-e169-47c9-bff9-437663afecf6",
+    "data": [
+      {
+        "text": "C#",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "92f3e205-2023-4181-b023-ca1a01281218",
+    "data": [
+      {
+        "text": "Java",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "가 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "28cc63e3-3ea3-4e4d-a004-efa7514f56d9",
+    "data": [
+      {
+        "text": "C++",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f1d988a3-e351-41fe-b501-bf15119c229c",
+    "data": [
+      {
+        "text": "Ada",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "가 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "09b60f67-fd19-4b95-b001-f59bfe1085b3",
+    "data": [
+      {
+        "text": "Pascal",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f4ea66f0-babc-4c80-8a32-58a16f2e5b59",
+    "data": [
+      {
+        "text": "알골",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ebe489e5-374b-4f00-b90e-6c5078ab1dd7",
+    "data": [
+      {
+        "text": "ALGOL",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f0f7426b-fd2f-4741-99ae-f003da11ec04",
+    "data": [
+      {
+        "text": "포트란",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "32f94344-cb5a-4862-82ee-deeecc0dffe8",
+    "data": [
+      {
+        "text": "FORTRAN",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "801191bc-c59b-4250-a7db-e18bb374376e",
+    "data": [
+      {
+        "text": "코볼",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ac1fd07d-5a26-496a-950e-329ce7f7c2df",
+    "data": [
+      {
+        "text": "COBOL",
+        "meta": "@PL",
+        "alias": "pl",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

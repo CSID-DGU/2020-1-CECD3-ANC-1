@@ -1,0 +1,23 @@
+[
+  {
+    "value": "set",
+    "synonyms": [
+      "set",
+      "집합"
+    ]
+  },
+  {
+    "value": "subset",
+    "synonyms": [
+      "subset",
+      "부분 집합"
+    ]
+  },
+  {
+    "value": "상위집합",
+    "synonyms": [
+      "상위집합",
+      "상위 집합"
+    ]
+  }
+]

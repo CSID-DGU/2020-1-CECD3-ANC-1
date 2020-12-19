@@ -1,0 +1,78 @@
+{
+  "id": "4f6bb76e-55df-4790-bf18-ad1f86edfdea",
+  "name": "ask_derivation",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "53f0edf4-74de-49b9-b7c0-80bfe7ce58a9",
+          "name": "questiontype",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$questiontype",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "3e6e24e0-5b5d-4c29-bbb8-46c667c85170",
+          "name": "questiontype1",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$questiontype1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "3c209f2e-0a7b-4298-92f8-57214d4850fd",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "\"(\u003d\u003e)는 직접 유도된다고 말하며, 생성 규칙 a-\u003eb가 존재하고 r, g ㅌ V(star)이면\nrag\u003d\u003erbg로 표기합니다. 이는 한 스트링에서 생성 규칙을 한 번 적용해서 다른 스트링으로 바뀌는 것을 나타내고, 유도 과정이라 말합니다. \u003d\u003e*는 영 번 이상의 유도 과정을 나타냅니다.\""
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

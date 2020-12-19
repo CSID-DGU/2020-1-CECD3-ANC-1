@@ -1,0 +1,31 @@
+[
+  {
+    "id": "cb0afe1d-dffb-4a6f-a4d4-464ea005e656",
+    "data": [
+      {
+        "text": "compiler",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "interpreter",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": false
+      },
+      {
+        "text": "는 뭐가 달라요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

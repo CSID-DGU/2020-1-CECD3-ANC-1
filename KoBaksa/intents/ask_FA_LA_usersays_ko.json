@@ -1,0 +1,41 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "Finite Automata",
+        "meta": "@FiniteAutomata",
+        "alias": "FiniteAutomata",
+        "userDefined": true
+      },
+      {
+        "text": "는 정규 언어를 인식하는 인식기인데, 그러면 ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "Lexical Analyzer",
+        "meta": "@structure",
+        "alias": "structure",
+        "userDefined": true
+      },
+      {
+        "text": "에서 작동되는 것인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

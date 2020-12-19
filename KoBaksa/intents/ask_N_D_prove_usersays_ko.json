@@ -1,0 +1,71 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "NFA",
+        "meta": "@NFA",
+        "alias": "NFA",
+        "userDefined": true
+      },
+      {
+        "text": "에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "DFA",
+        "meta": "@DFA",
+        "alias": "DFA",
+        "userDefined": true
+      },
+      {
+        "text": "로 변환 하고 ",
+        "userDefined": false
+      },
+      {
+        "text": "L(M)\u003dL(M\u0027)",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "이라는 것을 입력 스트링의 길이에 대하여 ",
+        "userDefined": false
+      },
+      {
+        "text": "귀납법",
+        "meta": "@prove",
+        "alias": "prove",
+        "userDefined": true
+      },
+      {
+        "text": "으로 증명 하신다고 했는데 정확히 ",
+        "userDefined": false
+      },
+      {
+        "text": "증명",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "방법",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "은 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

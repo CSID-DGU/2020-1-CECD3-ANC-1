@@ -1,0 +1,9 @@
+{
+  "id": "ac820d01-3143-4293-a39c-2556acfad99f",
+  "name": "interpreter",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

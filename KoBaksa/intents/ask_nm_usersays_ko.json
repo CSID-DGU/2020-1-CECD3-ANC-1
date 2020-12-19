@@ -1,0 +1,15 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "1장에서 cpu가 frontend와 backend로 나누어지면서 N*m에서 n+m으로 변했다고 하셨는데 N*M은 cpu개수인 건 알겠는데 n+m은 어떤 의미인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

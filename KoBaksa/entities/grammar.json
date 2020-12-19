@@ -1,0 +1,9 @@
+{
+  "id": "4813512b-c414-4b96-8e65-aef38efa99b4",
+  "name": "grammar",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

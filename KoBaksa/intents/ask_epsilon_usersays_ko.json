@@ -1,0 +1,86 @@
+[
+  {
+    "id": "b8f96f31-fbbe-4391-975f-c0264432ede8",
+    "data": [
+      {
+        "text": "종결 노드",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "에 반드시 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "이 포함되어야 하나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " part 3 에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "종결 노드",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "에 반드시 ",
+        "userDefined": false
+      },
+      {
+        "text": "e",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "(",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": ")이 포함되어야 하나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

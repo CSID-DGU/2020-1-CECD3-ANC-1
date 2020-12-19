@@ -1,0 +1,9 @@
+{
+  "id": "dc390caa-a02e-4148-99fc-e24f5e3c6c73",
+  "name": "line",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

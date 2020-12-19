@@ -1,0 +1,45 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "복잡한 ",
+        "userDefined": false
+      },
+      {
+        "text": "production rule",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "을 구하는 것이 어려운데, ",
+        "userDefined": false
+      },
+      {
+        "text": "production rule",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "을 구할 때 쉽게 규칙을 발견할 수 있는 ",
+        "userDefined": false
+      },
+      {
+        "text": "방법",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "같은 것이 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

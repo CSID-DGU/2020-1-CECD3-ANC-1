@@ -1,0 +1,17 @@
+[
+  {
+    "id": "508f35bc-274c-42ac-849f-1c17680df72e",
+    "data": [
+      {
+        "text": "cross-compiler",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

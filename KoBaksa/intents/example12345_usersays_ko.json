@@ -1,0 +1,17 @@
+[
+  {
+    "id": "eaca7018-f7ee-4542-b202-04ef25945c2a",
+    "data": [
+      {
+        "text": "cross-compiler",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "a16cfff5-69de-405e-850f-e4f7e0ec3ce1",
+    "data": [
+      {
+        "text": "ㄴㄴ",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "0517a17c-ca4d-4714-a1dd-ffeb06c8f73a",
+    "data": [
+      {
+        "text": "아니요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1ff1bc99-4236-4330-9441-1c214c10be47",
+    "data": [
+      {
+        "text": "종료",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1c91ad22-3f8b-4079-bc0c-8be086720531",
+    "data": [
+      {
+        "text": "끝",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "d0abcb9c-1159-4e08-afec-59668b112d56",
+    "data": [
+      {
+        "text": "필요없어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "80ada5d5-6364-46ad-91c9-a8a34541c70b",
+    "data": [
+      {
+        "text": "아니",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "7c3143d6-3085-4258-8358-60e0e6a65b84",
+    "data": [
+      {
+        "text": "없어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a61350a7-4345-4682-b472-3fe78b483d9b",
+    "data": [
+      {
+        "text": "아니 없어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

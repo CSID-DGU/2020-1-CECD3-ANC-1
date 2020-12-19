@@ -1,0 +1,135 @@
+[
+  {
+    "id": "13eab3c6-8c18-4447-985a-7a95548cb925",
+    "data": [
+      {
+        "text": "교수",
+        "meta": "@teacher",
+        "alias": "teacher",
+        "userDefined": true
+      },
+      {
+        "text": "님한테 질문하고 싶어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "74cb474c-cf31-4fe4-84cf-4b5211884a3b",
+    "data": [
+      {
+        "text": "조교",
+        "meta": "@teacher",
+        "alias": "teacher",
+        "userDefined": true
+      },
+      {
+        "text": "님한테 질문하고 싶어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1530f4be-efc3-494e-bbb2-59a47125f84d",
+    "data": [
+      {
+        "text": "조교",
+        "meta": "@teacher",
+        "alias": "teacher",
+        "userDefined": true
+      },
+      {
+        "text": "님한테 물어볼래",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ae6cc27b-9f39-4b58-9352-dc8354010b0f",
+    "data": [
+      {
+        "text": "조교",
+        "meta": "@teacher",
+        "alias": "teacher",
+        "userDefined": true
+      },
+      {
+        "text": "님한테 물어보고 싶어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ff09c514-adcc-4a23-b828-892dd34e69ad",
+    "data": [
+      {
+        "text": "질문 미해결질문 게시판",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": "에 올릴래",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "321d0f59-2198-4b3a-b6fa-64918a5d81b2",
+    "data": [
+      {
+        "text": "질문 등록할래",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ff9bcc5e-e61a-41db-9a4a-b634fce97e54",
+    "data": [
+      {
+        "text": "질문 등록",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1601d123-ff44-4803-a685-278d7a5e54eb",
+    "data": [
+      {
+        "text": "질문 등록하기",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "824c7dc0-6a65-480e-bfc3-19c84460a313",
+  "name": "analysis",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

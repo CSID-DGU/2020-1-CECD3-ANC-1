@@ -1,0 +1,106 @@
+{
+  "id": "6f58946a-a30f-4ee6-bb42-40e4b17c6cae",
+  "name": "ask_bracket",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1b3d8727-7021-4615-a76a-b7c26d2af1e0",
+          "name": "bracket",
+          "required": false,
+          "dataType": "@bracket",
+          "value": "$bracket",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7ee391a2-cc2f-4f98-b54e-2117711db859",
+          "name": "bracket1",
+          "required": false,
+          "dataType": "@bracket",
+          "value": "$bracket1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c4d163c7-7d2a-428f-ba68-9fae4a03af60",
+          "name": "bracket2",
+          "required": false,
+          "dataType": "@bracket",
+          "value": "$bracket2",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "266b1b43-0139-4d8d-8d6a-67d1d004a4df",
+          "name": "bracket3",
+          "required": false,
+          "dataType": "@bracket",
+          "value": "$bracket3",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e025aec4-40d4-484b-a847-3ce33ed3c044",
+          "name": "different",
+          "required": false,
+          "dataType": "@different",
+          "value": "$different",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "문법에서 ()는 터미널 심벌, 논터미널 심벌, 시작 심벌 등을 표시하는 괄호이고, {}는 집합, 언어의 형태를 표현할 때 주로 쓰이고, []는 비결정적 유한 오토마타에서 상태를 나타낼 때 주로 쓰입니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

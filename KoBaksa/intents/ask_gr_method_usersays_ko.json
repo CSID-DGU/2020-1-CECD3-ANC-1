@@ -1,0 +1,184 @@
+[
+  {
+    "id": "d54bd8d3-3549-41ed-baed-3821b395016a",
+    "data": [
+      {
+        "text": "특정 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": false
+      },
+      {
+        "text": "을 만족하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": false
+      },
+      {
+        "text": "은 다양하게 ",
+        "userDefined": false
+      },
+      {
+        "text": "존재",
+        "meta": "@exist",
+        "alias": "exist",
+        "userDefined": true
+      },
+      {
+        "text": "하나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "c9a7a83a-8a87-46bc-ab04-7118be7692bd",
+    "data": [
+      {
+        "text": "특정 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": false
+      },
+      {
+        "text": "을 만족하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성 규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": false
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "유일",
+        "meta": "@only",
+        "alias": "only",
+        "userDefined": true
+      },
+      {
+        "text": "한가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "9d2044fa-9e6e-4bea-8ac9-2be9d244e037",
+    "data": [
+      {
+        "text": "특정 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": false
+      },
+      {
+        "text": "을 만족하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": false
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "유일",
+        "meta": "@only",
+        "alias": "only",
+        "userDefined": true
+      },
+      {
+        "text": "해?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "특정 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "을 만족시키는 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성규칙",
+        "meta": "@productionRule",
+        "alias": "productionRule",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "유일",
+        "meta": "@only",
+        "alias": "only",
+        "userDefined": true
+      },
+      {
+        "text": "하게 ",
+        "userDefined": false
+      },
+      {
+        "text": "존재",
+        "meta": "@exist",
+        "alias": "exist",
+        "userDefined": true
+      },
+      {
+        "text": "하는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

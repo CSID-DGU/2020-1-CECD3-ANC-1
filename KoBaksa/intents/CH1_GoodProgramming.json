@@ -1,0 +1,50 @@
+{
+  "id": "f9120c7f-8a56-4c57-9743-b58a928bc48b",
+  "name": "CH1_GoodProgramming",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fa782e8a-4e37-4527-9e2d-cd7eaa856163",
+          "name": "GPFactor",
+          "required": false,
+          "dataType": "@GPFactor",
+          "value": "$GPFactor",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "좋은 프로그래밍 언어의 요건에는 언어의 확장성이 우수, 좋은 프로그래밍 환경등이 있습니다. 자세한 내용은 1단원 교안 3 페이지를 참고하세요."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1a7cd8c0-4082-4740-bd96-e2d389af64cf",
+    "data": [
+      {
+        "text": "컴파일러와 ",
+        "userDefined": false
+      },
+      {
+        "text": "인터프리터의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이는 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇인가요? ",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

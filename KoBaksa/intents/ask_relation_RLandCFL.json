@@ -1,0 +1,64 @@
+{
+  "id": "334c1bab-71cd-4510-8ea0-2340355e7a7b",
+  "name": "ask_relation_RLandCFL",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "40a365f2-b2c0-42aa-9660-9539e2da5e1b",
+          "name": "relation",
+          "required": false,
+          "dataType": "@relation",
+          "value": "$relation",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f756d4da-1d26-4263-861a-88c48f52b32b",
+          "name": "language",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "CFL 이 더 큽니다. 포함관계는 regular language ⊂ context-free language ⊂ context-sensitive language ⊂ unrestricted language 입니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

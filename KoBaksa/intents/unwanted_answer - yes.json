@@ -1,0 +1,55 @@
+{
+  "id": "5fef6918-dfe5-43ed-8ecc-dc1ccff1c7c0",
+  "parentId": "17ebac2d-35ab-4b8d-a747-4c2e18596d97",
+  "rootParentId": "17ebac2d-35ab-4b8d-a747-4c2e18596d97",
+  "name": "unwanted_answer - yes",
+  "auto": true,
+  "contexts": [
+    "unwanted_answer-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "unwanted_answer.unwanted_answer-yes",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "954c50df-2782-4f00-8318-bc6ddf6076f3",
+          "name": "person",
+          "required": false,
+          "dataType": "@sys.person",
+          "value": "$person",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "웹페이지 url 제공"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

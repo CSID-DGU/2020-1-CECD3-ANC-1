@@ -1,0 +1,9 @@
+{
+  "id": "f769b4c5-21f6-49ea-9ebd-1ae5113702a2",
+  "name": "recognizer",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

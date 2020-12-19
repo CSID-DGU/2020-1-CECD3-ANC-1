@@ -1,0 +1,94 @@
+[
+  {
+    "id": "cd609e0b-d26c-4a17-8a18-52f9e3a02f59",
+    "data": [
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "0f22380a-86fb-4408-9930-418d79eb3a92",
+    "data": [
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "뜻",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "시작하자 마자 ",
+        "userDefined": false
+      },
+      {
+        "text": "종결",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "automata",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "를 왜 ",
+        "userDefined": false
+      },
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "이라고 하나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

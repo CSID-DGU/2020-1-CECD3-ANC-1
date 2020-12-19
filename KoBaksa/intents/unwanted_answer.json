@@ -1,0 +1,42 @@
+{
+  "id": "17ebac2d-35ab-4b8d-a747-4c2e18596d97",
+  "name": "unwanted_answer",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "unwanted_answer-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "미해결 질문 페이지로 이동해서 질문 등록해주세요",
+            "미해결 질문 등록 페이지로 이동해서 질문을 등록해주세요",
+            "미해결 질문에 등록해주세요"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

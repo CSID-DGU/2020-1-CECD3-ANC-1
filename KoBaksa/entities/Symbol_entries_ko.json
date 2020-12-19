@@ -1,0 +1,30 @@
+[
+  {
+    "value": "L(G) , {w| .. }, Vt, 기호",
+    "synonyms": [
+      "L(G) , {w| .. }  Vt 기호",
+      "L(G)",
+      "{w| .. }",
+      "Vt",
+      "기호"
+    ]
+  },
+  {
+    "value": "epsilon",
+    "synonyms": [
+      "epsilon",
+      "입실론",
+      "E",
+      "엡실론"
+    ]
+  },
+  {
+    "value": "terminal_symbol",
+    "synonyms": [
+      "terminal symbol",
+      "terminal 심볼",
+      "terminal심볼",
+      "터미널 심볼"
+    ]
+  }
+]

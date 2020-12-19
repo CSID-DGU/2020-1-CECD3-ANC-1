@@ -1,0 +1,39 @@
+[
+  {
+    "id": "8cee4b7d-d23a-45d6-96b6-a6ced1444bbd",
+    "data": [
+      {
+        "text": "cross-compiler ",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": "아침형 ",
+        "userDefined": false
+      },
+      {
+        "text": "인터프리터 ",
+        "meta": "@interpreter",
+        "alias": "interpreter",
+        "userDefined": false
+      },
+      {
+        "text": "새벽에는 ",
+        "userDefined": false
+      },
+      {
+        "text": "아주 ",
+        "userDefined": false
+      },
+      {
+        "text": "졸리네요 ",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

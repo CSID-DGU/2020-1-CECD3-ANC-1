@@ -1,0 +1,78 @@
+{
+  "id": "029bfc47-bc5b-48af-9716-e212b6a70d39",
+  "name": "ask_FA_LA",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "2c13aee7-77bf-4248-bdb4-4f262da7bacd",
+          "name": "FiniteAutomata",
+          "required": false,
+          "dataType": "@FiniteAutomata",
+          "value": "$FiniteAutomata",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9343b170-c80e-4bda-b453-23c7c9ce90aa",
+          "name": "structure",
+          "required": false,
+          "dataType": "@structure",
+          "value": "$structure",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "97253ca7-61a1-4dff-b022-101f622226a8",
+          "name": "compiler",
+          "required": false,
+          "dataType": "@compiler",
+          "value": "$compiler",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "Finite Automata 는 정규언어를  인식하는 인식기이고 어휘분석기인 스캐너이기 때문에 컴파일러의 Lexical Analyzer에서 작동합니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

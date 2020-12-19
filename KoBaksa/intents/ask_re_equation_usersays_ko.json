@@ -1,0 +1,80 @@
+[
+  {
+    "id": "588fa883-2faa-4108-9c17-8051bc78a072",
+    "data": [
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " equation을 풀 때 ",
+        "userDefined": false
+      },
+      {
+        "text": "X \u003d aX+b",
+        "meta": "@RE",
+        "alias": "RE1",
+        "userDefined": true
+      },
+      {
+        "text": " 형태로 풀면 모든 ",
+        "userDefined": false
+      },
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE2",
+        "userDefined": true
+      },
+      {
+        "text": " equation을 풀 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "c210ac99-7059-4882-b7b8-db5d14eeb846",
+    "data": [
+      {
+        "text": "regular expression",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " equation을 풀 때 ",
+        "userDefined": false
+      },
+      {
+        "text": "X \u003d aX+b",
+        "meta": "@RE",
+        "alias": "RE1",
+        "userDefined": true
+      },
+      {
+        "text": " 형태로 풀면 모든 ",
+        "userDefined": false
+      },
+      {
+        "text": "RE",
+        "meta": "@RE",
+        "alias": "RE2",
+        "userDefined": true
+      },
+      {
+        "text": " equation을 풀 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

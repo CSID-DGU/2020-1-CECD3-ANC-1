@@ -1,0 +1,96 @@
+[
+  {
+    "id": "7be209c4-5d46-442d-87fe-2b0cf859bdc2",
+    "data": [
+      {
+        "text": "예스",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "44eec2e9-f775-491b-876f-2f3cd7720e71",
+    "data": [
+      {
+        "text": "웅",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "02500b79-20c2-49ad-b767-fce2b26e4d7d",
+    "data": [
+      {
+        "text": "좋아",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "52ca1f45-5dfa-4c6f-a76c-f8d8b28e1380",
+    "data": [
+      {
+        "text": "그래",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "7b3d0075-6ef1-4ae6-a991-bffdc6b76281",
+    "data": [
+      {
+        "text": "응",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "2b48c50f-ca5c-4ff3-89f8-17c64c6bae98",
+    "data": [
+      {
+        "text": "네",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ee2e0465-f4e5-4d5b-abfa-fe94e18fc66a",
+    "data": [
+      {
+        "text": "넵",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

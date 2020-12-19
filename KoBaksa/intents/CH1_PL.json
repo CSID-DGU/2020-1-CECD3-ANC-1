@@ -1,0 +1,50 @@
+{
+  "id": "c8ebaeae-fb11-4cd0-b318-eca0978f6e0d",
+  "name": "CH1_PL",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "27c4aa5a-d511-4301-98a3-f754d4136f5e",
+          "name": "pl",
+          "required": false,
+          "dataType": "@PL",
+          "value": "$pl",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "무슨 말인지  잘 모르겠네요...\n질문을 등록 하고 싶다면 미해결 질문 게시판으로 이동해주세요:)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

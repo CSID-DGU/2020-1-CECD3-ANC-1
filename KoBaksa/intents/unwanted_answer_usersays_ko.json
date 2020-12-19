@@ -1,0 +1,125 @@
+[
+  {
+    "id": "a692544c-2339-48a9-a41c-6d4535702120",
+    "data": [
+      {
+        "text": "내가 원한 답",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 아니야",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "4e15c73c-4e56-4807-bc51-c479e7de98b5",
+    "data": [
+      {
+        "text": "대답",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "이상해",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "caf68ebc-9b94-4c17-8d24-fb86fb5faabd",
+    "data": [
+      {
+        "text": "대답",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 이상한데?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f451ee15-7329-4221-bb9b-f37926703a4b",
+    "data": [
+      {
+        "text": "이거 말고 다른 걸 물어봤어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "0b0aa84d-2c0f-4deb-8210-80ebcc0315d2",
+    "data": [
+      {
+        "text": "내가 물어본건 이게 아니야",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ee436570-d339-4285-bcb1-5844a22303ec",
+    "data": [
+      {
+        "text": "아닌 거 같은데",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "4b4c6c80-332c-41dd-90ea-0635447c48da",
+    "data": [
+      {
+        "text": "그걸 물어본게 아닌데",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

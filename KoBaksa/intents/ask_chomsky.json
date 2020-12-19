@@ -1,0 +1,78 @@
+{
+  "id": "ecbe0ffe-9111-4228-8628-2d76a4674ccc",
+  "name": "ask_chomsky",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "bacbcdbf-4d7b-457c-99c8-85b2b972f470",
+          "name": "compiler",
+          "required": false,
+          "dataType": "@compiler",
+          "value": "$compiler",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "40684cd7-ba5a-44a0-809e-069b1f11407a",
+          "name": "ChomskyHierarchy",
+          "required": false,
+          "dataType": "@ChomskyHierarchy",
+          "value": "$ChomskyHierarchy",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f0c3ad72-988c-4c28-991e-33311370d87a",
+          "name": "CHType",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "TYPE2 (Context-free)문법은 구문분석단계에서 적용 ,TYPE3(regular) 문법은 어휘 분석단계에서 적용됩니다 "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

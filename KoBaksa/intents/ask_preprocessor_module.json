@@ -1,0 +1,92 @@
+{
+  "id": "8491313d-d846-490b-91c1-3ffa143770ed",
+  "name": "ask_preprocessor_module",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "7e090ba8-ccc2-4a33-bcff-5274c97171e6",
+          "name": "preprocessor",
+          "required": false,
+          "dataType": "@preprocessor",
+          "value": "$preprocessor",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "fdfdf8ad-0e8b-4f1f-a541-aa438c631b8e",
+          "name": "interpreter",
+          "required": false,
+          "dataType": "@interpreter",
+          "value": "$interpreter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9f58432e-8e47-404f-8024-cf187fcb1b89",
+          "name": "compiler",
+          "required": false,
+          "dataType": "@compiler",
+          "value": "$compiler",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6d947987-6ce2-43f2-bd32-63b39dfb0f68",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "전처리기 같은 경우 함수별로 모듈을 만들어 사용이  가능합니다. 전처리기 같은 경우는 매크로 함수를 이용하여 일반함수에 비해 실행속도가 빠르게 할수있으며  단점으로는 정의하기가 매우 까다롭습니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

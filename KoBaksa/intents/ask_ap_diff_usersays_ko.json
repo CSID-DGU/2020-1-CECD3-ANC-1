@@ -1,0 +1,80 @@
+[
+  {
+    "id": "11ecf3f0-b89d-477d-9428-a3ca77618a9a",
+    "data": [
+      {
+        "text": "유한 오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "푸시다운 오토마타",
+        "meta": "@automata",
+        "alias": "automata1",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "유한 오토마타",
+        "meta": "@automata",
+        "alias": "automata1",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "푸시다운 오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이점",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "이 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "ko",
+    "updated": 0
+  }
+]

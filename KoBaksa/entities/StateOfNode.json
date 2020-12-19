@@ -1,0 +1,9 @@
+{
+  "id": "03ab38b0-7997-47ec-acb9-f45ee6713695",
+  "name": "StateOfNode",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

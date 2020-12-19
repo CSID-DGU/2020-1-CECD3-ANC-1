@@ -1,0 +1,75 @@
+[
+  {
+    "value": "δ (q,xa) \u003d δ(δ (q,x),a)",
+    "synonyms": [
+      "δ (q,xa) \u003d δ(δ (q,x),a)"
+    ]
+  },
+  {
+    "value": "L(M)\u003dL(M\u0027)",
+    "synonyms": [
+      "L(M)\u003dL(M\u0027)"
+    ]
+  },
+  {
+    "value": "(αα* + ε)β \u003d α*β",
+    "synonyms": [
+      "(αα* + ε)β \u003d α*β"
+    ]
+  },
+  {
+    "value": "수식",
+    "synonyms": [
+      "수식"
+    ]
+  },
+  {
+    "value": "A-\u003e tB",
+    "synonyms": [
+      "A-\u003e tB"
+    ]
+  },
+  {
+    "value": "t∈VT*",
+    "synonyms": [
+      "t∈VT*"
+    ]
+  },
+  {
+    "value": "a∈VT",
+    "synonyms": [
+      "a∈VT"
+    ]
+  },
+  {
+    "value": "(1+01)*00(0+1)*",
+    "synonyms": [
+      "(1+01)*00(0+1)*"
+    ]
+  },
+  {
+    "value": "(0+1)*",
+    "synonyms": [
+      "(0+1)*"
+    ]
+  },
+  {
+    "value": "0(0+1)*",
+    "synonyms": [
+      "0(0+1)*"
+    ]
+  },
+  {
+    "value": "ωω | ω ∈ {a, b}*",
+    "synonyms": [
+      "ωω | ω ∈ {a, b}*",
+      "처음의 반과 나중의 반이 같은 스트링의 집합"
+    ]
+  },
+  {
+    "value": "A-\u003ea",
+    "synonyms": [
+      "A-\u003ea"
+    ]
+  }
+]

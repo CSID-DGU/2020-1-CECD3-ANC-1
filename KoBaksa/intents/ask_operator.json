@@ -1,0 +1,78 @@
+{
+  "id": "b7337989-99b0-4b63-802f-687124916ea2",
+  "name": "ask_operator",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fc8a3f8a-0f8b-4fc8-88d7-f9068b4c0cea",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b3c4154b-a000-4d3e-8a48-06e068fb9308",
+          "name": "operator",
+          "required": false,
+          "dataType": "@operator",
+          "value": "$operator",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b9b88d3f-7c16-4340-97aa-a6c83a70e9d2",
+          "name": "operator1",
+          "required": false,
+          "dataType": "@operator",
+          "value": "$operator1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "정규 표현 방정식으로 표현할 때 X \u003d α X ＋ β \u003d α(α* β)＋ β\u003d α+β ＋ β\u003d (α+ +ε) β\u003d α* β 로 유일해로 증명이 됩니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

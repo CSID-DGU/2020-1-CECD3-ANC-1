@@ -1,0 +1,9 @@
+{
+  "id": "3e4ed73b-f189-4c0a-af69-1c7076829f84",
+  "name": "connection",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "a9e62c54-7ed3-4cbe-b7d5-3924683ffeba",
+  "name": "ide",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "27dba13b-ec92-460d-85ac-38114cce1268",
+    "data": [
+      {
+        "text": "왜",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": " 유한 ",
+        "userDefined": false
+      },
+      {
+        "text": "오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": false
+      },
+      {
+        "text": "에서만 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": "에 ",
+        "userDefined": false
+      },
+      {
+        "text": "저장소",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "가 없나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "834df325-0ce2-40bd-aeee-d9eda5ff616e",
+    "data": [
+      {
+        "text": "유한 오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": "에서만 ",
+        "userDefined": false
+      },
+      {
+        "text": "저장소",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "가 없는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "는 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "d41e75c6-108e-4fe3-83ca-2a4297d0f2eb",
+    "data": [
+      {
+        "text": "Finite automata",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": false
+      },
+      {
+        "text": "에서만 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": " 구현에 ",
+        "userDefined": false
+      },
+      {
+        "text": "저장소",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "가 없는 이유는?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Finite Automata",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "에서만 ",
+        "userDefined": false
+      },
+      {
+        "text": "인식기",
+        "meta": "@recognizer",
+        "alias": "recognizer",
+        "userDefined": true
+      },
+      {
+        "text": "에 ",
+        "userDefined": false
+      },
+      {
+        "text": "storage",
+        "meta": "@storage",
+        "alias": "storage",
+        "userDefined": true
+      },
+      {
+        "text": "가 ",
+        "userDefined": false
+      },
+      {
+        "text": "존재",
+        "meta": "@exist",
+        "alias": "exist",
+        "userDefined": true
+      },
+      {
+        "text": "하지 않는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "가 ",
+        "userDefined": false
+      },
+      {
+        "text": "효율성",
+        "meta": "@efficiency",
+        "alias": "efficiency",
+        "userDefined": true
+      },
+      {
+        "text": "을 높이기 위함 인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

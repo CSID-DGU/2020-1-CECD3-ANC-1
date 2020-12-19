@@ -1,0 +1,78 @@
+{
+  "id": "920d4eae-9fe4-4ba2-abad-5d6dfc2264b3",
+  "name": "ask_ide_syn",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "640ceac1-5436-41b0-93f3-94043ad2da58",
+          "name": "error",
+          "required": false,
+          "dataType": "@error",
+          "value": "$error",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "89aa3cf7-c095-45e4-a126-6267237442c1",
+          "name": "check",
+          "required": false,
+          "dataType": "@check",
+          "value": "$check",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4038ad30-4f9e-4386-b589-6c723574795f",
+          "name": "ide",
+          "required": false,
+          "dataType": "@ide",
+          "value": "$ide",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "대표적으로 MS Visual Studio의 IntelliSense가 있는데 IntelliSense 기능 구현을 위한 데이터 파일로 존재합니다.IDE 내에 존재하는 한 지속적으로 동작합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "11dac03b-713d-4f32-8380-8295f92d21f3",
+  "name": "RE",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

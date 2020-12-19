@@ -1,0 +1,100 @@
+[
+  {
+    "id": "709063a9-1f2f-42dc-8952-9d582c036abd",
+    "data": [
+      {
+        "text": "CFL",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "임에도 ",
+        "userDefined": false
+      },
+      {
+        "text": "CSG",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": true
+      },
+      {
+        "text": "로 만들어질 수 있을 것 같은데 주어진",
+        "userDefined": false
+      },
+      {
+        "text": " L",
+        "meta": "@language",
+        "alias": "language2",
+        "userDefined": true
+      },
+      {
+        "text": "을 보고 ",
+        "userDefined": false
+      },
+      {
+        "text": "G",
+        "meta": "@grammar",
+        "alias": "grammar1",
+        "userDefined": true
+      },
+      {
+        "text": "을 만들 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a76f6e8b-9f75-4cc5-948e-9766045e522c",
+    "data": [
+      {
+        "text": "CFL",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "임에도 ",
+        "userDefined": false
+      },
+      {
+        "text": "CSG",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": true
+      },
+      {
+        "text": "로 만들어질 수 있을 것 같은데 주어진 ",
+        "userDefined": false
+      },
+      {
+        "text": "Language",
+        "meta": "@language",
+        "alias": "language2",
+        "userDefined": true
+      },
+      {
+        "text": "을 보고 ",
+        "userDefined": false
+      },
+      {
+        "text": "Grammer",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "를 만들 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "6e148393-311f-4eea-bb0d-34f600d295d0",
+  "name": "ChomskyHierarchy",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "9def1d68-ade0-400b-a1da-5b5d8aefe385",
+  "name": "ask_quiz_#3_solution",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d5164709-ffd0-49d2-bac4-9de1c9c3679b",
+          "name": "Assignment",
+          "required": false,
+          "dataType": "@Assignment",
+          "value": "$Assignment",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "0edfff1e-426c-4b41-b8f2-f6a570a7308b",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8814bf6b-f543-440b-b097-e2f0d016970f",
+          "name": "number",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "{a^nb^m | n, m \u003e\u003d 1} , 여기서 ^n은 power of n을 뜻함.G\u003d{(A,B},(a,b),P,A)P : A -\u003e aBb | ab    B -\u003e aA | Ab연속된 1이 없는 문법G\u003d({A,B},{0,1},P,A)P : A -\u003e 0A | 1B | ε      B -\u003e 0A | ε처음의 반과 뒤의 반이 같은 문법G \u003d ({A, B}, {a, b}, P, S}P : S -\u003e A | ε    A -\u003e BB | ε    B -\u003e aAaA | bAbA"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

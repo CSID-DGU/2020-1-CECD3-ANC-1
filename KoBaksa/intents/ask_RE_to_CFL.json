@@ -1,0 +1,50 @@
+{
+  "id": "910a4661-600f-4c83-81f2-3a55b6831e3d",
+  "name": "ask_RE_to_CFL",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "52e97eda-1a0d-4e7a-bd2d-a7853a6b293b",
+          "name": "RE",
+          "required": false,
+          "dataType": "@RE",
+          "value": "$RE",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "촘스키 계층 구조에서 정규 문법은 context-free 문법보다 상위 문법이기 때문에 정규 문법은 모든 context-free문법의 형태를 만족하고, 이에 따라 모든 context-free language를 표현할 수 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "value": "compiler",
+    "synonyms": [
+      "compiler",
+      "컴파일러"
+    ]
+  },
+  {
+    "value": "cross-compiler",
+    "synonyms": [
+      "cross-compiler",
+      "크로스 컴파일러"
+    ]
+  }
+]

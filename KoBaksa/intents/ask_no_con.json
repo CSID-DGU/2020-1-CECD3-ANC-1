@@ -1,0 +1,65 @@
+{
+  "id": "72ca0bb4-6705-4f25-adae-26d1fb3f88f6",
+  "name": "ask_no_con",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e4372c38-db71-482c-9427-771c7df05d41",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "79662060-91b8-4577-aab1-4f9d3810b1aa",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "G\u003d({A,B},{0,1},P,A} \\n\nP: A-\u003e 0A | 1B | E(epsilon) \\n\n   B-\u003e 0A | E(Epsilon) \\n\n0A로 시작해서 A에 1B를 대입하여 1B가 되고 B에 0A를 대입하여 1A, A에 E를 대입하여 1이 됩니다.",
+            "연속된 1이 없는 문법 \\n\nG\u003d({A,B},{0,1},P,A) \\n\nP : A -\u003e 0A | 1B | ε \\n\n      B -\u003e 0A | ε"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

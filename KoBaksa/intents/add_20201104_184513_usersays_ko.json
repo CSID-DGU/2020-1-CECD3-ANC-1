@@ -1,0 +1,45 @@
+[
+  {
+    "id": "84f734c8-275d-44af-8469-e347ce11b1c0",
+    "data": [
+      {
+        "text": "컴파일러 ",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": false
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "전단부를 ",
+        "userDefined": false
+      },
+      {
+        "text": "scanner와 ",
+        "userDefined": false
+      },
+      {
+        "text": "parser로 ",
+        "userDefined": false
+      },
+      {
+        "text": "구성하는 ",
+        "userDefined": false
+      },
+      {
+        "text": "이유가 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇인가요? ",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

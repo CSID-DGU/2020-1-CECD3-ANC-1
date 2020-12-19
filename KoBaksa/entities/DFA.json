@@ -1,0 +1,9 @@
+{
+  "id": "e4cbc665-b0f1-46e8-9f59-e8ad15fd154a",
+  "name": "DFA",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

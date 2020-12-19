@@ -1,0 +1,9 @@
+{
+  "id": "aaf7185b-061e-47e2-95a5-237ebaee4467",
+  "name": "pdf",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

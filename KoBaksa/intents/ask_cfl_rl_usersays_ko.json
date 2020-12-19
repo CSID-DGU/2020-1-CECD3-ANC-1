@@ -1,0 +1,136 @@
+[
+  {
+    "id": "37363f26-8a1d-4160-85f4-16e3535a22c9",
+    "data": [
+      {
+        "text": "cfl",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "rl",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": true
+      },
+      {
+        "text": "을 ",
+        "userDefined": false
+      },
+      {
+        "text": "표현",
+        "meta": "@express",
+        "alias": "express",
+        "userDefined": true
+      },
+      {
+        "text": "할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있다는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ceffa7c3-f4c3-45f2-9c43-47acd100306f",
+    "data": [
+      {
+        "text": "cfl",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "rl",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": true
+      },
+      {
+        "text": "을 나타낼 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있다는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "148d9b68-2b31-4030-8db2-c0e8c0d01765",
+    "data": [
+      {
+        "text": "cfl",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "을 ",
+        "userDefined": false
+      },
+      {
+        "text": "rl",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": true
+      },
+      {
+        "text": "로 ",
+        "userDefined": false
+      },
+      {
+        "text": "생성",
+        "meta": "@create",
+        "alias": "create",
+        "userDefined": true
+      },
+      {
+        "text": "할 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 없다는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

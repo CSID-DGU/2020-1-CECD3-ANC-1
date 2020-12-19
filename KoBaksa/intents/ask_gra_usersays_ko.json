@@ -1,0 +1,259 @@
+[
+  {
+    "id": "fdf717e4-5fc2-4f48-9273-b407098b1ba6",
+    "data": [
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " 이외의 ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "문법은 어디서 쓰여?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "1da49fae-8322-4135-82ec-494e5f639bfc",
+    "data": [
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " 이외의 ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "문법은 어디서 쓰이나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "ae2167ee-0d09-4c8c-bc91-ddb65395379f",
+    "data": [
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " 이외의 ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "문법은 그저 사람들",
+        "userDefined": false
+      },
+      {
+        "text": "이 인식",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "하기 편하게 만든 간단한 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f3a0fff7-d474-4aa3-a0c4-31e58030334b",
+    "data": [
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " 이외의 ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "문법은 ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "의 다른 부분에서 사용되는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "a245de0a-f5d1-4fef-8a81-7916bf2f7bec",
+    "data": [
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " 이외의 ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "userDefined": false
+      },
+      {
+        "text": "은 현재",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 쓰이지 않는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "정규 표현",
+        "meta": "@RE",
+        "alias": "RE",
+        "userDefined": true
+      },
+      {
+        "text": " 이외의 3문법은 현재 쓰이지 않는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "이거나 아니면 ",
+        "userDefined": false
+      },
+      {
+        "text": "컴파일러",
+        "meta": "@compiler",
+        "alias": "compiler",
+        "userDefined": true
+      },
+      {
+        "text": "의 다른 부분에서 사용되고 있는 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "이거나 그저 사람들이 인식하기 편하게 만든 간단한 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "인 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

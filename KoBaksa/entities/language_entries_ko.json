@@ -1,0 +1,44 @@
+[
+  {
+    "value": "CFL",
+    "synonyms": [
+      "context-free language",
+      "문맥 자유 문법",
+      "문맥 무관 문법",
+      "cfl"
+    ]
+  },
+  {
+    "value": "RL",
+    "synonyms": [
+      "Regular Language",
+      "RL",
+      "정규언어"
+    ]
+  },
+  {
+    "value": "REL",
+    "synonyms": [
+      "REL",
+      "Recursively Enumerable language",
+      "재귀 열거 언어"
+    ]
+  },
+  {
+    "value": "CSL",
+    "synonyms": [
+      "CSL",
+      "Context Sensitive Language",
+      "문맥 의존 언어"
+    ]
+  },
+  {
+    "value": "language",
+    "synonyms": [
+      "language",
+      "언어",
+      "L",
+      "languages"
+    ]
+  }
+]

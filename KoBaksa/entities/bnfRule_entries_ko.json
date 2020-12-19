@@ -1,0 +1,18 @@
+[
+  {
+    "value": "lhs",
+    "synonyms": [
+      "lhs",
+      "LHS",
+      "left hand side"
+    ]
+  },
+  {
+    "value": "rhs",
+    "synonyms": [
+      "rhs",
+      "RHS",
+      "right hand side"
+    ]
+  }
+]

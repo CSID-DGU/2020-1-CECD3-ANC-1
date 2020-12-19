@@ -1,0 +1,9 @@
+{
+  "id": "a49ee8bf-3a09-443c-a6a0-500d86dc2513",
+  "name": "bnfRule",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

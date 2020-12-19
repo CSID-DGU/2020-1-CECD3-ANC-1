@@ -1,0 +1,9 @@
+{
+  "id": "d7bf473a-5ed3-48b5-bc66-af3bf8b96a20",
+  "name": "CHType",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

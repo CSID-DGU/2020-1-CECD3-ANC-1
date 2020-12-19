@@ -1,0 +1,23 @@
+[
+  {
+    "value": "RE",
+    "synonyms": [
+      "RE",
+      "regular expression",
+      "정규 표현식",
+      "정규 표현"
+    ]
+  },
+  {
+    "value": "X \u003d αX + β",
+    "synonyms": [
+      "X \u003d αX + β"
+    ]
+  },
+  {
+    "value": "X \u003d ax+b(a!\u003de)",
+    "synonyms": [
+      "X \u003d ax+b(a!\u003de)"
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "id": "b7c81dda-a46e-4e7e-a051-de5e7830009e",
+  "name": "CH1_IC",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "96c042fc-76d6-4d1e-bf0c-3ee1977286ac",
+          "name": "compiler",
+          "required": false,
+          "dataType": "@compiler",
+          "value": "$compiler",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5271823f-554e-4084-a064-b6969744bd40",
+          "name": "interpreter",
+          "required": false,
+          "dataType": "@interpreter",
+          "value": "$interpreter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "ba9f3125-3181-4cac-ac3e-b54d1250f7cc",
+          "name": "preprocessor",
+          "required": false,
+          "dataType": "@preprocessor",
+          "value": "$preprocessor",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b8b01496-2d34-441a-a8b0-2cf4501ebceb",
+          "name": "structure",
+          "required": false,
+          "dataType": "@structure",
+          "value": "$structure",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "98434022-d9de-4b1c-b182-d6963ee85e69",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "무슨 말인지  잘 모르겠네요...\n질문을 등록 하고 싶다면 미해결 질문 게시판으로 이동해주세요:)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

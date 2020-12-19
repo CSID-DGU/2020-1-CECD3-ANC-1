@@ -1,0 +1,41 @@
+[
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "X \u003d αX + β \u003c-\u003e X \u003d  α*β",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": ".이 식에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "+",
+        "meta": "@operator",
+        "alias": "operator",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "*",
+        "meta": "@operator",
+        "alias": "operator1",
+        "userDefined": true
+      },
+      {
+        "text": "를 바꿀 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

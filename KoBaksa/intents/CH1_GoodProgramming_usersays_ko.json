@@ -1,0 +1,79 @@
+[
+  {
+    "id": "f575b607-31f8-4886-a44d-b773b498fc62",
+    "data": [
+      {
+        "text": "좋은 프로그래밍 언어의 요건",
+        "meta": "@GPFactor",
+        "alias": "GPFactor",
+        "userDefined": true
+      },
+      {
+        "text": "에는 뭐가 있어요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "c2e64c89-c120-4878-852f-e41b8170902b",
+    "data": [
+      {
+        "text": "프로그래밍 언어의 요건",
+        "meta": "@GPFactor",
+        "alias": "GPFactor",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "f6a45f81-c0f4-48d5-992c-aa7b34ef6852",
+    "data": [
+      {
+        "text": "좋은 프로그래밍 언어의 요건",
+        "meta": "@GPFactor",
+        "alias": "GPFactor",
+        "userDefined": true
+      },
+      {
+        "text": "이 뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "d2384194-4a56-4bfc-97e8-7da5d11262b4",
+    "data": [
+      {
+        "text": "좋은 프로그래밍 언어 요건",
+        "meta": "@GPFactor",
+        "alias": "GPFactor",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

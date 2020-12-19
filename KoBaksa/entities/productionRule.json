@@ -1,0 +1,9 @@
+{
+  "id": "d7ca4c59-c0b4-45d9-9109-855eab2f9e82",
+  "name": "productionRule",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

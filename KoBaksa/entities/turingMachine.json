@@ -1,0 +1,9 @@
+{
+  "id": "fb04b6ed-c50e-4d6b-8761-8225c525ec5e",
+  "name": "turingMachine",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

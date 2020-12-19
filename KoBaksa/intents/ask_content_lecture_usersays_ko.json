@@ -1,0 +1,145 @@
+[
+  {
+    "id": "bffe23e2-94c2-4601-8609-ef37e0fbe810",
+    "data": [
+      {
+        "text": "교안 3",
+        "userDefined": false
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "21",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "페이지에 We shall write \u0027d(q,a)\u0027 instead of d(q,a)\u003d{p} if deterministic 에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "집합",
+        "meta": "@kind_of_set",
+        "alias": "kind_of_set",
+        "userDefined": true
+      },
+      {
+        "text": "으로 표기하는 건가요 ",
+        "userDefined": false
+      },
+      {
+        "text": "부분 집합",
+        "meta": "@kind_of_set",
+        "alias": "kind_of_set1",
+        "userDefined": true
+      },
+      {
+        "text": "으로 표현하는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "e0cfb6a6-bd69-4dc6-a4c6-60a37ece39e6",
+    "data": [
+      {
+        "text": "교안 ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "21",
+        "meta": "@sys.number",
+        "alias": "number1",
+        "userDefined": true
+      },
+      {
+        "text": "페이지에 We shall write \u0027",
+        "userDefined": false
+      },
+      {
+        "text": "d(q",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": ",a)\u0027 instead of ",
+        "userDefined": false
+      },
+      {
+        "text": "d(q",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": ",a)\u003d{p} if deterministic 에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "set",
+        "meta": "@kind_of_set",
+        "alias": "kind_of_set",
+        "userDefined": true
+      },
+      {
+        "text": "으로 표기하는 건가요 ",
+        "userDefined": false
+      },
+      {
+        "text": "subset",
+        "meta": "@kind_of_set",
+        "alias": "kind_of_set1",
+        "userDefined": true
+      },
+      {
+        "text": "으로 표현하는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "3장 21페이지에 We shall write \u0027d(q,a)\u0027 instead of d(q,a)\u003d{p} if deterministic 이라고 되어있는데, 교수님께서 강의하실 때 set으로 표기한다고 하셨는데(21:09) : 개수이기 때문에 보통 부분집합으로 표현! , 어떤 게 맞는 표현인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

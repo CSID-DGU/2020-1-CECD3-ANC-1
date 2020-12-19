@@ -1,0 +1,87 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " p4에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "RG",
+        "meta": "@grammar",
+        "alias": "grammar",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "A-\u003eaB |a (a∈VT, A,B∈VN)",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": " -1번 인데, p5에서는 1번에서에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "t∈VT*",
+        "meta": "@mathFormula",
+        "alias": "mathFormula1",
+        "userDefined": true
+      },
+      {
+        "text": "만 변경된 -2번 상태를 확인할 수 있는데 이 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "가, 1번이 RG의 표현 형태이고, 2번이 ",
+        "userDefined": false
+      },
+      {
+        "text": "type3",
+        "meta": "@CHType",
+        "alias": "CHType",
+        "userDefined": true
+      },
+      {
+        "text": "의 형태인 것인가요? 그래서 type3형태로 표현된 ",
+        "userDefined": false
+      },
+      {
+        "text": "문법",
+        "meta": "@grammar",
+        "alias": "grammar1",
+        "userDefined": true
+      },
+      {
+        "text": "은 t가 여러 개의 심볼들로 concatenate된 상태이므로, RG로 표현할 수 있는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

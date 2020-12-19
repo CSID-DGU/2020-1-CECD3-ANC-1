@@ -1,0 +1,31 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "Finite Automata",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "의 구성요소 중 ",
+        "userDefined": false
+      },
+      {
+        "text": "시그마",
+        "meta": "@FiniteAutomata",
+        "alias": "FiniteAutomata",
+        "userDefined": true
+      },
+      {
+        "text": "는 세트로 구성된다고 할 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

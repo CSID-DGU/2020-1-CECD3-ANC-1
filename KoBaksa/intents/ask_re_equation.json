@@ -1,0 +1,78 @@
+{
+  "id": "c6cf1b94-d897-49e2-9ea6-20a141ae0443",
+  "name": "ask_re_equation",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "665a9fbe-fae2-476d-a5b7-dc78fc7d15ce",
+          "name": "RE",
+          "required": false,
+          "dataType": "@RE",
+          "value": "$RE",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "762237f2-2b19-4214-b1d5-98ef49f9b672",
+          "name": "RE1",
+          "required": false,
+          "dataType": "@RE",
+          "value": "$RE1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2223530e-7ca5-4cc8-a145-e6295fa69b4f",
+          "name": "RE2",
+          "required": false,
+          "dataType": "@RE",
+          "value": "$RE2",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "a, b가 정규 표현이고 E(epsilon)이 L(a)에 속하지 않으면 X\u003daX+b의 유일해는 X\u003da*b가 됩니다. 이를 이용해서 언어 L(G)를 생성하는 정규문법 G에서 X\u003da*b를 적용해 시작 심벌에 대한 정규 표현식이 있는 곳으로 진행하게 되면 정규 언어 L(G)가 됩니다. 따라서 X\u003daX+b형태는 정규 언어로 만들어가는 과정으로 보면 됩니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

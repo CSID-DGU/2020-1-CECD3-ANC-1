@@ -1,0 +1,78 @@
+{
+  "id": "0f6ee317-a1d9-4528-bd03-09ff3e9351ca",
+  "name": "ask_lh_ex",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "59f3b280-a5f6-45a9-bb5e-71a65433c295",
+          "name": "bnfRule",
+          "required": false,
+          "dataType": "@bnfRule",
+          "value": "$bnfRule",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7db8603f-9847-4c0c-b628-1fc105341611",
+          "name": "bnfRule1",
+          "required": false,
+          "dataType": "@bnfRule",
+          "value": "$bnfRule1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8e91c1d3-4e7a-42ee-a542-de4cf4d9a9ad",
+          "name": "convert",
+          "required": false,
+          "dataType": "@convert",
+          "value": "$convert",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "터미널 심볼의 개수가 1개일 경우 가능합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

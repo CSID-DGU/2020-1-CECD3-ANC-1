@@ -1,0 +1,78 @@
+{
+  "id": "94f8db8a-8db8-423d-9813-85c91a963f4c",
+  "name": "ask_storage",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0b736d61-47b8-4d75-bbfb-c5f4ebda07d6",
+          "name": "CHType",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "62c64436-3044-4133-a8ad-1130ee675540",
+          "name": "recognizer",
+          "required": false,
+          "dataType": "@recognizer",
+          "value": "$recognizer",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "1db5cd46-e333-4998-a3dd-40bf3686a8fa",
+          "name": "storage",
+          "required": false,
+          "dataType": "@storage",
+          "value": "$storage",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "TYPE3(regular) 문법의 인식기인  유한 오토마타같은 경우는 스캐너의 기능을 하기 때문에 저장공간이 필요 없습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

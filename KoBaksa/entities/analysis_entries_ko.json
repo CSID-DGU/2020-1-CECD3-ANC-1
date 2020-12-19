@@ -1,0 +1,20 @@
+[
+  {
+    "value": "LA",
+    "synonyms": [
+      "Lexical Analysis",
+      "lexical analysis",
+      "어휘분석",
+      "어휘 분석"
+    ]
+  },
+  {
+    "value": "SA",
+    "synonyms": [
+      "Syntax Analysis",
+      "syntax analysis",
+      "구문 분석",
+      "구문분석"
+    ]
+  }
+]

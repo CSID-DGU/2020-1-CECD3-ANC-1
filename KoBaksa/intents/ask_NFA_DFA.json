@@ -1,0 +1,106 @@
+{
+  "id": "65ed8741-3976-4ec8-be2d-befe80607e2b",
+  "name": "ask_NFA_DFA",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b731fa4f-7d99-4bbc-8eb8-f05620e567c2",
+          "name": "pdf",
+          "required": false,
+          "dataType": "@pdf",
+          "value": "$pdf",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f4c7757d-689e-4c03-871d-189c30961dc5",
+          "name": "number",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "51f16fc3-2b9a-4202-a722-cb2f1de36a30",
+          "name": "Chapter",
+          "required": false,
+          "dataType": "@Chapter",
+          "value": "$Chapter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "3e034358-38b1-491d-86c7-a894f8f894b6",
+          "name": "NFA",
+          "required": false,
+          "dataType": "@NFA",
+          "value": "$NFA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c5aa1135-55b2-48d4-b87f-b837c970e4a5",
+          "name": "DFA",
+          "required": false,
+          "dataType": "@DFA",
+          "value": "$DFA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "δ\u0027 ([q0,q1],0) \u003d δ({q0,q1},0) \u003d {q0,q1} \u003d [q0,q1] 의 경우[q0,q1]에서 갈 수 있는 상태는 [q0]에서 갈 수 있는 상태와 [q1]에서 갈 수 있는 상태의 합집합입니다. 그렇기에 δ\u0027([q0], 0) \u003d [q0, q1], δ\u0027([q1], 0) \u003d Ø 의 합인 [q0, q1]인 것입니다.마찬가지로,δ\u0027 ([q0,q1],1) \u003d δ({q0,q1},1) \u003d {q0,q1} \u003d [q0,q1] 또한δ\u0027([q0], 1) , δ\u0027([q1], 1)의 값을 계산하면 [q0, q1]의 상태를 얻어낼 수 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

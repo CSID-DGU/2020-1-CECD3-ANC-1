@@ -1,0 +1,40 @@
+{
+  "id": "5e4eb076-4473-4864-a469-46e224b99821",
+  "parentId": "3f60cd7d-04a3-43fa-b68c-f98d366122ff",
+  "rootParentId": "3f60cd7d-04a3-43fa-b68c-f98d366122ff",
+  "name": "regi_question - yes",
+  "auto": true,
+  "contexts": [
+    "regi_question-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "regi_question.regi_question-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "웹페이지 url 제공"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

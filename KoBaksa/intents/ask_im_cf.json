@@ -1,0 +1,78 @@
+{
+  "id": "9a64aa21-dc3f-4597-84f6-f1ccba55d329",
+  "name": "ask_im_cf",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "875fc2d7-49a6-45a4-9310-059b21f43f42",
+          "name": "CHType",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9487551f-962c-4c85-82c0-2cabb5a0cd58",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "dc2df013-b2f3-4846-85b6-dac7eae833d3",
+          "name": "productionRule",
+          "required": false,
+          "dataType": "@productionRule",
+          "value": "$productionRule",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "embedded 생성 규칙은 같은 수의 terminal 심벌을 생성해야 하기 때문에 생성 규칙의 형태가 nonterminal 심벌이 terminal 심벌 사이에 내장되어 있습니다.\n하지만 정규 문법은 좌선형 문법 또는 우선형 문법의 생성규칙을 가지고 있기 때문에 embedded는 정규 문법이 될 수 없습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

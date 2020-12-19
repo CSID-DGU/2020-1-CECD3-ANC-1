@@ -1,0 +1,41 @@
+{
+  "id": "e1a88096-31ca-472e-bf1f-b5486246ca4f",
+  "parentId": "4fbcccc9-b996-433f-b229-471c366d1bdc",
+  "rootParentId": "6e456132-31f0-4e7b-8d63-55254cda0b6b",
+  "name": "Default Fallback Intent - no - no",
+  "auto": true,
+  "contexts": [
+    "DefaultFallbackIntent-no-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultFallbackIntent.DefaultFallbackIntent-custom-2.DefaultFallbackIntent-no-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "대화를 종료합니다.",
+            "대화 종료"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

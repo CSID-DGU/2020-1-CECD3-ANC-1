@@ -1,0 +1,106 @@
+{
+  "id": "348b55bb-5c55-4cf1-93c3-9d6a85950756",
+  "name": "ask_token",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "9e2d24f1-ad3d-4412-8199-7c1804bf53ba",
+          "name": "analysis",
+          "required": false,
+          "dataType": "@analysis",
+          "value": "$analysis",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "56d55c22-54b1-4e2e-ac48-351a1b49ad8c",
+          "name": "token",
+          "required": false,
+          "dataType": "@token",
+          "value": "$token",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "51bd4387-c7a3-41fa-86f8-51ce7995a950",
+          "name": "line",
+          "required": false,
+          "dataType": "@line",
+          "value": "$line",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2e54e14e-ff9b-440f-a82b-fcef40074173",
+          "name": "column",
+          "required": false,
+          "dataType": "@column",
+          "value": "$column",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e16a116f-a2fb-47f7-a10c-9a7c4852ac6a",
+          "name": "row",
+          "required": false,
+          "dataType": "@row",
+          "value": "$row",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "line, column, row 값들은 lexical analyzer단계에서 자동화 기계의 도움으로 오류를 식별하고 C , C++와 같이 기본이 되는 언어의 문법을 이용하여 오류의 행 번호와 열 번호를 표현할 때 사용됩니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

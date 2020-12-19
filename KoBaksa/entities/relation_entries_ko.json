@@ -1,0 +1,28 @@
+[
+  {
+    "value": "포함",
+    "synonyms": [
+      "포함",
+      "Inclusion relationship",
+      "포함관계",
+      "포함 관계",
+      "inclusion"
+    ]
+  },
+  {
+    "value": "집합",
+    "synonyms": [
+      "집합",
+      "집합 관계",
+      "집합관계",
+      "Collective relationship",
+      "collective"
+    ]
+  },
+  {
+    "value": "관계",
+    "synonyms": [
+      "관계"
+    ]
+  }
+]

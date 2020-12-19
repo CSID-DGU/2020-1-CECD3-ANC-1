@@ -1,0 +1,79 @@
+{
+  "id": "ec711eb1-9310-4f2a-b33b-9ddfaca591c0",
+  "name": "ask_same_half",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5bc57460-2b6d-49a8-ac34-060bcd06952a",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c0d17c21-ee31-4e26-877c-8b0bf1ca38b6",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2452f184-4e48-44de-b301-82242291a895",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "{ωω | ω ∈ {a, b}*}, 즉 처음의 반과 나중의 반이 같은 스트링의 집합  \\n\n\u003d  G\u003d({A,B}{0,1},P,A)  \\n\n      P:A → 0A|1B|ε  \\n\n        B → 0A|ε",
+            "{ωω | ω∈{a,b}*}, 즉 처음의 반과 나중의 반이 같은 스트링의 집합이다. \\n\n \u003d G\u003d({A,B}{a,b},P,A)  \\n\n      P:A → BB|ε  \\n\n        B → aAaA|bBbB  \\n"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

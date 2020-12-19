@@ -1,0 +1,41 @@
+[
+  {
+    "id": "b0ebd571-631e-4246-b59f-a7e423bfe399",
+    "data": [
+      {
+        "text": "넌 짱이야",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "81956b70-3703-4731-98e5-d2e5de214025",
+    "data": [
+      {
+        "text": "수고했어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "d61189b6-bae0-45f3-9354-0319d35a61da",
+    "data": [
+      {
+        "text": "고마워",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

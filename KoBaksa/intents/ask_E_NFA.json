@@ -1,0 +1,92 @@
+{
+  "id": "9e37fd71-cb0d-407a-926b-d82c2566e270",
+  "name": "ask_E_NFA",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4dd16344-3a82-4186-b2c2-22792dfd7e55",
+          "name": "automata",
+          "required": false,
+          "dataType": "@automata",
+          "value": "$automata",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "0727a021-3715-40a7-82cf-e7f8c41bb136",
+          "name": "NFA",
+          "required": false,
+          "dataType": "@NFA",
+          "value": "$NFA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4c13ce71-2aae-448e-99f2-6c1a7abcab4a",
+          "name": "create",
+          "required": false,
+          "dataType": "@create",
+          "value": "$create",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c4e2c008-895b-4b64-8c9f-4403ba090c3a",
+          "name": "merge",
+          "required": false,
+          "dataType": "@merge",
+          "value": "$merge",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "E(epsilon), N을 인식하기 위해서는 두개의 상태가 필요합니다.정규 표현 N1+N2를 구성하기 위해 새로운 상태 I,f를 추가하여 상태 i에서는 N1과 N2의 시작상태로 E-전이를 각각 그리고 각 종결 상태에서 f로 가는 E-전이를 만들면 i가 시작 상태이고 f가 종결상태가 되며, 합집합을 인식하는 E-NFA가 됩니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

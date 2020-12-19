@@ -1,0 +1,9 @@
+{
+  "id": "9e98e798-636e-46fe-baf2-b5d82ec55e10",
+  "name": "merge",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

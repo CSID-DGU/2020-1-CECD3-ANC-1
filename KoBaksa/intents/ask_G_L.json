@@ -1,0 +1,106 @@
+{
+  "id": "54a9ef8f-f5aa-486a-a8f6-eaa88bd0cb15",
+  "name": "ask_G_L",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "2e4356f4-1094-4b77-bc53-920a1de3001b",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8a0cbf98-3ebf-47f3-b7e3-b8872adf8302",
+          "name": "language",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8e24faa6-e176-401c-a1a2-4bf67d59a7cb",
+          "name": "productionRule",
+          "required": false,
+          "dataType": "@productionRule",
+          "value": "$productionRule",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "722c9d65-c0c6-42b1-9ad0-3ead621f9be8",
+          "name": "simple",
+          "required": false,
+          "dataType": "@simple",
+          "value": "$simple",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "81c00e70-1fa1-458f-bf45-7a5def5a9a12",
+          "name": "overlap",
+          "required": false,
+          "dataType": "@overlap",
+          "value": "$overlap",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "문법으로부터 최종적으로 구하고자 하는 언어를 도출한다면 틀렸다고 볼 수는 없겠지만 불필요한 생성규칙으로 인해서 과정이 복잡해지는 것은 좋지 않겠죠."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

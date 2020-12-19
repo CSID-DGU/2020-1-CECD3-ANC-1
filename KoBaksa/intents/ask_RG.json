@@ -1,0 +1,64 @@
+{
+  "id": "317de4ee-04ca-4952-85fe-aef181b1c856",
+  "name": "ask_RG",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d19ed50f-4d08-4011-8332-7cef1e2f1f9f",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "35911647-e728-43f4-ad98-ad5f21bd0ce6",
+          "name": "use",
+          "required": false,
+          "dataType": "@use",
+          "value": "$use",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "정규문법의 경우 네 가지 문법 형태 중 가장 간단한 형태인 Type 3 문법입니다. . 어휘 분석 과정에서 인식되는 토큰 구조를 표현하는데 이용하며 컴파일러의 어휘 분석 단계에서 입력 프로그램을 구성하고 있는 토큰의 구조를 정의하는데 사용합니다.또한 언어의 형태를 체계적으로 구하여 정규 표현으로 나타낼 수 있습니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

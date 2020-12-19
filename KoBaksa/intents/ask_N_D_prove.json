@@ -1,0 +1,106 @@
+{
+  "id": "d252888a-2e00-4301-a525-976375c58b57",
+  "name": "ask_N_D_prove",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4ec33f43-e44d-4266-99cf-4bf5d86d81df",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "ea34372f-1dd1-430d-ab52-9c00fa18cada",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "644e5e59-5bdc-41e0-8cca-a109d987d658",
+          "name": "NFA",
+          "required": false,
+          "dataType": "@NFA",
+          "value": "$NFA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "408277b6-52d5-4e25-86b2-2bae09cc1f7e",
+          "name": "DFA",
+          "required": false,
+          "dataType": "@DFA",
+          "value": "$DFA",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c857764d-f3ae-4cea-a2d0-fd997943da67",
+          "name": "prove",
+          "required": false,
+          "dataType": "@prove",
+          "value": "$prove",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            ".L을 인식하는 NFA M \u003d (Q, Σ, δ, q0, F) 라 하면, DFA M’ \u003d (Q’, Σ’, δ’, q0’, F’) Q’ 의 한 상태는 [q1, q2, ···, qi]의 형태로 표시F\u0027 ＝ {q ∈ Q’ | q는 M의 최종 상태를 포함하는 Q’안에 있는 모든 상태들의 집합}q0\u0027 ＝ [q0]δ ({q1, q2, ···, qi}, a) ＝ {P1, P2, ···, Pj} 이면 δ \u0027([q1, q2, ···, qi], a) ＝ [P1, P2, ···, Pj] 로 표현이됩니다. "
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

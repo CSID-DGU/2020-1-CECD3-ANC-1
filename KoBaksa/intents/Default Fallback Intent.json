@@ -1,0 +1,41 @@
+{
+  "id": "6e456132-31f0-4e7b-8d63-55254cda0b6b",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [
+        {
+          "name": "DefaultFallbackIntent-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "무슨 소린지 못 알아 듣겠어요. 미해결 질문답변게시판에 질문을 등록 해주세요",
+            "무슨 말인지  잘 모르겠네요.. 미해결 질문답변 게시판에 미해결 질문으로 등록해주세요"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

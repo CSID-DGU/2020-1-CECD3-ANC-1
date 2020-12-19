@@ -1,0 +1,24 @@
+[
+  {
+    "value": "automata",
+    "synonyms": [
+      "automata",
+      "오토마타"
+    ]
+  },
+  {
+    "value": "finite automata",
+    "synonyms": [
+      "finite automata",
+      "유한 오토마타"
+    ]
+  },
+  {
+    "value": "pushdown automata",
+    "synonyms": [
+      "pushdown automata",
+      "pushdown",
+      "푸시다운 오토마타"
+    ]
+  }
+]

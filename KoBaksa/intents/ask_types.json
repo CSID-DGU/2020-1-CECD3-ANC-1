@@ -1,0 +1,120 @@
+{
+  "id": "1fc7f6d5-24ef-4fe7-84a8-199df610306f",
+  "name": "ask_types",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "32f953c4-2175-4412-9d78-e589de6f5ba0",
+          "name": "Chapter",
+          "required": false,
+          "dataType": "@Chapter",
+          "value": "$Chapter",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "eb125918-26bf-4428-85eb-df31f7d2ccec",
+          "name": "ChomskyHierarchy",
+          "required": false,
+          "dataType": "@ChomskyHierarchy",
+          "value": "$ChomskyHierarchy",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "308d9606-9276-427a-aada-80af6b370535",
+          "name": "CHType",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b7a262fd-339e-4b28-a671-8c9a8b65db65",
+          "name": "CHType1",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9dd9c2fa-4c55-460f-a3f7-c8f524853ec4",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "40c0367c-c74a-46c7-8895-a5cc833ba07a",
+          "name": "different",
+          "required": false,
+          "dataType": "@different",
+          "value": "$different",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "type1은 context-sensitive language를 생성하는 문법입니다. 이는 linear bounded automata를 통하여 인식될 수 있으며, a -\u003e b에서 | a | \u003c\u003d | b |를 만족합니다.type2는 context-free language를 생성하는 문법이며 pushdown automata를 통하여 인식될 수 있습니다. A가 non terminal symbol일 때 A -\u003e a를 만족합니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

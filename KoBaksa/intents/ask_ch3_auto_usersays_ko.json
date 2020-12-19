@@ -1,0 +1,76 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": true
+      },
+      {
+        "text": "장",
+        "meta": "@Chapter",
+        "alias": "Chapter",
+        "userDefined": true
+      },
+      {
+        "text": " p23에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "(1+01)*00(0+1)*",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "를 나타낸 ",
+        "userDefined": false
+      },
+      {
+        "text": "automata",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": "가 ",
+        "userDefined": false
+      },
+      {
+        "text": "(0+1)*",
+        "meta": "@mathFormula",
+        "alias": "mathFormula1",
+        "userDefined": true
+      },
+      {
+        "text": "을 인식할 수 있다고 하셨는데, start부터 p q를 거치고 나면, 최소한 001이 될 텐데, 그러면 (",
+        "userDefined": false
+      },
+      {
+        "text": "0",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": "+1)*이 아니라,  ",
+        "userDefined": false
+      },
+      {
+        "text": "0(0+1)*",
+        "meta": "@mathFormula",
+        "alias": "mathFormula2",
+        "userDefined": true
+      },
+      {
+        "text": "를 인식할 수 있는 거 아닌가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "fbb0f394-b919-4f9c-8683-8273f9d6f5f4",
+  "name": "FiniteAutomata",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

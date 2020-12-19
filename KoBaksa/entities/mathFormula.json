@@ -1,0 +1,9 @@
+{
+  "id": "72eceb3a-6b0e-496b-a4b7-b0bd4d1195a2",
+  "name": "mathFormula",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

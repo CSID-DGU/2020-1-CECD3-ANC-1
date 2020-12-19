@@ -1,0 +1,9 @@
+{
+  "id": "71b6d285-626f-4348-ae32-e8d164b1b740",
+  "name": "storage",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

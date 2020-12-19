@@ -1,0 +1,41 @@
+[
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "오토마타",
+        "meta": "@automata",
+        "alias": "automata",
+        "userDefined": true
+      },
+      {
+        "text": " Transition diagram에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "종결",
+        "meta": "@StateOfNode",
+        "alias": "StateOfNode",
+        "userDefined": true
+      },
+      {
+        "text": "이 되는 ",
+        "userDefined": false
+      },
+      {
+        "text": "기준",
+        "meta": "@standard",
+        "alias": "standard",
+        "userDefined": true
+      },
+      {
+        "text": "이 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

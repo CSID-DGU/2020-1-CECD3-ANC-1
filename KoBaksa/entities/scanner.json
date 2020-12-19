@@ -1,0 +1,9 @@
+{
+  "id": "48c0020d-8e44-4226-a13a-9fccc3f419e9",
+  "name": "scanner",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

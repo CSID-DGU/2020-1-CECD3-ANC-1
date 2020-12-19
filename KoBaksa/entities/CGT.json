@@ -1,0 +1,9 @@
+{
+  "id": "797acb9e-c347-42e8-9723-d560d2f51d98",
+  "name": "CGT",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,64 @@
+{
+  "id": "469d6f88-21b8-4d22-92d7-8cf148cf1f58",
+  "name": "ask_this_RG",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "c520b741-787f-4218-a496-9dec9b497a3c",
+          "name": "mathFormula",
+          "required": false,
+          "dataType": "@mathFormula",
+          "value": "$mathFormula",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a440067a-efb9-48db-89d6-500b96bf1bec",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "정규 문법은 정규 언어를 기술하는 문법으로 생성 규칙이 좌선형 문법이나 우선형 문법으로만 구성되어 있습니다.좌선형 문법은 P: A-\u003ea   A-\u003eaB   A-\u003eE(epsilon) 으로만 구성되어 있고,우선형 문법은P: A-\u003ea   A-\u003eBa   A-\u003eE으로만 구성되어 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

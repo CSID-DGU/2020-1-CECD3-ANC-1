@@ -1,0 +1,115 @@
+[
+  {
+    "id": "f2fd10da-a68e-46e8-a9c6-bb5a9ba69995",
+    "data": [
+      {
+        "text": "RL",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": false
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "CFL",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": false
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "다른 점이 뭐야?",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "4ae43a32-c46b-498a-9406-b1c4973e352b",
+    "data": [
+      {
+        "text": "RL",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": false
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "CFL",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": false
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": false
+      },
+      {
+        "text": "가 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "regular language",
+        "meta": "@language",
+        "alias": "language",
+        "userDefined": true
+      },
+      {
+        "text": "와 ",
+        "userDefined": false
+      },
+      {
+        "text": "context free language",
+        "meta": "@language",
+        "alias": "language1",
+        "userDefined": true
+      },
+      {
+        "text": " 둘의 ",
+        "userDefined": false
+      },
+      {
+        "text": "차이",
+        "meta": "@different",
+        "alias": "different",
+        "userDefined": true
+      },
+      {
+        "text": "가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

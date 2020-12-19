@@ -1,0 +1,102 @@
+[
+  {
+    "id": "2d4717ef-14f3-43ca-876e-99803bd809b4",
+    "data": [
+      {
+        "text": "IDE",
+        "meta": "@ide",
+        "alias": "ide",
+        "userDefined": true
+      },
+      {
+        "text": " 안에서 ",
+        "userDefined": false
+      },
+      {
+        "text": "구문 오류",
+        "meta": "@error",
+        "alias": "error",
+        "userDefined": true
+      },
+      {
+        "text": "를 ",
+        "userDefined": false
+      },
+      {
+        "text": "검사",
+        "meta": "@check",
+        "alias": "check",
+        "userDefined": true
+      },
+      {
+        "text": "하는 부분",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 지속적으로 돌아가고 있는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "최근 ",
+        "userDefined": false
+      },
+      {
+        "text": "IDE",
+        "meta": "@ide",
+        "alias": "ide",
+        "userDefined": true
+      },
+      {
+        "text": "에서는 ",
+        "userDefined": false
+      },
+      {
+        "text": "syntax error",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": "를 즉각적으로 찾아주는데 수업 중 배운 ",
+        "userDefined": false
+      },
+      {
+        "text": "syntax error",
+        "meta": "@error",
+        "alias": "error",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "검사",
+        "meta": "@check",
+        "alias": "check",
+        "userDefined": true
+      },
+      {
+        "text": "가 지속적으로 이루어지는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

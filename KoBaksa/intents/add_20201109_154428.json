@@ -1,0 +1,35 @@
+{
+  "id": "1a1569f7-15bb-4910-b8c3-83e116f2ef70",
+  "name": "add_20201109_154428",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "컴파일러, 인터프리터 둘 다 C나 자바같은 고레벨언어로 작성된 프로그래밍 언어를 기계어로 변환하는 것은 맞으나 그 과정에 있어서 차이를 보입니다\r\n"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

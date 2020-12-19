@@ -1,0 +1,64 @@
+{
+  "id": "faa0ad91-7f68-4787-97c9-20144dfd6823",
+  "name": "CH1_CGT",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1597e74c-0f7b-4663-9720-757494ae42ba",
+          "name": "model",
+          "required": false,
+          "dataType": "@model",
+          "value": "$model",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "dafa6105-422e-4797-85f4-d817dbe748e3",
+          "name": "CGT",
+          "required": false,
+          "dataType": "@CGT",
+          "value": "$CGT",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "무슨 말인지  잘 모르겠네요...\n질문을 등록 하고 싶다면 미해결 질문 게시판으로 이동해주세요:)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

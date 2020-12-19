@@ -1,0 +1,92 @@
+{
+  "id": "e9ef6be8-a89e-4533-b897-b2a6577353d8",
+  "name": "ask_cfl_rl",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "85738f89-2b18-45f5-a77d-8a77667209ae",
+          "name": "language",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f2b3f12c-d77a-44be-b748-8108f62c9c6d",
+          "name": "language1",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c7bf2c61-0837-4019-819a-efc6afb84cfb",
+          "name": "express",
+          "required": false,
+          "dataType": "@express",
+          "value": "$express",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "37be74a7-878f-4527-a6bb-d6776602ebad",
+          "name": "create",
+          "required": false,
+          "dataType": "@create",
+          "value": "$create",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "정규문법은 context-free 문법의 형태를 만족합니다. 정규문법이 context-free문법보다 상위단계에 있기 때문입니다. 따라서 모든 정규언어는 context-free언어가 될 수 있으나, context-free언어는 정규언어가 될 수 없는 경우도 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

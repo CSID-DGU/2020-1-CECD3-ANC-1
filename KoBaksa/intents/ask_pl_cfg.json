@@ -1,0 +1,148 @@
+{
+  "id": "4d22ed02-963e-4ff1-a282-02312668fa65",
+  "name": "ask_pl_cfg",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "cc486f5e-8817-48bc-9695-a11a2632b92b",
+          "name": "PL",
+          "required": false,
+          "dataType": "@PL",
+          "value": "$PL",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "bcb26f45-32b3-4b16-94c2-489d84d9dbe1",
+          "name": "CHType",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "305efda4-43b4-4423-bdc2-9bbf94bb1455",
+          "name": "language",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "55cc8110-0689-4818-ba7c-fe49b65320a8",
+          "name": "language1",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a740a596-f899-439f-b9f9-37f090b5ce0d",
+          "name": "kind_of_set",
+          "required": false,
+          "dataType": "@kind_of_set",
+          "value": "$kind_of_set",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "60b58bc7-23a5-41b6-ba77-7992d0b30b8c",
+          "name": "CHType1",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2f9f552e-ee91-416d-93c0-31a9e56c72ad",
+          "name": "CHType2",
+          "required": false,
+          "dataType": "@CHType",
+          "value": "$CHType2",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5a3e6ccd-4794-44b0-9941-2ad931473a0d",
+          "name": "express",
+          "required": false,
+          "dataType": "@express",
+          "value": "$express",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "촘스키 계층에서 정규언어\u003econtext-free 언어\u003econtext-sensitive 언어\u003e recursively enumerable언어의 포함관계를 가집니다. 다시 말해 recursively enumerable 언어는 모든 언어를 포함하고 있습니다. 따라서 context-free언어는 context-sensitive언어, recursively enumerable 언어의 조건을 모두 가지고 있어 context-free언어는 context-sensitive언어, recursively enumerable 언어로 표현할 수 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

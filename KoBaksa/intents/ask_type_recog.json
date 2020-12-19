@@ -1,0 +1,106 @@
+{
+  "id": "d392d35f-2c0b-4fd9-92ed-8fbe8e8c6705",
+  "name": "ask_type_recog",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5d9a2cef-5485-4905-8919-9e98473d0ae6",
+          "name": "language",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5544943d-e170-43a0-a047-e4b4345dfbd5",
+          "name": "language1",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c1278385-e5da-449e-a981-9737a4381df8",
+          "name": "language2",
+          "required": false,
+          "dataType": "@language",
+          "value": "$language2",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "76a0979f-5728-4e42-8a8e-db6ed3f246fe",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7518c544-bd1f-4dbf-91ba-b6eacd5c8f24",
+          "name": "grammar1",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "상위G에서 하위 L을 표현은 가능하지만 반대로는 표현이 불가능합니다. CFL임에도 CSG로 만들어질 수 있을 것은 CFL은  CSG 보다 상위 TYPE이기때문에 가능합니다. 제약조건을 이용하여 Type을 판별할수있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

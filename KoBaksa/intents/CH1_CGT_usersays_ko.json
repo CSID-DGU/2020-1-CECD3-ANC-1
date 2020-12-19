@@ -1,0 +1,241 @@
+[
+  {
+    "id": "b8b6a102-5533-4f4e-9a1f-92af93c97db9",
+    "data": [
+      {
+        "text": "ACK 모델",
+        "meta": "@model",
+        "alias": "model",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "eef785cc-41bc-4ef2-bfb2-fc56177b8ede",
+    "data": [
+      {
+        "text": "PQCC 모델",
+        "meta": "@model",
+        "alias": "model",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "0263156a-c498-41d2-94d3-29310ad5e489",
+    "data": [
+      {
+        "text": "컴파일러 컴파일러 시스템 종류",
+        "meta": "@CGT",
+        "alias": "CGT",
+        "userDefined": true
+      },
+      {
+        "text": "는 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "064857bf-c1b8-4be3-987c-f682318671c9",
+    "data": [
+      {
+        "text": "컴파일러 컴파일러 시스템",
+        "meta": "@CGT",
+        "alias": "CGT",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "8481ba61-b385-453f-8825-09c095f60b66",
+    "data": [
+      {
+        "text": "Automatic Code Generation",
+        "meta": "@CGT",
+        "alias": "CGT",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "50114d38-025e-411b-a6a7-d513438aec15",
+    "data": [
+      {
+        "text": "PGS의 종류",
+        "meta": "@CGT",
+        "alias": "CGT",
+        "userDefined": true
+      },
+      {
+        "text": "는 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "bfe54a5e-47a4-477e-a49f-7849512dd665",
+    "data": [
+      {
+        "text": "PGS",
+        "meta": "@CGT",
+        "alias": "CGT",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3117efaf-6a5a-48b7-9b14-a4c2189c3f1d",
+    "data": [
+      {
+        "text": "Parser Generator",
+        "meta": "@CGT",
+        "alias": "CGT",
+        "userDefined": true
+      },
+      {
+        "text": "가 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "57826e15-11e7-4439-8e4e-f22571480281",
+    "data": [
+      {
+        "text": "Lexical Analyzer Generator",
+        "meta": "@CGT",
+        "alias": "CGT",
+        "userDefined": true
+      },
+      {
+        "text": "가  뭐예요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "32c57bdd-bdcc-4e7d-aba3-207c267056f2",
+    "data": [
+      {
+        "text": "컴파일러 컴파일러 모델",
+        "meta": "@model",
+        "alias": "model",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "c9b03f13-c38d-4b97-813f-75020a34d09f",
+    "data": [
+      {
+        "text": "Compiler-compiler model",
+        "meta": "@model",
+        "alias": "model",
+        "userDefined": true
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭔가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

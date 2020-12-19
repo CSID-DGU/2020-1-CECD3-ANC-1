@@ -1,0 +1,50 @@
+{
+  "id": "d79429ed-9046-4042-b4c1-a8e075a174d5",
+  "name": "ask_20201119_020129",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6b382286-9eee-48c1-a98a-3b6411a3f6e8",
+          "name": "pumpinglemma",
+          "required": false,
+          "dataType": "@pumpinglemma",
+          "value": "$pumpinglemma",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "펌핑 보조정리(pumping lemma)는 형식 언어 이론에서 특정 종류 언어의 속성을 나타내주는 보조정리입니다. 대표적으로 정규 언어에 대한 것과 문맥 자유 언어에 관한 것 두 가지가 있습니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

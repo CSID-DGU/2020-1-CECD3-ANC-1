@@ -1,0 +1,26 @@
+[
+  {
+    "value": "사과",
+    "synonyms": [
+      "사과",
+      "apple",
+      "애플"
+    ]
+  },
+  {
+    "value": "딸기",
+    "synonyms": [
+      "딸기",
+      "strawberry",
+      "berry"
+    ]
+  },
+  {
+    "value": "수박",
+    "synonyms": [
+      "수박",
+      "워터멜론",
+      "water melon"
+    ]
+  }
+]

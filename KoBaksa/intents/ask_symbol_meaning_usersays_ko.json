@@ -1,0 +1,77 @@
+[
+  {
+    "id": "20ca9b6e-a124-49b6-93a7-4511af5d89e3",
+    "data": [
+      {
+        "text": "초반에 개념 부분 ",
+        "userDefined": false
+      },
+      {
+        "text": "L(G), {w| .. },  Vt 기호",
+        "meta": "@Symbol",
+        "alias": "symbol",
+        "userDefined": false
+      },
+      {
+        "text": " 나오는 부분에 대해 이론적으로 좀 더 ",
+        "userDefined": false
+      },
+      {
+        "text": "설명",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "해 주실 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3330d5a3-f38e-48fd-a3e6-000000000001",
+    "data": [
+      {
+        "text": "문제 풀이는 잘 이해가 가는데 초반에 개념 부분 ",
+        "userDefined": false
+      },
+      {
+        "text": "L(G), {w| .. },  Vt 기호",
+        "meta": "@Symbol",
+        "alias": "symbol",
+        "userDefined": true
+      },
+      {
+        "text": " 나오는 부분에 대해 이론적으로 좀 더 ",
+        "userDefined": false
+      },
+      {
+        "text": "설명",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "해 주실 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

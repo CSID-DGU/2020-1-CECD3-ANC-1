@@ -1,0 +1,80 @@
+[
+  {
+    "id": "7a347dcc-fd2f-43f4-bf3e-8ccc4c7b7d25",
+    "data": [
+      {
+        "text": "lhs",
+        "meta": "@bnfRule",
+        "alias": "bnfRule",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "rhs",
+        "meta": "@bnfRule",
+        "alias": "bnfRule1",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "바꿔",
+        "meta": "@convert",
+        "alias": "convert",
+        "userDefined": true
+      },
+      {
+        "text": "쓸 수 있나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "우선형 문법",
+        "meta": "@bnfRule",
+        "alias": "bnfRule",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "좌선형 문법",
+        "meta": "@bnfRule",
+        "alias": "bnfRule1",
+        "userDefined": true
+      },
+      {
+        "text": "은 항상 상호 ",
+        "userDefined": false
+      },
+      {
+        "text": "변환",
+        "meta": "@convert",
+        "alias": "convert",
+        "userDefined": true
+      },
+      {
+        "text": "이 가능한가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

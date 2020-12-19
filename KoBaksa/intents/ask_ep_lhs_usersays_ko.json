@@ -1,0 +1,60 @@
+[
+  {
+    "id": "c407b57a-af51-4da5-aca4-2dedd9a8f261",
+    "data": [
+      {
+        "text": "epsilon",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "이 ",
+        "userDefined": false
+      },
+      {
+        "text": "lhs",
+        "meta": "@bnfRule",
+        "alias": "bnfRule",
+        "userDefined": true
+      },
+      {
+        "text": "에 올 수 없는 이유는?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "513d460c-7282-4ea5-babd-c6d5639d580f",
+    "data": [
+      {
+        "text": "입실론",
+        "meta": "@Symbol",
+        "alias": "Symbol",
+        "userDefined": true
+      },
+      {
+        "text": "이 ",
+        "userDefined": false
+      },
+      {
+        "text": "lhs",
+        "meta": "@bnfRule",
+        "alias": "bnfRule",
+        "userDefined": true
+      },
+      {
+        "text": "에 올 수 없는 이유가 무엇인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

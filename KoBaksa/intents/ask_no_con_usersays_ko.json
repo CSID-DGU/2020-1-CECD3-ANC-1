@@ -1,0 +1,149 @@
+[
+  {
+    "id": "3da7fe68-dc02-4995-adc0-6984dec71f88",
+    "data": [
+      {
+        "text": "{ω|ωㅌ{0,1}*}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "이고 ω는 연속된 두개의 ",
+        "userDefined": false
+      },
+      {
+        "text": "1",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 없는 스트링 ",
+        "userDefined": false
+      },
+      {
+        "text": "문제의 풀이",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "를 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "c8623b75-34f7-4fad-979d-ae8b8f9398e6",
+    "data": [
+      {
+        "text": "{ω|ωㅌ{0,1}*}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "이고 ω는 연속된 두개의 ",
+        "userDefined": false
+      },
+      {
+        "text": "1",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 없는 스트링이란 ",
+        "userDefined": false
+      },
+      {
+        "text": "문제의 답",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "e3437e42-c87d-4d90-9a7f-54018b483bb4",
+    "data": [
+      {
+        "text": "{ω|ωㅌ{0,1}*}",
+        "meta": "@mathFormula",
+        "alias": "mathFormula",
+        "userDefined": true
+      },
+      {
+        "text": "이고 ω는 연속된 두개의 ",
+        "userDefined": false
+      },
+      {
+        "text": "1",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 없는 스트링 문제의 ",
+        "userDefined": false
+      },
+      {
+        "text": "해답",
+        "meta": "@QuestionType",
+        "alias": "QuestionType",
+        "userDefined": true
+      },
+      {
+        "text": "은 ",
+        "userDefined": false
+      },
+      {
+        "text": "무엇",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "인가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]

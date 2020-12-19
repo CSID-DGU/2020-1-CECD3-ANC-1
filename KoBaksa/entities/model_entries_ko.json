@@ -1,0 +1,25 @@
+[
+  {
+    "value": "cc_model",
+    "synonyms": [
+      "compiler compiler model",
+      "컴파일러 컴파일러 모델",
+      "compiler compiler 모델"
+    ]
+  },
+  {
+    "value": "pqcc_model",
+    "synonyms": [
+      "PQCC Model",
+      "PQCC 모델",
+      "pqcc 모델"
+    ]
+  },
+  {
+    "value": "ack_model",
+    "synonyms": [
+      "ACK Model",
+      "ACK 모델"
+    ]
+  }
+]

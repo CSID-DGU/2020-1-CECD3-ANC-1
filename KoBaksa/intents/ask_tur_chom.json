@@ -1,0 +1,92 @@
+{
+  "id": "3ac787b9-e8dc-434a-9c62-0dd13426aeba",
+  "name": "ask_tur_chom",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4351a1a3-cf83-4898-b67c-44d3fa8319f0",
+          "name": "turingMachine",
+          "required": false,
+          "dataType": "@turingMachine",
+          "value": "$turingMachine",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c843b64a-2290-42d1-9acd-3db529def037",
+          "name": "ChomskyHierarchy",
+          "required": false,
+          "dataType": "@ChomskyHierarchy",
+          "value": "$ChomskyHierarchy",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "750b1704-3072-431c-8bef-2211fff7545f",
+          "name": "connection",
+          "required": false,
+          "dataType": "@connection",
+          "value": "$connection",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d34796d5-1dbb-47a8-80c8-373c7447fa93",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "촘스키 계층의 unrestricted grammars는 모든 형식 문법을 포함하고, 튜링 머신으로 인식가능한 모든 언어를 정확히 생산합니다. 인식가능한 언어란 튜링 기계가 멈추는 모든 string들을 의미합니다. 이 언어들은 recursively enumerable languages입니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

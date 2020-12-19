@@ -1,0 +1,9 @@
+{
+  "id": "81f4e1cc-30ef-4b25-9484-ff4d05f370f3",
+  "name": "QuestionType",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

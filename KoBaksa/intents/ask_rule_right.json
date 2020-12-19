@@ -1,0 +1,92 @@
+{
+  "id": "f7aa6992-4940-472a-9398-9cb24307c5df",
+  "name": "ask_rule_right",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "be798ad4-ff5e-4ee8-9500-8b47a5a221d2",
+          "name": "Symbol",
+          "required": false,
+          "dataType": "@Symbol",
+          "value": "$Symbol",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "aed0c6df-d99a-43b4-adce-fa00603f51db",
+          "name": "productionRule",
+          "required": false,
+          "dataType": "@productionRule",
+          "value": "$productionRule",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "895a95bf-339c-45d2-a4be-5a166285efed",
+          "name": "exist",
+          "required": false,
+          "dataType": "@exist",
+          "value": "$exist",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "3db81365-a119-4485-9378-6f22722d94ec",
+          "name": "QuestionType",
+          "required": false,
+          "dataType": "@QuestionType",
+          "value": "$QuestionType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "생성 규칙이 S-\u003eE(epsilon)인 경우 E-생성 규칙이라 부르는데, 이와 같은 생성 규칙을 제거함으로써 구문 분석 시간을 줄일 수 있습니다. Context-free 문법\u003d((V)N, (V)T, P, S)의 조건 중에 S 하나만이  E-생성 규칙을 가지며 다른 생성 규칙의 오른쪽에 S가 나타나지 않는다는 조건과 P가 E-생성 규칙을 갖지 않는다는 조건을 가짐으로써 E-free한 문법이 되고 앞서 말한 구문 분석 시간을 줄일 수 있는 문법이 됩니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

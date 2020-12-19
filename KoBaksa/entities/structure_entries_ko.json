@@ -1,0 +1,58 @@
+[
+  {
+    "value": "structure",
+    "synonyms": [
+      "structure",
+      "구조"
+    ]
+  },
+  {
+    "value": "lexical",
+    "synonyms": [
+      "lexical Analyzer",
+      "어휘 분석기"
+    ]
+  },
+  {
+    "value": "syntax",
+    "synonyms": [
+      "Syntax Analyzer",
+      "구문 분석기"
+    ]
+  },
+  {
+    "value": "intermediate_code",
+    "synonyms": [
+      "intermediate Code  Generator",
+      "중간 코드 생성기"
+    ]
+  },
+  {
+    "value": "optimizer",
+    "synonyms": [
+      "code optimizer",
+      "코드 최적기",
+      "코드 최적화"
+    ]
+  },
+  {
+    "value": "target_code",
+    "synonyms": [
+      "Target Code Generator",
+      "타겟 코드 생성기"
+    ]
+  },
+  {
+    "value": "error",
+    "synonyms": [
+      "Error Recovery",
+      "에러 복구",
+      "오류 복구",
+      "오류 헨들링",
+      "Error handling",
+      "error repair",
+      "에러 수정",
+      "오류 수정"
+    ]
+  }
+]

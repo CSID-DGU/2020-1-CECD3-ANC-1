@@ -1,0 +1,9 @@
+{
+  "id": "e26b8d2e-6421-4148-b117-2db7751e90fb",
+  "name": "bracket",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

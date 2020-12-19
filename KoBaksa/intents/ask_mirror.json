@@ -1,0 +1,50 @@
+{
+  "id": "fbb8e77b-a484-4592-8000-96ef523bc696",
+  "name": "ask_mirror",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "73cebd6d-0b3e-4cec-b5a8-9a156e22025e",
+          "name": "grammar",
+          "required": false,
+          "dataType": "@grammar",
+          "value": "$grammar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "ko",
+          "speech": [
+            "mirror image language의 경우 \\n\nG \u003d ({A, B}, {a, b}, P, S} \\n\nP : S -\u003e A | ε   \\n\n     A -\u003e B | ε    \\n\n     B -\u003e aAa | bAb \\n\n처음의 반과 나중의 반이 같은 string  \\n\nG \u003d ({A, B}, {a, b}, P, S}  \\n\nP : S -\u003e A | ε      \\n\n     A -\u003e BB | ε    \\n\n     B -\u003e aAaA | bAbA    \\n\n입니다."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

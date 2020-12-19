@@ -1,0 +1,256 @@
+[
+  {
+    "id": "0e8ae7e0-4edf-40bb-b1e4-20179ccc35a1",
+    "data": [
+      {
+        "text": "lexical analysis",
+        "meta": "@analysis",
+        "alias": "analysis",
+        "userDefined": true
+      },
+      {
+        "text": " 단계에서 생성된 ",
+        "userDefined": false
+      },
+      {
+        "text": "토큰",
+        "meta": "@token",
+        "alias": "token",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "line",
+        "meta": "@line",
+        "alias": "line",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "column",
+        "meta": "@column",
+        "alias": "column",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "row",
+        "meta": "@row",
+        "alias": "row",
+        "userDefined": true
+      },
+      {
+        "text": " 값은 어떤 ",
+        "userDefined": false
+      },
+      {
+        "text": "경우",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "를 위한거야?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "9c9bafb2-048f-4231-9608-2114038c83ff",
+    "data": [
+      {
+        "text": "lexical analysis",
+        "meta": "@analysis",
+        "alias": "analysis",
+        "userDefined": true
+      },
+      {
+        "text": " 단계에서 생성된 ",
+        "userDefined": false
+      },
+      {
+        "text": "토큰",
+        "meta": "@token",
+        "alias": "token",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "line",
+        "meta": "@line",
+        "alias": "line",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "column",
+        "meta": "@column",
+        "alias": "column",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "row",
+        "meta": "@row",
+        "alias": "row",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "값은",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " 어디에 써?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "3e0eab50-0cff-41c9-8930-35379314d7aa",
+    "data": [
+      {
+        "text": "lexical analysis",
+        "meta": "@analysis",
+        "alias": "analysis",
+        "userDefined": true
+      },
+      {
+        "text": " 단계에서 생성된 ",
+        "userDefined": false
+      },
+      {
+        "text": "토큰",
+        "meta": "@token",
+        "alias": "token",
+        "userDefined": true
+      },
+      {
+        "text": "의 ",
+        "userDefined": false
+      },
+      {
+        "text": "line",
+        "meta": "@line",
+        "alias": "line",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "column",
+        "meta": "@column",
+        "alias": "column",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "row",
+        "meta": "@row",
+        "alias": "row",
+        "userDefined": true
+      },
+      {
+        "text": " 값은 어디에 쓰이나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  },
+  {
+    "id": "10d3155d-4468-4118-8f5d-15009af446d0",
+    "data": [
+      {
+        "text": "Lexical Analysis",
+        "meta": "@analysis",
+        "alias": "analysis",
+        "userDefined": true
+      },
+      {
+        "text": "단계에서 인코딩 과정을 통해 ",
+        "userDefined": false
+      },
+      {
+        "text": "토큰",
+        "meta": "@token",
+        "alias": "token",
+        "userDefined": true
+      },
+      {
+        "text": "이 생성되면 각 토큰은 토큰 number와 토큰 value 값을 가지고 또 추가적으로 line, column, row값을 가질 수 있다고 하셨는데 이 ",
+        "userDefined": false
+      },
+      {
+        "text": "line",
+        "meta": "@line",
+        "alias": "line",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "column",
+        "meta": "@column",
+        "alias": "column",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "row",
+        "meta": "@row",
+        "alias": "row",
+        "userDefined": true
+      },
+      {
+        "text": " 값들은 어떤 경우를 위해 있는 건가요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "ko",
+    "updated": 0
+  }
+]
