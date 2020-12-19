@@ -8,14 +8,24 @@
 유소영 (wka99)
 이민주 (Minjoo-L)
 
-## 필요한 환경설정
-다음 명령으로 필요한 라이브러리를 설치해주세요.
-
+## 설치하기
+# [시스템 실행]
+1. Python 설치
+- Windows 10에 맞는 Python 3.x 버전을 설치한다. 
+- 설치과정에서 Add Python 3.5 to PATH를 체크하여 cmd창의 모든 경로상에서 Python 명령어를 사용할 수 있도록 한다. 
+- 설치가 완료되면 cmd창에서 다음 명령어로 실행되는지 확인한다.
 ```sh
-pip3 install -r requirements.txt
+pip -V
 ```
 
-다음 명령으로 서버를 구동시켜주세요.
+2. Django 설치
+Python를 설치한 다음 cmd 창에서 다음 명령어를 입력하여 Django를 설치한다. 
+```sh
+pip install django
+```
+3. 시스템 실행
+- https://github.com/CSID-DGU/2020-1-CECD3-ANC-1에서 프로젝트 폴더를 원하는 경로에 다운받는다.
+- 2020-1-CECD3-ANC-1/mypage/mypage 경로에 my_settings.py 파일을 추가하여 AWS EC2 ubuntu 18.04에 설치된 moodle MySQL 데이터베이스를 시스템과 연동한다. 아래 그림은 my_setting.py 이다. 각 필드에 해당되는 값을 입력한다.
 
 ```sh
 python3 manage.py runserver
