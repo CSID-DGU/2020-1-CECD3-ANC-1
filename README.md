@@ -28,12 +28,15 @@ pip install django
 - https://github.com/CSID-DGU/2020-1-CECD3-ANC-1에서 프로젝트 폴더를 원하는 경로에 다운받는다.
 - 2020-1-CECD3-ANC-1/mypage/mypage 경로에 my_settings.py 파일을 추가하여 AWS EC2 ubuntu 18.04에 설치된 moodle MySQL 데이터베이스를 시스템과 연동한다. 아래 그림은 my_setting.py 이다. 각 필드에 해당되는 값을 입력한다.
 <img width="361" alt="DB" src="https://user-images.githubusercontent.com/45723998/102689223-b9a67980-423f-11eb-9caa-eb4de3a3ade7.png">
+
 - 2020-1-CECD3-ANC-1/mypage/chatbot 경로에 .json의 확장자를 갖는 Dialogflow 에이전트의 키 파일을 추가한다.
 - 2020-1-CECD3-ANC-1/requirements.txt 파일에 작성된 라이브러리를 설치하기 위해 cmd창에 다음 명령을 입력한다.
+
 ```sh
 pip3 install -r requirements.txt
 ```
 - 다음 명령으로 서버를 구동시킨후 http://127.0.0.1:8000/mypage 로 접속한다.
+
 ```sh
 python3 manage.py runserver
 ```
